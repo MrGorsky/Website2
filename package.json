@@ -7,7 +7,6 @@
     "dev": "astro dev",
     "build": "astro build && node scripts/photo-metadata.mjs",
     "preview": "astro preview",
-    "placeholders": "node scripts/make-placeholders.mjs",
     "check": "node scripts/check-seo.mjs"
   },
   "dependencies": {

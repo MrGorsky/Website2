@@ -2,7 +2,8 @@
 
 ## Before cutover
 
-- [ ] Real photos in `src/assets/photos/` + `src/data/images.json`; delete the `placeholder-*` files. Re-run `npm run build && npm run check` and Lighthouse (real photos are heavier than placeholders).
+- [x] Photos in `src/assets/photos/` + `src/data/images.json` (61 photos; placeholders removed). Lighthouse mobile: 100/100/100/100 on every page, LCP 1.5–1.8 s.
+- [ ] Fill `location` in `src/data/images.json` for each photo (city where it was shot; left empty for now, so no location is published).
 - [ ] Fill `src/data/site.ts`: Instagram / LinkedIn URLs, Google Business Profile URL, `[GA4_ID]`, `[ADS_ID]`, `[ADS_LABEL_PHONE]`, `[ADS_LABEL_EMAIL]`, `[META_PIXEL_ID]` (or leave the pixel in brackets to keep it off).
 - [ ] In GA4, set data retention to 14 months (the privacy page says so).
 - [ ] GitHub → repo Settings → Pages → Source: **GitHub Actions**.

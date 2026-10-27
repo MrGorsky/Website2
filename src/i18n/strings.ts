@@ -8,15 +8,15 @@ export const pages: Record<PageKey, Record<Lang, PageText>> = {
     fr: {
       title: 'Photographe corporatif à Montréal | Hamel Photo',
       description:
-        'Photographe d’événements, de portraits corporatifs et d’immobilier dans le Grand Montréal depuis 2012. Appelez au 514 802-6778.',
-      h1: 'Photographe d’événements, portraits corporatifs et immobilier — Grand Montréal',
+        'Photographe d’événements, de portraits corporatifs et de milieux de travail dans le Grand Montréal depuis 2012. Appelez au 514 802-6778.',
+      h1: 'Photographe corporatif à Montréal : événements, portraits et milieu de travail',
       crumb: 'Accueil',
     },
     en: {
       title: 'Corporate Photographer in Montreal | Hamel Photo',
       description:
-        'Event, corporate headshot and real estate photographer serving Greater Montreal since 2012. Call 514 802-6778.',
-      h1: 'Event, corporate headshot and real estate photographer — Greater Montreal',
+        'Event, corporate headshot and workplace photographer serving Greater Montreal since 2012. Call 514 802-6778.',
+      h1: 'Corporate photographer in Montreal: events, headshots and workplace',
       crumb: 'Home',
     },
   },
@@ -60,24 +60,24 @@ export const pages: Record<PageKey, Record<Lang, PageText>> = {
       crumb: 'Corporate headshots',
     },
   },
-  realestate: {
+  workplace: {
     fr: {
-      title: 'Photographie immobilière à Montréal | Hamel Photo',
+      title: 'Photographie corporative à Montréal | Hamel Photo',
       description:
-        'Photos immobilières de condos, maisons, plex et espaces commerciaux pour courtiers et promoteurs du Grand Montréal. 514 802-6778.',
-      h1: 'Photographe immobilier à Montréal',
+        'Photos de vos employés au travail, au bureau comme à l’usine, pour votre site Web, vos offres d’emploi et vos rapports. 514 802-6778.',
+      h1: 'Photographie corporative en milieu de travail à Montréal',
       intro:
-        'Photos de condos, maisons, plex et espaces commerciaux pour courtiers et promoteurs, à Montréal, sur la Rive-Nord et la Rive-Sud.',
-      crumb: 'Photographie immobilière',
+        'Vos employés au travail, au bureau, à l’atelier ou à l’usine, pour votre site Web, vos offres d’emploi et vos rapports annuels. À Montréal, Laval et sur la Rive-Sud.',
+      crumb: 'Photographie corporative',
     },
     en: {
-      title: 'Real Estate Photography in Montreal | Hamel Photo',
+      title: 'Corporate Photography in Montreal | Hamel Photo',
       description:
-        'Real estate photos of condos, houses, plexes and commercial spaces for brokers and developers in Greater Montreal. Call 514 802-6778.',
-      h1: 'Real estate photographer in Montreal',
+        'Photos of your people at work, in the office or on the shop floor, for your website, careers page and reports. Call 514 802-6778.',
+      h1: 'Workplace photography in Montreal',
       intro:
-        'Photos of condos, houses, plexes and commercial spaces for brokers and developers in Montreal, the North Shore and the South Shore.',
-      crumb: 'Real estate photography',
+        'Your people at work, in the office, the workshop or the plant, for your website, careers page and annual reports. In Montreal, Laval and the South Shore.',
+      crumb: 'Corporate photography',
     },
   },
   privacy: {
@@ -101,7 +101,7 @@ export const pages: Record<PageKey, Record<Lang, PageText>> = {
 export const ui = {
   fr: {
     filterLabel: 'Filtrer les photos par service',
-    chips: { home: 'Tout', event: 'Événements', headshot: 'Portraits corporatifs', realestate: 'Immobilier' },
+    chips: { home: 'Tout', event: 'Événements', headshot: 'Portraits corporatifs', workplace: 'Milieu de travail' },
     langSwitchLabel: 'Langue',
     serving: 'Desservant le Grand Montréal : Montréal, Laval, Longueuil, Rive-Sud, Rive-Nord',
     privacy: 'Confidentialité',
@@ -118,7 +118,7 @@ export const ui = {
   },
   en: {
     filterLabel: 'Filter photos by service',
-    chips: { home: 'All', event: 'Events', headshot: 'Corporate headshots', realestate: 'Real estate' },
+    chips: { home: 'All', event: 'Events', headshot: 'Corporate headshots', workplace: 'Workplace' },
     langSwitchLabel: 'Language',
     serving: 'Serving Greater Montreal: Montréal, Laval, Longueuil, Rive-Sud, Rive-Nord',
     privacy: 'Privacy',

@@ -1,146 +1,490 @@
 [
   {
-    "file": "placeholder-evenement-gala-chambre-commerce-montreal-01.jpg",
+    "file": "evenement-conferencier-lutrin-01.jpg",
     "service": "event",
-    "caption_fr": "Gala annuel de la Chambre de commerce, Montréal",
-    "caption_en": "Annual Chamber of Commerce gala, Montreal",
-    "location": "Montréal",
+    "caption_fr": "Conférencier au lutrin pendant une conférence d’affaires",
+    "caption_en": "Speaker at the lectern during a business conference",
+    "location": "",
     "featured": true
   },
   {
-    "file": "placeholder-evenement-conference-conferenciere-scene-montreal-01.jpg",
+    "file": "evenement-congres-grande-salle-01.jpg",
     "service": "event",
-    "caption_fr": "Conférencière sur scène lors d’un congrès, Montréal",
-    "caption_en": "Keynote speaker on stage at a convention, Montreal",
-    "location": "Montréal",
-    "featured": false
-  },
-  {
-    "file": "placeholder-evenement-cocktail-reseautage-laval-01.jpg",
-    "service": "event",
-    "caption_fr": "Cocktail de réseautage d’entreprise, Laval",
-    "caption_en": "Corporate networking cocktail, Laval",
-    "location": "Laval",
-    "featured": false
-  },
-  {
-    "file": "placeholder-evenement-remise-prix-gala-longueuil-01.jpg",
-    "service": "event",
-    "caption_fr": "Remise de prix lors d’un gala, Longueuil",
-    "caption_en": "Award presentation at a gala, Longueuil",
-    "location": "Longueuil",
-    "featured": false
-  },
-  {
-    "file": "placeholder-evenement-panel-discussion-congres-montreal-01.jpg",
-    "service": "event",
-    "caption_fr": "Panel de discussion lors d’un congrès, Montréal",
-    "caption_en": "Panel discussion at a conference, Montreal",
-    "location": "Montréal",
-    "featured": false
-  },
-  {
-    "file": "placeholder-evenement-party-bureau-fin-annee-montreal-01.jpg",
-    "service": "event",
-    "caption_fr": "Party de bureau de fin d’année, Montréal",
-    "caption_en": "Year-end office party, Montreal",
-    "location": "Montréal",
-    "featured": false
-  },
-  {
-    "file": "placeholder-portrait-corporatif-avocate-bureau-montreal-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’une avocate dans ses bureaux, Montréal",
-    "caption_en": "Corporate headshot of a lawyer at her office, Montreal",
-    "location": "Montréal",
+    "caption_fr": "Vue d’ensemble d’un congrès dans une grande salle comble",
+    "caption_en": "Wide view of a packed convention hall",
+    "location": "",
     "featured": true
   },
   {
-    "file": "placeholder-portrait-corporatif-dirigeant-fond-gris-montreal-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait de dirigeant sur fond gris, Montréal",
-    "caption_en": "Executive headshot on grey backdrop, Montreal",
-    "location": "Montréal",
+    "file": "evenement-conference-principale-ecran-geant-01.jpg",
+    "service": "event",
+    "caption_fr": "Conférencière sur scène devant un écran géant",
+    "caption_en": "Keynote speaker on stage in front of a giant screen",
+    "location": "",
     "featured": false
   },
   {
-    "file": "placeholder-portrait-corporatif-equipe-direction-laval-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Photo d’équipe de direction, Laval",
-    "caption_en": "Leadership team photo, Laval",
-    "location": "Laval",
+    "file": "evenement-panel-discussion-scene-01.jpg",
+    "service": "event",
+    "caption_fr": "Panel de discussion sur scène devant le public",
+    "caption_en": "Panel discussion on stage in front of the audience",
+    "location": "",
     "featured": false
   },
   {
-    "file": "placeholder-portrait-corporatif-ingenieur-lumiere-naturelle-longueuil-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait d’un ingénieur en lumière naturelle, Longueuil",
-    "caption_en": "Engineer portrait in natural light, Longueuil",
-    "location": "Longueuil",
+    "file": "evenement-gala-invites-tenue-soiree-01.jpg",
+    "service": "event",
+    "caption_fr": "Invités en tenue de soirée lors d’un gala",
+    "caption_en": "Guests in evening wear at a gala",
+    "location": "",
     "featured": false
   },
   {
-    "file": "placeholder-portrait-corporatif-courtier-immobilier-rive-sud-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait d’une courtière immobilière, Rive-Sud",
-    "caption_en": "Real estate broker headshot, South Shore",
-    "location": "Rive-Sud",
+    "file": "evenement-cocktail-reseautage-01.jpg",
+    "service": "event",
+    "caption_fr": "Participants qui échangent lors d’un cocktail de réseautage",
+    "caption_en": "Guests mingling at a networking reception",
+    "location": "",
     "featured": false
   },
   {
-    "file": "placeholder-portrait-corporatif-medecin-clinique-montreal-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait d’un médecin en clinique, Montréal",
-    "caption_en": "Physician headshot at a clinic, Montreal",
-    "location": "Montréal",
+    "file": "evenement-reception-terrasse-coucher-soleil-01.jpg",
+    "service": "event",
+    "caption_fr": "Réception sur une terrasse au coucher du soleil",
+    "caption_en": "Rooftop reception at sunset",
+    "location": "",
     "featured": false
   },
   {
-    "file": "placeholder-photographie-immobiliere-condo-salon-laval-01.jpg",
-    "service": "realestate",
-    "caption_fr": "Salon lumineux d’un condo, Laval",
-    "caption_en": "Bright condo living room, Laval",
-    "location": "Laval",
+    "file": "evenement-entrevue-scene-causerie-01.jpg",
+    "service": "event",
+    "caption_fr": "Entrevue sur scène en formule causerie",
+    "caption_en": "Fireside chat on stage",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-conferenciere-scene-01.jpg",
+    "service": "event",
+    "caption_fr": "Conférencière en mouvement sur scène",
+    "caption_en": "Keynote speaker walking the stage",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-allocution-plein-air-01.jpg",
+    "service": "event",
+    "caption_fr": "Allocution en plein air devant les employés",
+    "caption_en": "Outdoor speech to staff",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-photo-groupe-equipe-ventes-01.jpg",
+    "service": "event",
+    "caption_fr": "Photo de groupe d’une équipe des ventes lors d’un événement",
+    "caption_en": "Sales team group photo at an event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-presentation-salle-hotel-01.jpg",
+    "service": "event",
+    "caption_fr": "Présentation dans une salle de réunion d’hôtel",
+    "caption_en": "Presentation in a hotel meeting room",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-salon-professionnel-poignee-main-01.jpg",
+    "service": "event",
+    "caption_fr": "Poignée de main à un kiosque de salon professionnel",
+    "caption_en": "Handshake at a trade show booth",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-conferencier-gros-plan-01.jpg",
+    "service": "event",
+    "caption_fr": "Gros plan d’un conférencier au lutrin",
+    "caption_en": "Close-up of a speaker at the lectern",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-assemblee-employes-bureau-01.jpg",
+    "service": "event",
+    "caption_fr": "Assemblée des employés dans les bureaux de l’entreprise",
+    "caption_en": "All-hands meeting in the company office",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-participants-congres-01.jpg",
+    "service": "event",
+    "caption_fr": "Trois participants qui posent lors d’un congrès",
+    "caption_en": "Three attendees posing at a conference",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-pause-cafe-congres-01.jpg",
+    "service": "event",
+    "caption_fr": "Discussion pendant la pause-café d’un congrès",
+    "caption_en": "Conversation during a conference coffee break",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-salon-professionnel-demonstration-01.jpg",
+    "service": "event",
+    "caption_fr": "Démonstration de logiciel à un kiosque de salon professionnel",
+    "caption_en": "Software demo at a trade show booth",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-panel-table-honneur-01.jpg",
+    "service": "event",
+    "caption_fr": "Panel d’experts à la table d’honneur d’une conférence",
+    "caption_en": "Expert panel at the head table of a conference",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-party-bureau-fetes-01.jpg",
+    "service": "event",
+    "caption_fr": "Couple qui pose au party de bureau des Fêtes",
+    "caption_en": "Couple posing at the office holiday party",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-atelier-salle-conference-01.jpg",
+    "service": "event",
+    "caption_fr": "Atelier dans une salle de conférence",
+    "caption_en": "Breakout session in a conference room",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-tournoi-golf-entreprise-01.jpg",
+    "service": "event",
+    "caption_fr": "Trois golfeurs lors d’un tournoi de golf d’entreprise",
+    "caption_en": "Three golfers at a corporate golf tournament",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-kiosque-exposant-visiteurs-01.jpg",
+    "service": "event",
+    "caption_fr": "Exposant qui discute avec des visiteurs à son kiosque",
+    "caption_en": "Exhibitor talking with visitors at a booth",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-invitees-cocktail-01.jpg",
+    "service": "event",
+    "caption_fr": "Deux invitées qui posent lors d’un cocktail",
+    "caption_en": "Two guests posing at a reception",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-presentation-resultats-banquet-01.jpg",
+    "service": "event",
+    "caption_fr": "Présentation de résultats lors d’un banquet d’affaires",
+    "caption_en": "Results presentation at a business banquet",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-photo-groupe-fond-blanc-01.jpg",
+    "service": "event",
+    "caption_fr": "Photo de groupe sur fond blanc lors d’un événement d’entreprise",
+    "caption_en": "Group photo on a white backdrop at a company event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-presentation-kiosque-salon-01.jpg",
+    "service": "event",
+    "caption_fr": "Présentation devant public à un kiosque de salon professionnel",
+    "caption_en": "Presentation to an audience at a trade show booth",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-anniversaire-entreprise-collegues-01.jpg",
+    "service": "event",
+    "caption_fr": "Collègues réunis pour l’anniversaire de l’entreprise",
+    "caption_en": "Colleagues celebrating a company anniversary",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-femme-veston-camel-fond-gris-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle en veston camel, fond gris",
+    "caption_en": "Corporate headshot of a woman in a camel blazer, grey backdrop",
+    "location": "",
     "featured": true
   },
   {
-    "file": "placeholder-photographie-immobiliere-cuisine-maison-rive-nord-01.jpg",
-    "service": "realestate",
-    "caption_fr": "Cuisine d’une maison unifamiliale, Rive-Nord",
-    "caption_en": "Single-family home kitchen, North Shore",
-    "location": "Rive-Nord",
+    "file": "portrait-corporatif-homme-veston-bleu-fond-gris-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’un professionnel en veston bleu, fond gris",
+    "caption_en": "Corporate headshot of a man in a blue blazer, grey backdrop",
+    "location": "",
     "featured": false
   },
   {
-    "file": "placeholder-photographie-immobiliere-facade-plex-montreal-01.jpg",
-    "service": "realestate",
-    "caption_fr": "Façade d’un plex, Montréal",
-    "caption_en": "Plex façade, Montreal",
-    "location": "Montréal",
+    "file": "portrait-corporatif-femme-lunettes-fond-bleu-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle à lunettes, fond bleu marine",
+    "caption_en": "Corporate headshot of a woman wearing glasses, navy backdrop",
+    "location": "",
     "featured": false
   },
   {
-    "file": "placeholder-photographie-immobiliere-chambre-principale-longueuil-01.jpg",
-    "service": "realestate",
-    "caption_fr": "Chambre principale, Longueuil",
-    "caption_en": "Primary bedroom, Longueuil",
-    "location": "Longueuil",
+    "file": "portrait-corporatif-dirigeant-complet-cravate-fond-gris-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’un dirigeant en complet-cravate, fond gris",
+    "caption_en": "Corporate headshot of an executive in a suit and tie, grey backdrop",
+    "location": "",
     "featured": false
   },
   {
-    "file": "placeholder-photographie-immobiliere-bureaux-commerciaux-montreal-01.jpg",
-    "service": "realestate",
-    "caption_fr": "Bureaux commerciaux à aire ouverte, Montréal",
-    "caption_en": "Open-plan commercial offices, Montreal",
-    "location": "Montréal",
+    "file": "portrait-corporatif-homme-chandail-gris-fond-gris-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’un jeune professionnel en chandail gris, fond gris",
+    "caption_en": "Corporate headshot of a young professional in a grey sweater, grey backdrop",
+    "location": "",
     "featured": false
   },
   {
-    "file": "placeholder-photographie-immobiliere-salle-de-bain-rive-sud-01.jpg",
-    "service": "realestate",
-    "caption_fr": "Salle de bain rénovée, Rive-Sud",
-    "caption_en": "Renovated bathroom, South Shore",
-    "location": "Rive-Sud",
+    "file": "portrait-corporatif-femme-veston-vert-fond-gris-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle en veston vert, fond gris",
+    "caption_en": "Corporate headshot of a woman in a green blazer, grey backdrop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-homme-chemise-bleue-fond-bleu-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’un professionnel en chemise bleu pâle, fond bleu marine",
+    "caption_en": "Corporate headshot of a man in a light blue shirt, navy backdrop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-femme-veston-marine-fond-gris-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle en veston marine, fond gris",
+    "caption_en": "Corporate headshot of a woman in a navy blazer, grey backdrop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-dirigeant-complet-marine-fond-gris-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’un dirigeant en complet marine, fond gris",
+    "caption_en": "Corporate headshot of an executive in a navy suit, grey backdrop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-femme-cardigan-bordeaux-fond-bleu-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle en cardigan bordeaux, fond bleu marine",
+    "caption_en": "Corporate headshot of a woman in a burgundy cardigan, navy backdrop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-homme-col-roule-fond-gris-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’un professionnel en col roulé et veston noir, fond gris",
+    "caption_en": "Corporate headshot of a man in a turtleneck and black blazer, grey backdrop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-femme-veston-gris-fond-gris-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle en veston gris, fond gris",
+    "caption_en": "Corporate headshot of a woman in a grey blazer, grey backdrop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-homme-barbe-lunettes-fond-bleu-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’un professionnel barbu à lunettes, fond bleu marine",
+    "caption_en": "Corporate headshot of a bearded man wearing glasses, navy backdrop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-femme-cheveux-gris-lunettes-fond-gris-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle aux cheveux gris, à lunettes, fond gris",
+    "caption_en": "Corporate headshot of a grey-haired woman wearing glasses, grey backdrop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-homme-veston-kaki-fond-gris-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’un professionnel en veston kaki, fond gris",
+    "caption_en": "Corporate headshot of a man in an olive blazer, grey backdrop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-femme-veston-vert-fond-bleu-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle en veston vert forêt, fond bleu marine",
+    "caption_en": "Corporate headshot of a woman in a forest-green blazer, navy backdrop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-femme-veston-gris-fond-bleu-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle en veston gris, fond bleu marine",
+    "caption_en": "Corporate headshot of a woman in a grey blazer, navy backdrop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-dirigeant-complet-marine-fond-gris-02.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’un dirigeant souriant en complet marine, fond gris",
+    "caption_en": "Corporate headshot of a smiling executive in a navy suit, grey backdrop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-femme-cheveux-roux-fond-bleu-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle aux cheveux roux, fond bleu marine",
+    "caption_en": "Corporate headshot of a red-haired woman, navy backdrop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "photo-corporative-machiniste-atelier-usinage-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Machiniste à son poste dans un atelier d’usinage",
+    "caption_en": "Machinist at work in a machine shop",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "photo-corporative-gestionnaire-bureau-aire-ouverte-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Gestionnaire en discussion à son bureau dans une aire ouverte",
+    "caption_en": "Manager talking at her desk in an open-plan office",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "photo-corporative-technicien-soudure-circuit-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Technicien qui soude un circuit électronique",
+    "caption_en": "Technician soldering a circuit board",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "photo-corporative-developpeur-poste-travail-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Développeur souriant à son poste de travail",
+    "caption_en": "Smiling developer at his workstation",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "photo-corporative-operateur-plieuse-tolerie-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Opérateur à la plieuse dans un atelier de tôlerie",
+    "caption_en": "Operator at the press brake in a sheet-metal shop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "photo-corporative-employee-bureau-lumineux-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Employée à son poste dans un bureau lumineux",
+    "caption_en": "Employee at her desk in a bright office",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "photo-corporative-technicienne-impression-3d-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Technicienne qui finit une pièce imprimée en 3D",
+    "caption_en": "Technician finishing a 3D-printed part",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "photo-corporative-architecte-plans-bureau-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Architecte qui annote des plans à son bureau",
+    "caption_en": "Architect marking up plans at his desk",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "photo-corporative-artisan-panneau-decoupe-laser-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Artisan qui présente un panneau découpé au laser",
+    "caption_en": "Maker holding a laser-cut panel",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "photo-corporative-dirigeant-bureau-vue-ville-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Dirigeant à son bureau avec vue sur la ville",
+    "caption_en": "Executive at his desk with a city view",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "photo-corporative-designer-graphique-studio-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Designer graphique à son poste dans un studio de création",
+    "caption_en": "Graphic designer at her desk in a creative studio",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "photo-corporative-technicien-atelier-fabrication-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Technicien au travail dans un atelier de fabrication",
+    "caption_en": "Technician at work in a fabrication workshop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "photo-corporative-professionnelle-portable-bureau-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Professionnelle qui travaille sur son portable au bureau",
+    "caption_en": "Professional working on her laptop at the office",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "photo-corporative-analyste-salle-controle-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Analyste devant plusieurs écrans dans une salle de contrôle",
+    "caption_en": "Analyst at a multi-screen desk in a control room",
+    "location": "",
     "featured": false
   }
 ]

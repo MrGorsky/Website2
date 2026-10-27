@@ -1,5 +1,5 @@
 ---
-import { Picture, getImage } from 'astro:assets';
+import { getImage } from 'astro:assets';
 import type { Photo } from '../data/images';
 import type { Lang } from '../i18n/routes';
 import { ui } from '../i18n/strings';
@@ -13,34 +13,50 @@ const { lang, photos } = Astro.props;
 const t = ui[lang].lightbox;
 // Roughly the first row at desktop width; these load eagerly.
 const EAGER = 3;
-const widths = [480, 800, 1200, 1600];
-const sizes = '(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 33vw';
+const widths = [240, 360, 480, 640, 800, 1200, 1600];
+// A photo's base width is aspect ratio × --row height (values from global.css). With two or more photos
+// per row, a justified row stretches it by less than 1.5×; a photo alone on its row fills the width.
+const sizesFor = (r: number) =>
+  `(max-width: 640px) min(100vw, ${Math.round(r * 140 * 1.5)}px), (max-width: 1100px) min(100vw, ${Math.round(r * 240 * 1.5)}px), ${Math.round(r * 300 * 1.5)}px`;
+// Per-format quality: sharp's AVIF scale runs higher than WebP/JPEG, so 50 looks like WebP 72 at a smaller size.
+const formats = [
+  { format: 'avif', type: 'image/avif', quality: 50 },
+  { format: 'webp', type: 'image/webp', quality: 72 },
+] as const;
 
 const items = await Promise.all(
   photos.map(async (p) => {
     const full = await getImage({ src: p.src, width: Math.min(2400, p.src.width), format: 'webp' });
-    return { p, full: full.src, alt: lang === 'fr' ? p.caption_fr : p.caption_en, ratio: p.src.width / p.src.height };
+    const w = widths.filter((x) => x <= p.src.width);
+    const sources = await Promise.all(
+      formats.map(async ({ format, type, quality }) => ({ type, srcset: (await getImage({ src: p.src, widths: w, format, quality })).srcSet.attribute })),
+    );
+    const fallback = await getImage({ src: p.src, widths: w, format: 'jpg', quality: 72 });
+    const ratio = p.src.width / p.src.height;
+    return { full: full.src, alt: lang === 'fr' ? p.caption_fr : p.caption_en, ratio, sources, fallback, sizes: sizesFor(ratio) };
   }),
 );
 ---
 
 <div class="gallery" data-gallery>
   {
-    items.map(({ p, full, alt, ratio }, i) => (
+    items.map(({ full, alt, ratio, sources, fallback, sizes }, i) => (
       <figure style={`--r:${ratio.toFixed(4)}`}>
         <a href={full} data-full={full}>
-          <Picture
-            src={p.src}
-            alt={alt}
-            formats={['avif', 'webp']}
-            fallbackFormat="jpg"
-            widths={widths.filter((w) => w <= p.src.width)}
-            sizes={sizes}
-            quality={72}
-            priority={i === 0}
-            loading={i < EAGER ? 'eager' : 'lazy'}
-            decoding={i < EAGER ? 'auto' : 'async'}
-          />
+          <picture>
+            {sources.map((s) => <source type={s.type} srcset={s.srcset} sizes={sizes} />)}
+            <img
+              src={fallback.src}
+              srcset={fallback.srcSet.attribute}
+              sizes={sizes}
+              width={fallback.attributes.width}
+              height={fallback.attributes.height}
+              alt={alt}
+              loading={i < EAGER ? 'eager' : 'lazy'}
+              decoding={i < EAGER ? 'auto' : 'async'}
+              fetchpriority={i === 0 ? 'high' : undefined}
+            />
+          </picture>
         </a>
       </figure>
     ))

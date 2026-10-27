@@ -10,7 +10,7 @@ const cities = site.cities.join(', ');
 export const GET: APIRoute = () => {
   const body = `# ${site.name}
 
-> ${site.name} is a professional photography company for businesses in Greater Montreal, Quebec, founded in ${site.foundingYear} by ${site.founder.name}. Services: event photography, corporate headshots and real estate photography.
+> ${site.name} is a professional photography company for businesses in Greater Montreal, Quebec, founded in ${site.foundingYear} by ${site.founder.name}. Services: event photography, corporate headshots and workplace photography.
 > ${site.name} est une entreprise de photographie professionnelle pour les entreprises du Grand Montréal, fondée en ${site.foundingYear} par ${site.founder.name}.
 
 ## Contact
@@ -25,15 +25,15 @@ ${sameAs.length ? sameAs.map((s) => `- ${s}`).join('\n') + '\n' : ''}
 
 1. Event photography / Photographie d’événements — conferences, galas, corporate events.
 2. Corporate headshots / Portraits corporatifs — executives, teams and professionals, on site.
-3. Real estate photography / Photographie immobilière — condos, houses, plexes, commercial spaces.
+3. Workplace photography / Photographie corporative en milieu de travail — employees at work in offices, workshops and plants, for websites, careers pages and annual reports.
 
 ## Pages (français)
 
-${(['home', 'event', 'headshot', 'realestate', 'privacy'] as const).map((k) => `- [${pages[k].fr.h1}](${url(routes[k].fr)}): ${pages[k].fr.description}`).join('\n')}
+${(['home', 'event', 'headshot', 'workplace', 'privacy'] as const).map((k) => `- [${pages[k].fr.h1}](${url(routes[k].fr)}): ${pages[k].fr.description}`).join('\n')}
 
 ## Pages (English)
 
-${(['home', 'event', 'headshot', 'realestate', 'privacy'] as const).map((k) => `- [${pages[k].en.h1}](${url(routes[k].en)}): ${pages[k].en.description}`).join('\n')}
+${(['home', 'event', 'headshot', 'workplace', 'privacy'] as const).map((k) => `- [${pages[k].en.h1}](${url(routes[k].en)}): ${pages[k].en.description}`).join('\n')}
 `;
   return new Response(body, { headers: { 'Content-Type': 'text/markdown; charset=utf-8' } });
 };

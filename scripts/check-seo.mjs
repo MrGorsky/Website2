@@ -23,7 +23,7 @@ for (const f of files) {
   const biz = ld['@graph'].find((n) => n['@type'] === 'ProfessionalService');
   for (const k of ['name', 'url', 'logo', 'image', 'telephone', 'email', 'founder', 'foundingDate', 'areaServed', 'priceRange']) if (!biz[k]) bad(path, 'business missing ' + k);
   if (biz.address) bad(path, 'business has address');
-  const isService = /evenementiel|corporatifs|immobiliere|event-photography|corporate-headshots|real-estate/.test(path);
+  const isService = /evenementiel|corporatifs|photographie-corporative|event-photography|corporate-headshots|corporate-photography/.test(path);
   if (isService && !(types.includes('Service') && types.includes('ImageGallery'))) bad(path, 'service schema missing');
   if (isService) for (const img of ld['@graph'].find((n) => n['@type'] === 'ImageGallery').image)
     if (!existsSync('dist' + new URL(img.contentUrl).pathname)) bad(path, 'ImageObject file missing');

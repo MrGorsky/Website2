@@ -8,7 +8,7 @@ const pageService: Record<PageKey, Service | undefined> = {
   home: undefined,
   event: 'event',
   headshot: 'headshot',
-  realestate: 'realestate',
+  workplace: 'workplace',
   privacy: undefined,
 };
 

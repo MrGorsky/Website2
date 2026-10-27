@@ -25,7 +25,7 @@ const areaServed = site.cities.map((name) => ({ '@type': 'City', name }));
 const serviceType: Partial<Record<PageKey, Record<Lang, string>>> = {
   event: { fr: 'Photographie d’événements', en: 'Event photography' },
   headshot: { fr: 'Portraits corporatifs', en: 'Corporate headshots' },
-  realestate: { fr: 'Photographie immobilière', en: 'Real estate photography' },
+  workplace: { fr: 'Photographie corporative en milieu de travail', en: 'Workplace photography' },
 };
 
 const graph: Record<string, unknown>[] = [
@@ -91,7 +91,7 @@ if (type) {
         width: img.attributes.width,
         height: img.attributes.height,
         caption: lang === 'fr' ? p.caption_fr : p.caption_en,
-        contentLocation: { '@type': 'Place', name: p.location },
+        ...(p.location && { contentLocation: { '@type': 'Place', name: p.location } }),
         creator: { '@id': founderId },
         copyrightHolder: { '@id': businessId },
         copyrightNotice: copyright,
