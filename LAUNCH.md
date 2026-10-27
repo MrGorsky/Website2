@@ -13,9 +13,18 @@
 
 ## DNS at WHC
 
-Change **only** these records. Do **not** touch MX, SPF (TXT `v=spf1…`), DKIM (`…._domainkey`) or DMARC (`_dmarc`) — Zoho mail depends on them.
+**Email first.** As of 2026-10-27 the MX record is `0 hamelphoto.com.` and `mail` is a CNAME to `hamelphoto.com`: mail is delivered to whatever the apex `A` record points at (WHC's server, 173.209.33.163). Moving the apex to GitHub without the two changes below stops incoming email.
 
-Delete any existing `A`/`AAAA` record on `@` and any existing `A`/`AAAA`/`CNAME` on `www`, then add:
+Step A — keep mail on WHC (do this first, then wait one TTL and send yourself a test email):
+
+| Change | Type | Name | Value |
+|---|---|---|---|
+| Replace the `mail` CNAME with | A | mail | 173.209.33.163 |
+| Edit the MX record to | MX | @ | `mail.hamelphoto.com.` (priority 0) |
+
+Leave SPF (TXT `v=spf1…`), DKIM (`default._domainkey`) and DMARC as they are: SPF's `+mx` still covers 173.209.33.163 through `mail`. Optional tidy-up later: drop `+a` from SPF, since after the switch it would point at GitHub's servers. If unsure, ask WHC support to confirm the MX target before changing it.
+
+Step B — move the website. Delete any existing `A`/`AAAA` record on `@` and any existing `A`/`AAAA`/`CNAME` on `www`, then add:
 
 | Type | Name | Value |
 |---|---|---|
@@ -42,7 +51,7 @@ nslookup -type=CNAME www.hamelphoto.com
 nslookup -type=MX hamelphoto.com
 ```
 
-The MX answer must be unchanged (Zoho).
+The MX answer must be `mail.hamelphoto.com`, and `mail.hamelphoto.com` must still resolve to 173.209.33.163. Send and receive a test email after each step. Mail apps that connect to `mail.hamelphoto.com` keep working; any set up with `hamelphoto.com` as the server need to switch to `mail.hamelphoto.com`.
 
 ## Old site
 
