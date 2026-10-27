@@ -1,0 +1,69 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/site';
+---
+
+<Base lang="fr" page="privacy">
+  <article class="prose">
+    <p><em>Dernière mise à jour : 27 octobre 2026</em></p>
+
+    <h2>Responsable de la protection des renseignements personnels</h2>
+    <p>
+      {site.founder.name}, {site.name}<br />
+      <a href={`mailto:${site.email}`}>{site.email}</a> · <a href={site.phoneHref}>{site.phoneDisplay}</a>
+    </p>
+    <p>Écrivez-nous pour toute question, pour consulter ou corriger vos renseignements, ou pour retirer votre consentement.</p>
+
+    <h2>Ce que nous recueillons et pourquoi</h2>
+    <ul>
+      <li>
+        <strong>Quand vous nous appelez ou nous écrivez :</strong> votre nom, vos coordonnées et les détails de votre
+        demande. Nous les utilisons seulement pour vous répondre et réaliser le mandat.
+      </li>
+      <li>
+        <strong>Votre choix de témoins :</strong> enregistré dans votre navigateur (stockage local) pour ne pas vous
+        reposer la question. Aucune donnée ne nous est transmise.
+      </li>
+      <li>
+        <strong>Seulement si vous cliquez sur « Accepter » :</strong>
+        <ul>
+          <li>Google Analytics 4 : pages vues, type d’appareil et de navigateur, ville approximative, source de la visite. Sert à mesurer l’audience du site.</li>
+          <li>Google Ads : sert à savoir si une publicité a mené à un appel ou à un courriel, et à afficher nos publicités aux personnes qui ont visité le site.</li>
+          <li>Pixel Meta (Facebook, Instagram) : mêmes fins que Google Ads, sur les plateformes de Meta.</li>
+        </ul>
+        Ces outils déposent des témoins et nous signalent les clics sur notre numéro de téléphone et notre adresse
+        courriel. Ils ne nous donnent ni votre nom ni vos coordonnées.
+      </li>
+      <li>
+        <strong>Hébergement :</strong> le site est hébergé par GitHub Pages, qui conserve des journaux techniques
+        (adresse IP, date, page demandée) pour la sécurité du service.
+      </li>
+    </ul>
+
+    <h2>Témoins : votre consentement</h2>
+    <p>
+      Aucun témoin de mesure ou de publicité n’est déposé avant votre accord. Refuser est aussi simple qu’accepter, et le
+      site fonctionne de la même façon. Vous pouvez changer d’idée en tout temps avec le lien « Préférences de témoins »
+      au bas de chaque page.
+    </p>
+
+    <h2>Communication à l’extérieur du Québec</h2>
+    <p>
+      Google, Meta et GitHub traitent des données sur des serveurs situés à l’extérieur du Québec, notamment aux
+      États-Unis. Nous ne vendons aucun renseignement personnel.
+    </p>
+
+    <h2>Conservation</h2>
+    <p>
+      Les données de Google Analytics sont conservées 14 mois. Les échanges avec nos clients sont conservés le temps
+      nécessaire au mandat et aux obligations comptables.
+    </p>
+
+    <h2>Vos droits</h2>
+    <p>
+      Vous pouvez demander l’accès à vos renseignements, leur correction ou leur suppression, et retirer votre
+      consentement. Si vous n’êtes pas satisfait de notre réponse, vous pouvez porter plainte auprès de la
+      <a href="https://www.cai.gouv.qc.ca/" rel="noopener">Commission d’accès à l’information du Québec</a>.
+    </p>
+  </article>
+</Base>

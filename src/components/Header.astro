@@ -1,6 +1,6 @@
 ---
 import { site } from '../data/site';
-import { routes, type Lang, type PageKey } from '../i18n/routes';
+import { routes, htmlLang, type Lang, type PageKey } from '../i18n/routes';
 import { ui } from '../i18n/strings';
 
 interface Props {
@@ -11,7 +11,6 @@ interface Props {
 
 const { lang, page, h1 } = Astro.props;
 const t = ui[lang];
-const other: Lang = lang === 'fr' ? 'en' : 'fr';
 ---
 
 <header class="site-header">
@@ -23,8 +22,15 @@ const other: Lang = lang === 'fr' ? 'en' : 'fr';
       <a href={`mailto:${site.email}`} aria-label={`${t.emailLabel} ${site.email}`}>{site.email}</a>
     </div>
     <nav class="lang" aria-label={t.langSwitchLabel}>
-      <span aria-current="true">{lang.toUpperCase()}</span>
-      <a href={routes[page][other]} hreflang={other === 'fr' ? 'fr-CA' : 'en-CA'} lang={other}>{other.toUpperCase()}</a>
+      {
+        (['fr', 'en'] as const).map((l) =>
+          l === lang ? (
+            <span aria-current="true">{l.toUpperCase()}</span>
+          ) : (
+            <a href={routes[page][l]} hreflang={htmlLang[l]} lang={l}>{l.toUpperCase()}</a>
+          ),
+        )
+      }
     </nav>
   </div>
 </header>

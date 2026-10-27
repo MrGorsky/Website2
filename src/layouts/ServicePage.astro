@@ -1,0 +1,22 @@
+---
+import Base from './Base.astro';
+import FilterBar from '../components/FilterBar.astro';
+import Gallery from '../components/Gallery.astro';
+import { getPhotos } from '../data/images';
+import type { Lang, Service } from '../i18n/routes';
+import { pages } from '../i18n/strings';
+
+interface Props {
+  lang: Lang;
+  service: Service;
+}
+
+const { lang, service } = Astro.props;
+const photos = getPhotos(service);
+---
+
+<Base lang={lang} page={service} photos={photos}>
+  <FilterBar lang={lang} page={service} />
+  <p class="intro">{pages[service][lang].intro}</p>
+  <Gallery lang={lang} photos={photos} />
+</Base>

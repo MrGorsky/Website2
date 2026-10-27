@@ -1,0 +1,69 @@
+---
+import Base from '../../layouts/Base.astro';
+import { site } from '../../data/site';
+---
+
+<Base lang="en" page="privacy">
+  <article class="prose">
+    <p><em>Last updated: October 27, 2026</em></p>
+
+    <h2>Person in charge of personal information</h2>
+    <p>
+      {site.founder.name}, {site.name}<br />
+      <a href={`mailto:${site.email}`}>{site.email}</a> · <a href={site.phoneHref}>{site.phoneDisplay}</a>
+    </p>
+    <p>Contact us with any question, to access or correct your information, or to withdraw your consent.</p>
+
+    <h2>What we collect and why</h2>
+    <ul>
+      <li>
+        <strong>When you call or email us:</strong> your name, contact details and the details of your request. We use
+        them only to reply and to carry out the job.
+      </li>
+      <li>
+        <strong>Your cookie choice:</strong> stored in your browser (local storage) so we don’t ask again. Nothing is sent
+        to us.
+      </li>
+      <li>
+        <strong>Only if you click “Accept”:</strong>
+        <ul>
+          <li>Google Analytics 4: pages viewed, device and browser type, approximate city, how you reached the site. Used to measure site traffic.</li>
+          <li>Google Ads: used to know whether an ad led to a call or an email, and to show our ads to people who visited the site.</li>
+          <li>Meta Pixel (Facebook, Instagram): same purposes as Google Ads, on Meta’s platforms.</li>
+        </ul>
+        These tools set cookies and tell us when someone clicks our phone number or email address. They do not give us
+        your name or contact details.
+      </li>
+      <li>
+        <strong>Hosting:</strong> the site is hosted on GitHub Pages, which keeps technical logs (IP address, date, page
+        requested) to secure the service.
+      </li>
+    </ul>
+
+    <h2>Cookies: your consent</h2>
+    <p>
+      No analytics or advertising cookie is set before you agree. Rejecting is as easy as accepting, and the site works
+      the same either way. You can change your mind at any time with the “Cookie preferences” link at the bottom of
+      every page.
+    </p>
+
+    <h2>Transfers outside Quebec</h2>
+    <p>
+      Google, Meta and GitHub process data on servers outside Quebec, including in the United States. We do not sell
+      any personal information.
+    </p>
+
+    <h2>Retention</h2>
+    <p>
+      Google Analytics data is kept for 14 months. Client correspondence is kept as long as needed for the job and for
+      accounting obligations.
+    </p>
+
+    <h2>Your rights</h2>
+    <p>
+      You can ask to access, correct or delete your information, and withdraw your consent. If you are not satisfied
+      with our answer, you can file a complaint with the
+      <a href="https://www.cai.gouv.qc.ca/" rel="noopener">Commission d’accès à l’information du Québec</a>.
+    </p>
+  </article>
+</Base>

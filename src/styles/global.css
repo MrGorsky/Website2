@@ -115,7 +115,7 @@ a {
   gap: 6px;
   font-size: 0.875rem;
 }
-.lang span::after {
+.lang > :first-child::after {
   content: '|';
   margin-left: 6px;
   color: var(--line);
@@ -396,4 +396,19 @@ a {
     bottom: 64px;
     max-width: none;
   }
+}
+
+/* Privacy and 404 text */
+.prose h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 24px 0 8px;
+}
+.prose h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 28px 0 8px;
+}
+.prose li {
+  margin-bottom: 6px;
 }

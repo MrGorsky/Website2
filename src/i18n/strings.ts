@@ -113,7 +113,7 @@ export const ui = {
       text: 'Nous utilisons des témoins de mesure d’audience et de publicité seulement avec votre accord.',
       accept: 'Accepter',
       reject: 'Refuser',
-      more: 'En savoir plus',
+      more: 'Politique de confidentialité',
     },
   },
   en: {
@@ -130,7 +130,7 @@ export const ui = {
       text: 'We use analytics and advertising cookies only with your consent.',
       accept: 'Accept',
       reject: 'Reject',
-      more: 'Learn more',
+      more: 'Privacy policy',
     },
   },
 } as const;
