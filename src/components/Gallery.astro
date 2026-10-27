@@ -1,0 +1,60 @@
+---
+import { Picture, getImage } from 'astro:assets';
+import type { Photo } from '../data/images';
+import type { Lang } from '../i18n/routes';
+import { ui } from '../i18n/strings';
+
+interface Props {
+  lang: Lang;
+  photos: Photo[];
+}
+
+const { lang, photos } = Astro.props;
+const t = ui[lang].lightbox;
+// Roughly the first row at desktop width; these load eagerly.
+const EAGER = 3;
+const widths = [480, 800, 1200, 1600];
+const sizes = '(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 33vw';
+
+const items = await Promise.all(
+  photos.map(async (p) => {
+    const full = await getImage({ src: p.src, width: Math.min(2400, p.src.width), format: 'webp' });
+    return { p, full: full.src, alt: lang === 'fr' ? p.caption_fr : p.caption_en, ratio: p.src.width / p.src.height };
+  }),
+);
+---
+
+<div class="gallery" data-gallery>
+  {
+    items.map(({ p, full, alt, ratio }, i) => (
+      <figure style={`--r:${ratio.toFixed(4)}`}>
+        <a href={full} data-full={full}>
+          <Picture
+            src={p.src}
+            alt={alt}
+            formats={['avif', 'webp']}
+            fallbackFormat="jpg"
+            widths={widths.filter((w) => w <= p.src.width)}
+            sizes={sizes}
+            quality={72}
+            priority={i === 0}
+            loading={i < EAGER ? 'eager' : 'lazy'}
+            decoding={i < EAGER ? 'auto' : 'async'}
+          />
+        </a>
+      </figure>
+    ))
+  }
+</div>
+
+<dialog class="lightbox" aria-label={t.label}>
+  <img alt="" />
+  <p class="lb-count" aria-live="polite"></p>
+  <button type="button" class="lb-prev" aria-label={t.prev}>‹</button>
+  <button type="button" class="lb-next" aria-label={t.next}>›</button>
+  <button type="button" class="lb-close" aria-label={t.close} autofocus>×</button>
+</dialog>
+
+<script>
+  import '../scripts/lightbox';
+</script>

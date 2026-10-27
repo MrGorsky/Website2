@@ -1,0 +1,30 @@
+---
+import { site } from '../data/site';
+import { routes, type Lang, type PageKey } from '../i18n/routes';
+import { ui } from '../i18n/strings';
+
+interface Props {
+  lang: Lang;
+  page: PageKey;
+  h1: string;
+}
+
+const { lang, page, h1 } = Astro.props;
+const t = ui[lang];
+const other: Lang = lang === 'fr' ? 'en' : 'fr';
+---
+
+<header class="site-header">
+  <div class="bar">
+    <a class="logo" href={routes.home[lang]}>{site.name}</a>
+    <h1 class="h1">{h1}</h1>
+    <div class="contact">
+      <a href={site.phoneHref} aria-label={`${t.callLabel} ${site.phoneDisplay}`}>{site.phoneDisplay}</a>
+      <a href={`mailto:${site.email}`} aria-label={`${t.emailLabel} ${site.email}`}>{site.email}</a>
+    </div>
+    <nav class="lang" aria-label={t.langSwitchLabel}>
+      <span aria-current="true">{lang.toUpperCase()}</span>
+      <a href={routes[page][other]} hreflang={other === 'fr' ? 'fr-CA' : 'en-CA'} lang={other}>{other.toUpperCase()}</a>
+    </nav>
+  </div>
+</header>

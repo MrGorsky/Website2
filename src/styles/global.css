@@ -1,0 +1,399 @@
+/* Light, quiet frame: the photos carry the page. */
+:root {
+  --bg: #faf9f7;
+  --surface: #ffffff;
+  --text: #1c1c1a;
+  --muted: #5d5b57;
+  --line: #e4e1dc;
+  --accent: #24505f;
+  --accent-ink: #ffffff;
+  --gap: 6px;
+  --row: 300px;
+  --pad: clamp(16px, 3vw, 32px);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.15s;
+}
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: inherit;
+}
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.skip {
+  position: absolute;
+  left: var(--pad);
+  top: -100px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  padding: 8px 12px;
+  z-index: 20;
+}
+.skip:focus {
+  top: 8px;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--bg) 94%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.bar {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 8px 24px;
+  padding: 12px var(--pad);
+  max-height: 80px;
+}
+.logo {
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.h1 {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--muted);
+}
+.contact {
+  display: flex;
+  gap: 16px;
+  white-space: nowrap;
+}
+.contact a,
+.lang a {
+  text-decoration: none;
+  font-weight: 550;
+}
+.contact a:hover,
+.lang a:hover {
+  text-decoration: underline;
+}
+.lang {
+  display: flex;
+  gap: 6px;
+  font-size: 0.875rem;
+}
+.lang span::after {
+  content: '|';
+  margin-left: 6px;
+  color: var(--line);
+}
+.lang span {
+  color: var(--muted);
+}
+
+/* Filters */
+.filters {
+  padding: 16px var(--pad) 0;
+}
+.filters ul {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0 0 4px;
+  list-style: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.chip {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+.chip:hover {
+  border-color: var(--muted);
+}
+.chip[aria-current='page'] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.intro {
+  max-width: 60ch;
+  margin: 12px var(--pad) 0;
+  color: var(--muted);
+}
+
+/* Justified grid: each photo grows in proportion to its aspect ratio, no cropping. */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  padding: 16px var(--pad) 48px;
+}
+.gallery::after {
+  content: '';
+  flex-grow: 999;
+}
+.gallery figure {
+  margin: 0;
+  flex: var(--r) 1 calc(var(--r) * var(--row));
+  aspect-ratio: var(--r);
+  background: var(--line);
+}
+.gallery a,
+.gallery picture,
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.gallery img {
+  object-fit: cover;
+}
+
+/* Lightbox */
+.lightbox {
+  width: 100vw;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: rgb(15 15 14 / 0.96);
+  color: #fff;
+}
+.lightbox::backdrop {
+  background: transparent;
+}
+.lightbox[open] {
+  display: grid;
+  place-items: center;
+}
+.lightbox img {
+  max-width: calc(100vw - 32px);
+  max-height: calc(100dvh - 96px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.lightbox button {
+  position: absolute;
+  min-width: 48px;
+  min-height: 48px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.lb-close {
+  top: 8px;
+  right: 8px;
+}
+.lb-prev {
+  left: 8px;
+  top: 50%;
+  translate: 0 -50%;
+}
+.lb-next {
+  right: 8px;
+  top: 50%;
+  translate: 0 -50%;
+}
+.lb-count {
+  position: absolute;
+  bottom: 12px;
+  margin: 0;
+  font-size: 0.875rem;
+  color: #d6d4d0;
+}
+.lightbox :focus-visible {
+  outline-color: #fff;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 32px var(--pad) 40px;
+  font-size: 0.9375rem;
+  color: var(--muted);
+}
+.site-footer p {
+  margin: 0 0 8px;
+}
+.nap {
+  color: var(--text);
+}
+.nap span {
+  margin: 0 6px;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  margin: 16px 0;
+  padding: 0;
+  list-style: none;
+}
+.links a,
+.linklike {
+  display: inline-block;
+  padding: 6px 0;
+}
+.linklike {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.copy {
+  font-size: 0.875rem;
+}
+
+/* Consent: small card in a corner, never over the grid's centre. */
+.consent {
+  position: fixed;
+  z-index: 30;
+  left: 16px;
+  bottom: 16px;
+  max-width: 360px;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 0.08);
+  font-size: 0.875rem;
+}
+.consent p {
+  margin: 0 0 10px;
+}
+.consent-actions {
+  display: flex;
+  gap: 8px;
+}
+.consent-actions button {
+  flex: 1;
+  min-height: 40px;
+  padding: 8px 12px;
+  font: inherit;
+  font-weight: 550;
+  border-radius: 6px;
+  border: 1px solid var(--text);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+.consent-actions button:hover {
+  background: var(--text);
+  color: var(--surface);
+}
+
+.prose {
+  max-width: 68ch;
+  padding: 8px var(--pad) 48px;
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --row: 240px;
+  }
+  .bar {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 'logo contact lang' 'h1 h1 h1';
+    padding-block: 8px;
+  }
+  .logo { grid-area: logo; }
+  .contact { grid-area: contact; justify-self: end; }
+  .lang { grid-area: lang; }
+  .h1 { grid-area: h1; }
+}
+
+/* Phones: header scrolls away; the contact links pin to the bottom of the screen. */
+@media (max-width: 640px) {
+  :root {
+    --row: 140px;
+    --gap: 4px;
+  }
+  body {
+    padding-bottom: 56px;
+  }
+  /* static + no backdrop-filter, which would otherwise trap the fixed contact bar inside the header */
+  .site-header {
+    position: static;
+    backdrop-filter: none;
+  }
+  .bar {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 'logo lang' 'h1 h1';
+    max-height: none;
+  }
+  .contact {
+    position: fixed;
+    z-index: 25;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: stretch;
+    gap: 1px;
+    background: var(--line);
+    border-top: 1px solid var(--line);
+  }
+  .contact a {
+    display: grid;
+    place-items: center;
+    min-height: 52px;
+    background: var(--surface);
+    font-size: 0.875rem;
+  }
+  .consent {
+    left: 8px;
+    right: 8px;
+    bottom: 64px;
+    max-width: none;
+  }
+}

@@ -1,0 +1,72 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ConsentBanner from '../components/ConsentBanner.astro';
+import SchemaOrg from '../components/SchemaOrg.astro';
+import { site } from '../data/site';
+import type { Photo } from '../data/images';
+import { routes, htmlLang, type Lang, type PageKey } from '../i18n/routes';
+import { pages } from '../i18n/strings';
+
+interface Props {
+  lang: Lang;
+  page: PageKey;
+  photos?: Photo[];
+}
+
+const { lang, page, photos } = Astro.props;
+const text = pages[page][lang];
+const abs = (path: string) => new URL(path, site.url).href;
+const canonical = abs(routes[page][lang]);
+const ogImage = abs(`/og/${page}.jpg`);
+
+if (text.title.length > 60) throw new Error(`Title over 60 chars (${text.title.length}): ${text.title}`);
+if (text.description.length > 155) throw new Error(`Description over 155 chars (${text.description.length}): ${text.description}`);
+---
+
+<!doctype html>
+<html lang={htmlLang[lang]}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{text.title}</title>
+    <meta name="description" content={text.description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="fr-CA" href={abs(routes[page].fr)} />
+    <link rel="alternate" hreflang="en-CA" href={abs(routes[page].en)} />
+    <link rel="alternate" hreflang="x-default" href={abs(routes[page].fr)} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={text.title} />
+    <meta property="og:description" content={text.description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content={lang === 'fr' ? 'fr_CA' : 'en_CA'} />
+    <meta property="og:locale:alternate" content={lang === 'fr' ? 'en_CA' : 'fr_CA'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={text.title} />
+    <meta name="twitter:description" content={text.description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#faf9f7" />
+
+    <SchemaOrg lang={lang} page={page} ogImage={ogImage} photos={photos} />
+  </head>
+  <body data-page={page}>
+    <a class="skip" href="#main">{lang === 'fr' ? 'Aller au contenu' : 'Skip to content'}</a>
+    <Header lang={lang} page={page} h1={text.h1} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+    <ConsentBanner lang={lang} />
+  </body>
+</html>

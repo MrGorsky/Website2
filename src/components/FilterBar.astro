@@ -1,0 +1,27 @@
+---
+import { routes, type Lang, type PageKey } from '../i18n/routes';
+import { ui } from '../i18n/strings';
+
+interface Props {
+  lang: Lang;
+  page: PageKey;
+}
+
+const { lang, page } = Astro.props;
+const t = ui[lang];
+const chips = ['home', 'event', 'headshot', 'realestate'] as const;
+---
+
+<nav class="filters" aria-label={t.filterLabel}>
+  <ul>
+    {
+      chips.map((key) => (
+        <li>
+          <a class="chip" href={routes[key][lang]} aria-current={key === page ? 'page' : undefined}>
+            {t.chips[key]}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

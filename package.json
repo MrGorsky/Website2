@@ -1,0 +1,20 @@
+{
+  "name": "hamelphoto",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node scripts/photo-metadata.mjs",
+    "preview": "astro preview",
+    "placeholders": "node scripts/make-placeholders.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.4.2",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "exiftool-vendored": "^39.0.1"
+  }
+}

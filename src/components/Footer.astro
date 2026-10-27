@@ -1,0 +1,32 @@
+---
+import { site } from '../data/site';
+import { routes, type Lang } from '../i18n/routes';
+import { ui } from '../i18n/strings';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = ui[lang];
+const socials = Object.entries(site.socials).filter(([, url]) => url);
+const labels: Record<string, string> = { instagram: 'Instagram', linkedin: 'LinkedIn' };
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <p class="nap">
+    <strong>{site.name}</strong>
+    <span aria-hidden="true">·</span>
+    <a href={site.phoneHref}>{site.phoneDisplay}</a>
+    <span aria-hidden="true">·</span>
+    <a href={`mailto:${site.email}`}>{site.email}</a>
+  </p>
+  <p>{t.serving}</p>
+  <ul class="links">
+    {socials.map(([key, url]) => <li><a href={url} rel="me noopener" target="_blank">{labels[key] ?? key}</a></li>)}
+    <li><a href={routes.privacy[lang]}>{t.privacy}</a></li>
+    <li><button type="button" class="linklike" data-consent-open>{t.cookies}</button></li>
+  </ul>
+  <p class="copy">© {site.foundingYear}–{year} {site.name}</p>
+</footer>
