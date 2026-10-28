@@ -1,6 +1,10 @@
 // Post-build sanity check: one H1, canonical, hreflang, OG tags, JSON-LD and internal links on every page.
-// Usage: npm run build && node scripts/check-seo.mjs
+// Usage: npm run build && node scripts/check-seo.mjs (with the same SITE_URL / BASE_PATH as the build)
 import { readFileSync, existsSync, globSync } from 'node:fs';
+
+const site = process.env.SITE_URL || 'https://hamelphoto.com';
+const base = (process.env.BASE_PATH || '/').replace(/\/$/, '');
+const production = site === 'https://hamelphoto.com';
 
 const files = globSync('dist/**/index.html');
 let problems = 0;
@@ -11,10 +15,11 @@ for (const f of files) {
   const get = (re) => (h.match(re) || [])[1];
   if ((h.match(/<h1[ >]/g) || []).length !== 1) bad(path, 'h1 count');
   const canon = get(/rel="canonical" href="([^"]+)"/);
-  if (canon !== 'https://hamelphoto.com' + path) bad(path, 'canonical ' + canon);
+  if (canon !== site + base + path) bad(path, 'canonical ' + canon);
+  if (production === h.includes('<meta name="robots" content="noindex">')) bad(path, production ? 'noindex on the real domain' : 'test copy missing noindex');
   const hl = [...h.matchAll(/hreflang="([^"]+)" href="([^"]+)"/g)];
   if (hl.length !== 3 || !hl.some(([, l, u]) => u === canon)) bad(path, 'hreflang');
-  for (const [, , u] of hl) if (!existsSync('dist' + new URL(u).pathname + 'index.html')) bad(path, 'hreflang target missing ' + u);
+  for (const [, , u] of hl) if (!existsSync('dist' + new URL(u).pathname.slice(base.length) + 'index.html')) bad(path, 'hreflang target missing ' + u);
   const lang = get(/<html lang="([^"]+)"/);
   if (lang !== (path.startsWith('/en/') ? 'en-CA' : 'fr-CA')) bad(path, 'lang ' + lang);
   for (const m of ['og:title', 'og:description', 'og:image', 'og:url', 'twitter:card']) if (!h.includes(m)) bad(path, 'missing ' + m);
@@ -26,9 +31,10 @@ for (const f of files) {
   const isService = /evenementiel|corporatifs|photographie-corporative|event-photography|corporate-headshots|corporate-photography/.test(path);
   if (isService && !(types.includes('Service') && types.includes('ImageGallery'))) bad(path, 'service schema missing');
   if (isService) for (const img of ld['@graph'].find((n) => n['@type'] === 'ImageGallery').image)
-    if (!existsSync('dist' + new URL(img.contentUrl).pathname)) bad(path, 'ImageObject file missing');
+    if (!existsSync('dist' + new URL(img.contentUrl).pathname.slice(base.length))) bad(path, 'ImageObject file missing');
   for (const [, href] of h.matchAll(/href="(\/[^"#]*)"/g)) {
-    const p = 'dist' + href;
+    if (!href.startsWith(base + '/')) { bad(path, 'link outside base path ' + href); continue; }
+    const p = 'dist' + href.slice(base.length);
     if (!existsSync(p) && !existsSync(p + 'index.html')) bad(path, 'broken link ' + href);
   }
   const imgs = [...h.matchAll(/<img [^>]*>/g)].map((m) => m[0]);

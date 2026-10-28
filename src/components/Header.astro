@@ -2,6 +2,7 @@
 import { site } from '../data/site';
 import { routes, htmlLang, type Lang, type PageKey } from '../i18n/routes';
 import { ui } from '../i18n/strings';
+import { href } from '../i18n/url';
 
 interface Props {
   lang: Lang;
@@ -15,7 +16,7 @@ const t = ui[lang];
 
 <header class="site-header">
   <div class="bar">
-    <a class="logo" href={routes.home[lang]}>{site.name}</a>
+    <a class="logo" href={href(routes.home[lang])}>{site.name}</a>
     <h1 class="h1">{h1}</h1>
     <div class="contact">
       <a href={site.phoneHref} aria-label={`${t.callLabel} ${site.phoneDisplay}`}>{site.phoneDisplay}</a>
@@ -27,7 +28,7 @@ const t = ui[lang];
           l === lang ? (
             <span aria-current="true">{l.toUpperCase()}</span>
           ) : (
-            <a href={routes[page][l]} hreflang={htmlLang[l]} lang={l}>{l.toUpperCase()}</a>
+            <a href={href(routes[page][l])} hreflang={htmlLang[l]} lang={l}>{l.toUpperCase()}</a>
           ),
         )
       }

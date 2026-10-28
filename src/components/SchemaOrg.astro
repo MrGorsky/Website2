@@ -4,6 +4,7 @@ import { site, sameAs } from '../data/site';
 import type { Photo } from '../data/images';
 import { routes, htmlLang, type Lang, type PageKey } from '../i18n/routes';
 import { pages } from '../i18n/strings';
+import { abs, absAsset } from '../i18n/url';
 
 interface Props {
   lang: Lang;
@@ -13,11 +14,10 @@ interface Props {
 }
 
 const { lang, page, ogImage, photos = [] } = Astro.props;
-const abs = (path: string) => new URL(path, site.url).href;
 const pageUrl = abs(routes[page][lang]);
 const text = pages[page][lang];
-const businessId = `${site.url}/#business`;
-const founderId = `${site.url}/#founder`;
+const businessId = `${abs('/')}#business`;
+const founderId = `${abs('/')}#founder`;
 const copyright = `© ${site.name}`;
 
 const areaServed = site.cities.map((name) => ({ '@type': 'City', name }));
@@ -33,7 +33,7 @@ const graph: Record<string, unknown>[] = [
     '@type': 'ProfessionalService',
     '@id': businessId,
     name: site.name,
-    url: `${site.url}/`,
+    url: abs('/'),
     logo: abs('/icon-512.png'),
     image: ogImage,
     telephone: site.phone,
@@ -54,8 +54,8 @@ const graph: Record<string, unknown>[] = [
   },
   {
     '@type': 'WebSite',
-    '@id': `${site.url}/#website`,
-    url: `${site.url}/`,
+    '@id': `${abs('/')}#website`,
+    url: abs('/'),
     name: site.name,
     inLanguage: ['fr-CA', 'en-CA'],
     publisher: { '@id': businessId },
@@ -87,7 +87,7 @@ if (type) {
       const img = await getImage({ src: p.src, width: Math.min(1600, p.src.width), format: 'jpg' });
       return {
         '@type': 'ImageObject',
-        contentUrl: abs(img.src),
+        contentUrl: absAsset(img.src),
         width: img.attributes.width,
         height: img.attributes.height,
         caption: lang === 'fr' ? p.caption_fr : p.caption_en,

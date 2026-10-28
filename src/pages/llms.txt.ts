@@ -2,8 +2,8 @@ import type { APIRoute } from 'astro';
 import { site, sameAs } from '../data/site';
 import { routes } from '../i18n/routes';
 import { pages } from '../i18n/strings';
+import { abs } from '../i18n/url';
 
-const url = (path: string) => new URL(path, site.url).href;
 const cities = site.cities.join(', ');
 
 // Plain-markdown summary for AI assistants. Built from the same data as the pages.
@@ -17,7 +17,7 @@ export const GET: APIRoute = () => {
 
 - Phone / Téléphone: ${site.phone}
 - Email / Courriel: ${site.email}
-- Website: ${site.url}/
+- Website: ${abs('/')}
 - Area served / Territoire desservi: ${cities} (service-area business, no public storefront)
 - Languages: French, English
 ${sameAs.length ? sameAs.map((s) => `- ${s}`).join('\n') + '\n' : ''}
@@ -29,11 +29,11 @@ ${sameAs.length ? sameAs.map((s) => `- ${s}`).join('\n') + '\n' : ''}
 
 ## Pages (français)
 
-${(['home', 'event', 'headshot', 'workplace', 'privacy'] as const).map((k) => `- [${pages[k].fr.h1}](${url(routes[k].fr)}): ${pages[k].fr.description}`).join('\n')}
+${(['home', 'event', 'headshot', 'workplace', 'privacy'] as const).map((k) => `- [${pages[k].fr.h1}](${abs(routes[k].fr)}): ${pages[k].fr.description}`).join('\n')}
 
 ## Pages (English)
 
-${(['home', 'event', 'headshot', 'workplace', 'privacy'] as const).map((k) => `- [${pages[k].en.h1}](${url(routes[k].en)}): ${pages[k].en.description}`).join('\n')}
+${(['home', 'event', 'headshot', 'workplace', 'privacy'] as const).map((k) => `- [${pages[k].en.h1}](${abs(routes[k].en)}): ${pages[k].en.description}`).join('\n')}
 `;
   return new Response(body, { headers: { 'Content-Type': 'text/markdown; charset=utf-8' } });
 };

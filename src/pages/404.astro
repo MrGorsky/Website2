@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { site } from '../data/site';
 import { routes } from '../i18n/routes';
+import { href } from '../i18n/url';
 ---
 
 <!doctype html>
@@ -11,21 +12,21 @@ import { routes } from '../i18n/routes';
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Page introuvable · Page not found | {site.name}</title>
     <meta name="robots" content="noindex" />
-    <link rel="icon" href="/favicon.ico" sizes="32x32" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href={href('/favicon.ico')} sizes="32x32" />
+    <link rel="icon" href={href('/favicon.svg')} type="image/svg+xml" />
     <meta name="theme-color" content="#faf9f7" />
   </head>
   <body>
     <header class="site-header">
       <div class="bar">
-        <a class="logo" href="/">{site.name}</a>
+        <a class="logo" href={href(routes.home.fr)}>{site.name}</a>
       </div>
     </header>
     <main class="prose">
       <h1>Page introuvable</h1>
-      <p>Cette page n’existe pas ou a été déplacée. <a href={routes.home.fr}>Voir toutes les photos</a></p>
+      <p>Cette page n’existe pas ou a été déplacée. <a href={href(routes.home.fr)}>Voir toutes les photos</a></p>
       <h2 lang="en-CA">Page not found</h2>
-      <p lang="en-CA">This page doesn’t exist or has moved. <a href={routes.home.en}>See all photos</a></p>
+      <p lang="en-CA">This page doesn’t exist or has moved. <a href={href(routes.home.en)}>See all photos</a></p>
       <p>
         <a href={site.phoneHref}>{site.phoneDisplay}</a> · <a href={`mailto:${site.email}`}>{site.email}</a>
       </p>

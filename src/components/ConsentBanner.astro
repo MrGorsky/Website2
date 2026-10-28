@@ -1,6 +1,7 @@
 ---
 import { routes, type Lang } from '../i18n/routes';
 import { ui } from '../i18n/strings';
+import { href } from '../i18n/url';
 
 interface Props {
   lang: Lang;
@@ -11,7 +12,7 @@ const t = ui[lang].consent;
 ---
 
 <section id="consent" class="consent" aria-label={lang === 'fr' ? 'Témoins' : 'Cookies'} hidden>
-  <p>{t.text} <a href={routes.privacy[lang]}>{t.more}</a></p>
+  <p>{t.text} <a href={href(routes.privacy[lang])}>{t.more}</a></p>
   <div class="consent-actions">
     <button type="button" data-consent="denied">{t.reject}</button>
     <button type="button" data-consent="granted">{t.accept}</button>

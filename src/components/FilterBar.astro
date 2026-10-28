@@ -1,6 +1,7 @@
 ---
 import { routes, type Lang, type PageKey } from '../i18n/routes';
 import { ui } from '../i18n/strings';
+import { href } from '../i18n/url';
 
 interface Props {
   lang: Lang;
@@ -17,7 +18,7 @@ const chips = ['home', 'event', 'headshot', 'workplace'] as const;
     {
       chips.map((key) => (
         <li>
-          <a class="chip" href={routes[key][lang]} aria-current={key === page ? 'page' : undefined}>
+          <a class="chip" href={href(routes[key][lang])} aria-current={key === page ? 'page' : undefined}>
             {t.chips[key]}
           </a>
         </li>

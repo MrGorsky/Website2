@@ -2,6 +2,7 @@
 import { site } from '../data/site';
 import { routes, type Lang } from '../i18n/routes';
 import { ui } from '../i18n/strings';
+import { href } from '../i18n/url';
 
 interface Props {
   lang: Lang;
@@ -25,7 +26,7 @@ const year = new Date().getFullYear();
   <p>{t.serving}</p>
   <ul class="links">
     {socials.map(([key, url]) => <li><a href={url} rel="me noopener" target="_blank">{labels[key] ?? key}</a></li>)}
-    <li><a href={routes.privacy[lang]}>{t.privacy}</a></li>
+    <li><a href={href(routes.privacy[lang])}>{t.privacy}</a></li>
     <li><button type="button" class="linklike" data-consent-open>{t.cookies}</button></li>
   </ul>
   <p class="copy">© {site.foundingYear}–{year} {site.name}</p>

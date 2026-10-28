@@ -7,7 +7,8 @@
 - [ ] Fill `src/data/site.ts`: Instagram / LinkedIn URLs, Google Business Profile URL, `[GA4_ID]`, `[ADS_ID]`, `[ADS_LABEL_PHONE]`, `[ADS_LABEL_EMAIL]`, `[META_PIXEL_ID]` (or leave the pixel in brackets to keep it off).
 - [ ] In GA4, set data retention to 14 months (the privacy page says so).
 - [ ] GitHub → repo Settings → Pages → Source: **GitHub Actions**.
-- [ ] GitHub → repo Settings → Pages → Custom domain: `hamelphoto.com` (with an Actions deploy, the `CNAME` file is not enough — the setting is what counts).
+- [ ] Test copy: until the switch, the site deploys to https://mrgorsky.github.io/Website2/ with `noindex` on every page. The deploy reads the address from the Pages settings, so no code changes for the switch.
+- [ ] At the switch (after the DNS steps below): GitHub → repo Settings → Pages → Custom domain: `hamelphoto.com` → Save, then Actions → "Deploy to GitHub Pages" → Run workflow. That rebuild produces hamelphoto.com URLs without `noindex`. (With an Actions deploy, the `CNAME` file is not enough — the setting is what counts.)
 - [ ] Recommended: GitHub → your profile Settings → Pages → Add a verified domain `hamelphoto.com`. It gives you a TXT record to add (below).
 - [ ] Merge `redesign` into `master` and push. The workflow builds and deploys.
 
