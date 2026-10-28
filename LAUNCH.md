@@ -1,5 +1,24 @@
 # Launch checklist — hamelphoto.com
 
+## Publishing on WHC (chosen route)
+
+hamelphoto.com stays on WHC hosting; DNS and email are not touched. GitHub keeps the noindex test copy at https://mrgorsky.github.io/Website2/.
+
+Each time you publish:
+
+1. Double-click `Package-for-WHC.cmd`. It builds the site for hamelphoto.com, runs the checks and makes `hamelphoto-upload.zip` (about 95 MB).
+2. Log in to WHC's client area → cPanel → **File Manager** → open `public_html`. Turn on **Settings → Show Hidden Files** (top right) so `.htaccess` is visible.
+3. First time only — back up and remove the old React site:
+   - Select everything in `public_html` → **Compress** → Zip → name it `old-site-backup.zip` → then **Download** it to your computer.
+   - Delete the old site's files: `index.html`, the `assets` folder, and `.htaccess` (backed up in the zip). Keep `.well-known` and `cgi-bin` if present, and the backup zip until you're happy.
+4. **Upload** `hamelphoto-upload.zip` into `public_html`. Then right-click it → **Extract** → into `/public_html` → Extract Files (overwrite when asked).
+5. Delete `hamelphoto-upload.zip` from `public_html` (it should not stay public).
+6. Check https://hamelphoto.com/ in a private window, plus `http://www.hamelphoto.com/` (it should land on `https://hamelphoto.com/`) and https://hamelphoto.com/test-404/ (the bilingual 404 page).
+
+Later updates: same steps, skipping step 3. Extracting over the old files is enough; old photo files left behind are harmless.
+
+If the site shows "500 Internal Server Error" after extracting, the host refused a rule in `.htaccess`: delete `.htaccess` in `public_html` and the site works without it (no redirects or caching rules).
+
 ## Before cutover
 
 - [x] Photos in `src/assets/photos/` + `src/data/images.json` (61 photos; placeholders removed). Lighthouse mobile: 100/100/100/100 on every page, LCP 1.5–1.8 s.

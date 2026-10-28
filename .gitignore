@@ -8,3 +8,6 @@ dist/
 
 # Original PNG exports; the site uses the JPEGs next to them
 src/assets/photos/*/
+
+# Upload package for WHC (made by Package-for-WHC.cmd)
+hamelphoto-upload.zip
