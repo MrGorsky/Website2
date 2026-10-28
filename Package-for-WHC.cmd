@@ -20,7 +20,10 @@ echo Checking the pages...
 call npm run check || goto :error
 
 if exist hamelphoto-upload.zip del hamelphoto-upload.zip
-"%SystemRoot%\System32\tar.exe" -a -c -f hamelphoto-upload.zip -C dist . || goto :error
+rem PowerShell 7's zip stores no Unix permissions, so cPanel extracts with its defaults (644/755).
+rem Not tar.exe (stores 666/777: world-writable on the server) nor Windows PowerShell 5
+rem (writes backslashes in paths, which Linux extracts as odd file names).
+pwsh -NoProfile -Command "[IO.Compression.ZipFile]::CreateFromDirectory('dist', 'hamelphoto-upload.zip')" || goto :error
 
 echo.
 echo Done: hamelphoto-upload.zip is ready to upload to WHC.

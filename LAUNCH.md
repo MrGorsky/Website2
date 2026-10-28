@@ -8,7 +8,7 @@ Each time you publish:
 
 1. Double-click `Package-for-WHC.cmd`. It builds the site for hamelphoto.com, runs the checks and makes `hamelphoto-upload.zip` (about 95 MB).
 2. Log in to WHC's client area → cPanel → **File Manager** → open `public_html`. Turn on **Settings → Show Hidden Files** (top right) so `.htaccess` is visible.
-3. First time only — back up and remove the old React site:
+3. First time only (done 2026-10-28: backup at `/home/qxrjli08/old-site-backup-2026-10-28.zip`, outside `public_html`; old files in cPanel's trash) — back up and remove the old React site:
    - Select everything in `public_html` → **Compress** → Zip → name it `old-site-backup.zip` → then **Download** it to your computer.
    - Delete the old site's files: `index.html`, the `assets` folder, and `.htaccess` (backed up in the zip). Keep `.well-known` and `cgi-bin` if present, and the backup zip until you're happy.
 4. **Upload** `hamelphoto-upload.zip` into `public_html`. Then right-click it → **Extract** → into `/public_html` → Extract Files (overwrite when asked).
