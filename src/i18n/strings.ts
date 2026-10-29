@@ -62,22 +62,22 @@ export const pages: Record<PageKey, Record<Lang, PageText>> = {
   },
   workplace: {
     fr: {
-      title: 'Photographie corporative à Montréal | Hamel Photo',
+      title: 'Photographie en milieu de travail à Montréal | Hamel Photo',
       description:
         'Photos de vos employés au travail, au bureau comme à l’usine, pour votre site Web, vos offres d’emploi et vos rapports. 514 802-6778.',
-      h1: 'Photographie corporative en milieu de travail à Montréal',
+      h1: 'Photographie en milieu de travail à Montréal',
       intro:
         'Vos employés au travail, au bureau, à l’atelier ou à l’usine, pour votre site Web, vos offres d’emploi et vos rapports annuels. À Montréal, Laval et sur la Rive-Sud.',
-      crumb: 'Photographie corporative',
+      crumb: 'Milieu de travail',
     },
     en: {
-      title: 'Corporate Photography in Montreal | Hamel Photo',
+      title: 'Workplace Photography in Montreal | Hamel Photo',
       description:
         'Photos of your people at work, in the office or on the shop floor, for your website, careers page and reports. Call 514 802-6778.',
       h1: 'Workplace photography in Montreal',
       intro:
         'Your people at work, in the office, the workshop or the plant, for your website, careers page and annual reports. In Montreal, Laval and the South Shore.',
-      crumb: 'Corporate photography',
+      crumb: 'Workplace photography',
     },
   },
   privacy: {

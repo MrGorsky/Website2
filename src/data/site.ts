@@ -12,11 +12,12 @@ export const site = {
     name: 'Jo Hamel',
     jobTitle: { fr: 'Fondateur et directeur de création', en: 'Founder & Creative Director' },
   },
-  cities: ['Montréal', 'Laval', 'Longueuil', 'Rive-Sud', 'Rive-Nord'],
-  // TODO: replace with the real profile URLs. Empty strings are skipped everywhere.
+  cities: ['Montréal', 'Laval', 'Longueuil'],
+  regions: ['Rive-Sud', 'Rive-Nord'],
+  // TODO: add the real profile URLs (e.g. https://www.instagram.com/hamelphoto/). Empty strings are skipped everywhere.
   socials: {
-    instagram: 'https://www.instagram.com/',
-    linkedin: 'https://www.linkedin.com/',
+    instagram: '',
+    linkedin: '',
   },
   googleBusinessProfile: '',
   // Placeholders: any value still in [brackets] is treated as "not configured" and never loaded.

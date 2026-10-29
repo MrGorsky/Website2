@@ -4,7 +4,7 @@ import { routes } from '../i18n/routes';
 import { pages } from '../i18n/strings';
 import { abs } from '../i18n/url';
 
-const cities = site.cities.join(', ');
+const cities = [...site.cities, ...site.regions].join(', ');
 
 // Plain-markdown summary for AI assistants. Built from the same data as the pages.
 export const GET: APIRoute = () => {
@@ -25,7 +25,7 @@ ${sameAs.length ? sameAs.map((s) => `- ${s}`).join('\n') + '\n' : ''}
 
 1. Event photography / Photographie d’événements — conferences, galas, corporate events.
 2. Corporate headshots / Portraits corporatifs — executives, teams and professionals, on site.
-3. Workplace photography / Photographie corporative en milieu de travail — employees at work in offices, workshops and plants, for websites, careers pages and annual reports.
+3. Workplace photography / Photographie en milieu de travail — employees at work in offices, workshops and plants, for websites, careers pages and annual reports.
 
 ## Pages (français)
 

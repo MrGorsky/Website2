@@ -20,12 +20,16 @@ const businessId = `${abs('/')}#business`;
 const founderId = `${abs('/')}#founder`;
 const copyright = `© ${site.name}`;
 
-const areaServed = site.cities.map((name) => ({ '@type': 'City', name }));
+// Rive-Sud and Rive-Nord are regions, not cities.
+const areaServed = [
+  ...site.cities.map((name) => ({ '@type': 'City', name })),
+  ...site.regions.map((name) => ({ '@type': 'Place', name })),
+];
 
 const serviceType: Partial<Record<PageKey, Record<Lang, string>>> = {
   event: { fr: 'Photographie d’événements', en: 'Event photography' },
   headshot: { fr: 'Portraits corporatifs', en: 'Corporate headshots' },
-  workplace: { fr: 'Photographie corporative en milieu de travail', en: 'Workplace photography' },
+  workplace: { fr: 'Photographie en milieu de travail', en: 'Workplace photography' },
 };
 
 const graph: Record<string, unknown>[] = [
