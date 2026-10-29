@@ -421,12 +421,12 @@ a {
   margin-bottom: 6px;
 }
 
-/* Service page text, below the gallery */
-.service-copy {
+/* Home and service page text, below the gallery */
+.page-copy {
   border-top: 1px solid var(--line);
   margin-inline: var(--pad);
   padding-inline: 0;
 }
-.service-copy a {
+.page-copy a {
   color: var(--accent);
 }

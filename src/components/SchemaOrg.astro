@@ -2,7 +2,7 @@
 import { getImage } from 'astro:assets';
 import { site, sameAs } from '../data/site';
 import type { Photo } from '../data/images';
-import { serviceCopy } from '../data/serviceCopy';
+import { pageCopy } from '../data/pageCopy';
 import { routes, htmlLang, type Lang, type PageKey, type Service } from '../i18n/routes';
 import { pages } from '../i18n/strings';
 import { abs, absAsset } from '../i18n/url';
@@ -109,7 +109,7 @@ if (type) {
     '@id': `${pageUrl}#faq`,
     url: pageUrl,
     inLanguage: htmlLang[lang],
-    mainEntity: serviceCopy[page as Service][lang].faq.map(({ q, a }) => ({
+    mainEntity: (pageCopy[page as Service][lang].faq ?? []).map(({ q, a }) => ({
       '@type': 'Question',
       name: q,
       acceptedAnswer: { '@type': 'Answer', text: a.replace(/<[^>]+>/g, '') },

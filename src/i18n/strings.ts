@@ -8,14 +8,14 @@ export const pages: Record<PageKey, Record<Lang, PageText>> = {
     fr: {
       title: 'Photographe corporatif à Montréal | Hamel Photo',
       description:
-        'Photographe d’événements, de portraits corporatifs et de milieux de travail dans le Grand Montréal depuis 2012. Appelez au 514 802-6778.',
+        'Photographes d’expérience basés à Montréal depuis 2012 : événements, portraits corporatifs et milieux de travail, partout où vous êtes. 514 802-6778.',
       h1: 'Photographe corporatif à Montréal : événements, portraits et milieu de travail',
       crumb: 'Accueil',
     },
     en: {
       title: 'Corporate Photographer in Montreal | Hamel Photo',
       description:
-        'Event, corporate headshot and workplace photographer serving Greater Montreal since 2012. Call 514 802-6778.',
+        'Experienced Montreal-based photographers since 2012: events, corporate headshots and workplace photos, wherever you are. Call 514 802-6778.',
       h1: 'Corporate photographer in Montreal: events, headshots and workplace',
       crumb: 'Home',
     },
@@ -24,19 +24,19 @@ export const pages: Record<PageKey, Record<Lang, PageText>> = {
     fr: {
       title: 'Photographe d’événements à Montréal | Hamel Photo',
       description:
-        'Couverture photo de conférences, galas et événements d’entreprise à Montréal, Laval et sur la Rive-Sud. Livraison rapide. 514 802-6778.',
+        'Couverture photo de conférences, galas et événements d’entreprise, à Montréal et partout où vous êtes. Livraison rapide. 514 802-6778.',
       h1: 'Photographe d’événements à Montréal',
       intro:
-        'Couverture photo de conférences, galas et événements d’entreprise à Montréal, Laval et sur la Rive-Sud. Livraison rapide.',
+        'Des photographes d’expérience pour vos conférences, galas et événements d’entreprise, à Montréal, dans les environs ou ailleurs. Livraison rapide.',
       crumb: 'Photographe d’événements',
     },
     en: {
       title: 'Event Photography in Montreal | Hamel Photo',
       description:
-        'Photo coverage of conferences, galas and corporate events in Montreal, Laval and the South Shore. Fast delivery. Call 514 802-6778.',
+        'Photo coverage of conferences, galas and corporate events in Montreal and wherever you are. Fast delivery. Call 514 802-6778.',
       h1: 'Event photographer in Montreal',
       intro:
-        'Photo coverage of conferences, galas and corporate events in Montreal, Laval and the South Shore. Fast delivery.',
+        'Experienced photographers for your conferences, galas and corporate events, in Montreal, the surrounding area or beyond. Fast delivery.',
       crumb: 'Event photography',
     },
   },
@@ -44,19 +44,19 @@ export const pages: Record<PageKey, Record<Lang, PageText>> = {
     fr: {
       title: 'Portraits corporatifs à Montréal | Hamel Photo',
       description:
-        'Portraits corporatifs pour dirigeants, équipes et professionnels, réalisés à vos bureaux dans le Grand Montréal. 514 802-6778.',
+        'Portraits corporatifs pour dirigeants, équipes et professionnels, réalisés à vos bureaux, à Montréal et partout où vous êtes. 514 802-6778.',
       h1: 'Portraits corporatifs à Montréal',
       intro:
-        'Portraits pour dirigeants, équipes et professionnels, réalisés à vos bureaux à Montréal, Laval ou Longueuil.',
+        'Portraits pour dirigeants, équipes et professionnels, réalisés à vos bureaux, à Montréal, dans les environs ou ailleurs.',
       crumb: 'Portraits corporatifs',
     },
     en: {
       title: 'Corporate Headshots in Montreal | Hamel Photo',
       description:
-        'Corporate headshots for executives, teams and professionals, taken at your office across Greater Montreal. Call 514 802-6778.',
+        'Corporate headshots for executives, teams and professionals, taken at your office in Montreal and wherever you are. Call 514 802-6778.',
       h1: 'Corporate headshots in Montreal',
       intro:
-        'Headshots for executives, teams and professionals, taken at your office in Montreal, Laval or Longueuil.',
+        'Headshots for executives, teams and professionals, taken at your office in Montreal, the surrounding area or beyond.',
       crumb: 'Corporate headshots',
     },
   },
@@ -67,7 +67,7 @@ export const pages: Record<PageKey, Record<Lang, PageText>> = {
         'Photos de vos employés au travail, au bureau comme à l’usine, pour votre site Web, vos offres d’emploi et vos rapports. 514 802-6778.',
       h1: 'Photographie en milieu de travail à Montréal',
       intro:
-        'Vos employés au travail, au bureau, à l’atelier ou à l’usine, pour votre site Web, vos offres d’emploi et vos rapports annuels. À Montréal, Laval et sur la Rive-Sud.',
+        'Vos employés au travail, au bureau, à l’atelier ou à l’usine, pour votre site Web, vos offres d’emploi et vos rapports annuels. À Montréal, dans les environs ou ailleurs.',
       crumb: 'Milieu de travail',
     },
     en: {
@@ -76,7 +76,7 @@ export const pages: Record<PageKey, Record<Lang, PageText>> = {
         'Photos of your people at work, in the office or on the shop floor, for your website, careers page and reports. Call 514 802-6778.',
       h1: 'Workplace photography in Montreal',
       intro:
-        'Your people at work, in the office, the workshop or the plant, for your website, careers page and annual reports. In Montreal, Laval and the South Shore.',
+        'Your people at work, in the office, the workshop or the plant, for your website, careers page and annual reports. In Montreal, the surrounding area or beyond.',
       crumb: 'Workplace photography',
     },
   },
@@ -103,7 +103,7 @@ export const ui = {
     filterLabel: 'Filtrer les photos par service',
     chips: { home: 'Tout', event: 'Événements', headshot: 'Portraits corporatifs', workplace: 'Milieu de travail' },
     langSwitchLabel: 'Langue',
-    serving: 'Desservant le Grand Montréal : Montréal, Laval, Longueuil, Rive-Sud, Rive-Nord',
+    serving: 'Basés à Montréal · Grand Montréal et partout où vous êtes',
     privacy: 'Confidentialité',
     cookies: 'Préférences de témoins',
     callLabel: 'Appeler Hamel Photo au',
@@ -120,7 +120,7 @@ export const ui = {
     filterLabel: 'Filter photos by service',
     chips: { home: 'All', event: 'Events', headshot: 'Corporate headshots', workplace: 'Workplace' },
     langSwitchLabel: 'Language',
-    serving: 'Serving Greater Montreal: Montréal, Laval, Longueuil, Rive-Sud, Rive-Nord',
+    serving: 'Based in Montreal · Greater Montreal and wherever you are',
     privacy: 'Privacy',
     cookies: 'Cookie preferences',
     callLabel: 'Call Hamel Photo at',

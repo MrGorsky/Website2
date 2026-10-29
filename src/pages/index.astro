@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import FilterBar from '../components/FilterBar.astro';
 import Gallery from '../components/Gallery.astro';
+import PageCopy from '../components/PageCopy.astro';
 import { getPhotos } from '../data/images';
 
 const photos = getPhotos();
@@ -10,4 +11,5 @@ const photos = getPhotos();
 <Base lang="fr" page="home">
   <FilterBar lang="fr" page="home" />
   <Gallery lang="fr" photos={photos} />
+  <PageCopy lang="fr" page="home" />
 </Base>

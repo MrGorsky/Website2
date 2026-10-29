@@ -1,0 +1,51 @@
+---
+import { pageCopy } from '../data/pageCopy';
+import type { Lang, Service } from '../i18n/routes';
+
+interface Props {
+  lang: Lang;
+  page: Service | 'home';
+}
+
+const { lang, page } = Astro.props;
+const copy = pageCopy[page][lang];
+// French puts a space before ? : ; and inside « »; a non-breaking one keeps the mark on the same line.
+// Only a space followed by the mark is touched, so the HTML in some strings is left as is.
+const t = (s: string) => (lang === 'fr' ? s.replace(/ ([?:;»])/g, ' $1').replace(/« /g, '« ') : s);
+const colon = t(lang === 'fr' ? ' :' : ':');
+---
+
+<div class="prose page-copy">
+  {
+    copy.sections.map((s) => (
+      <section>
+        <h2>{t(s.h2)}</h2>
+        {s.paras?.map((p) => <p set:html={t(p)} />)}
+        {s.items && <ul>{s.items.map((i) => <li set:html={t(i)} />)}</ul>}
+        {s.steps && (
+          <ol>
+            {s.steps.map(([label, text]) => (
+              <li>
+                <strong>{label}{colon}</strong> {t(text)}
+              </li>
+            ))}
+          </ol>
+        )}
+        {s.after && <p>{t(s.after)}</p>}
+      </section>
+    ))
+  }
+  {
+    copy.faq && (
+      <section>
+        <h2>{copy.faqTitle}</h2>
+        {copy.faq.map(({ q, a }) => (
+          <>
+            <h3>{t(q)}</h3>
+            <p set:html={t(a)} />
+          </>
+        ))}
+      </section>
+    )
+  }
+</div>

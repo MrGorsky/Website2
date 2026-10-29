@@ -1,22 +1,81 @@
+import { site } from './site';
 import { routes, type Lang, type Service } from '../i18n/routes';
 import { href } from '../i18n/url';
 
-// Text shown below each service gallery. Answers may hold a link (HTML); the FAQPage schema strips it.
+// Text shown below the gallery on the home and service pages. Any string may hold a link (HTML);
+// the FAQPage schema strips it.
 interface Section {
   h2: string;
   paras?: string[];
+  items?: string[];
   steps?: [label: string, text: string][];
   after?: string;
 }
 interface Copy {
   sections: Section[];
-  faqTitle: string;
-  faq: { q: string; a: string }[];
+  faqTitle?: string;
+  faq?: { q: string; a: string }[];
 }
 
 const link = (service: Service, lang: Lang, text: string) => `<a href="${href(routes[service][lang])}">${text}</a>`;
+const phone = `<a href="${site.phoneHref}">${site.phoneDisplay}</a>`;
+const email = `<a href="mailto:${site.email}">${site.email}</a>`;
 
-export const serviceCopy: Record<Service, Record<Lang, Copy>> = {
+export const pageCopy: Record<Service | 'home', Record<Lang, Copy>> = {
+  home: {
+    fr: {
+      sections: [
+        {
+          h2: 'Nos services',
+          items: [
+            `<strong>${link('event', 'fr', 'Photographie d’événements')}</strong> : conférences, congrès, galas, lancements et fêtes d’entreprise, couverts du début à la fin.`,
+            `<strong>${link('headshot', 'fr', 'Portraits corporatifs')}</strong> : dirigeants, équipes et professionnels, photographiés à vos bureaux, dans un style uniforme pour toute l’équipe.`,
+            `<strong>${link('workplace', 'fr', 'Photographie en milieu de travail')}</strong> : vos employés au travail, au bureau, à l’atelier ou à l’usine, pour votre site Web, vos offres d’emploi et vos rapports.`,
+          ],
+        },
+        {
+          h2: 'Pourquoi Hamel Photo',
+          paras: [
+            'Des photographes d’expérience et un service sur mesure. Chaque mandat est préparé avec vous et adapté à vos besoins, du premier appel à la livraison, même quand la demande sort de l’ordinaire.',
+            'Basés à Montréal depuis 2012, nous servons surtout le Grand Montréal et nous nous déplaçons partout où vous êtes. Nous avons photographié des clients à Québec, à Toronto, à Calgary, à Edmonton, aux Bahamas et au Mexique.',
+            'Nous travaillons en français et en anglais. Les photos sont retouchées, prêtes pour le Web et l’impression, et livrées rapidement ; pour un événement, nous pouvons aussi vous en envoyer quelques-unes le jour même.',
+          ],
+        },
+        {
+          h2: 'Pour réserver',
+          paras: [
+            `Appelez-nous au ${phone} ou écrivez à ${email}. Dites-nous la date, le lieu et ce que vous voulez photographier : nous vous répondons avec une soumission.`,
+          ],
+        },
+      ],
+    },
+    en: {
+      sections: [
+        {
+          h2: 'Our services',
+          items: [
+            `<strong>${link('event', 'en', 'Event photography')}</strong>: conferences, conventions, galas, launches and company parties, covered from start to finish.`,
+            `<strong>${link('headshot', 'en', 'Corporate headshots')}</strong>: executives, teams and professionals, photographed at your office in one consistent style for the whole team.`,
+            `<strong>${link('workplace', 'en', 'Workplace photography')}</strong>: your people at work, in the office, workshop or plant, for your website, job postings and reports.`,
+          ],
+        },
+        {
+          h2: 'Why Hamel Photo',
+          paras: [
+            'Experienced photographers and a service tailored to you. Every assignment is planned with you and shaped around your needs, from the first call to delivery, even when the request is out of the ordinary.',
+            'Based in Montreal since 2012, we mainly serve Greater Montreal and travel wherever you are. We have photographed clients in Quebec City, Toronto, Calgary, Edmonton, the Bahamas and Mexico.',
+            'We work in French and English. Photos are edited, ready for web and print, and delivered fast; for events, we can also send you a few the same day.',
+          ],
+        },
+        {
+          h2: 'To book',
+          paras: [
+            `Call us at ${phone} or email ${email}. Tell us the date, the place and what you want photographed, and we’ll reply with a quote.`,
+          ],
+        },
+      ],
+    },
+  },
   event: {
     fr: {
       sections: [
@@ -35,7 +94,7 @@ export const serviceCopy: Record<Service, Record<Lang, Copy>> = {
             ['Après', 'vous recevez une sélection de photos retouchées, prêtes pour le Web et l’impression, par lien de téléchargement.'],
           ],
           after:
-            'Nous nous déplaçons à Montréal, à Laval, à Longueuil, sur la Rive-Sud et sur la Rive-Nord. Nous allons aussi à l’extérieur du Grand Montréal ; les frais de déplacement sont alors indiqués dans la soumission.',
+            'Basés à Montréal, nous servons surtout le Grand Montréal et nous nous déplaçons partout où vous êtes : nous avons photographié des clients à Québec, à Toronto, à Calgary, à Edmonton, aux Bahamas et au Mexique. À l’extérieur du Grand Montréal, les frais de déplacement sont indiqués dans la soumission.',
         },
       ],
       faqTitle: 'Questions fréquentes',
@@ -76,7 +135,7 @@ export const serviceCopy: Record<Service, Record<Lang, Copy>> = {
             ['After', 'you receive a selection of edited photos, ready for web and print, through a download link.'],
           ],
           after:
-            'We travel across Montreal, Laval, Longueuil, the South Shore and the North Shore. We also travel outside Greater Montreal; travel fees are then included in the quote.',
+            'Based in Montreal, we mainly serve Greater Montreal and travel wherever you are: we have photographed clients in Quebec City, Toronto, Calgary, Edmonton, the Bahamas and Mexico. Outside Greater Montreal, travel fees are included in the quote.',
         },
       ],
       faqTitle: 'Frequently asked questions',
@@ -119,7 +178,7 @@ export const serviceCopy: Record<Service, Record<Lang, Copy>> = {
         },
         {
           h2: 'Le jour de la séance',
-          paras: ['Nous guidons la pose et l’expression pour un résultat naturel, même pour les personnes qui n’aiment pas être photographiées.'],
+          paras: ['Nos photographes d’expérience guident la pose et l’expression pour un résultat naturel, même pour les personnes qui n’aiment pas être photographiées. Fond, horaire, nombre de personnes : la séance s’adapte à vos besoins.'],
         },
       ],
       faqTitle: 'Questions fréquentes',
@@ -137,6 +196,10 @@ export const serviceCopy: Record<Service, Record<Lang, Copy>> = {
           a: 'Des vêtements unis, dans des couleurs qui vous ressemblent et que vous portez au travail. Évitez les motifs très fins, qui ressortent mal à l’écran. Apportez un deuxième haut si vous hésitez.',
         },
         { q: 'Quand recevons-nous les portraits ?', a: 'Rapidement. Nous confirmons le délai exact au moment de la réservation.' },
+        {
+          q: 'Vous déplacez-vous à l’extérieur de Montréal ?',
+          a: 'Oui. Basés à Montréal, nous servons surtout le Grand Montréal et nous nous déplaçons partout où vous êtes. À l’extérieur du Grand Montréal, les frais de déplacement sont indiqués dans la soumission.',
+        },
         {
           q: 'Pouvez-vous photographier aussi l’équipe au travail le même jour ?',
           a: `Oui, les portraits se combinent bien avec des ${link('workplace', 'fr', 'photos en milieu de travail')}.`,
@@ -160,7 +223,7 @@ export const serviceCopy: Record<Service, Record<Lang, Copy>> = {
         },
         {
           h2: 'On the day',
-          paras: ['We guide pose and expression for a natural result, even for people who dislike being photographed.'],
+          paras: ['Our experienced photographers guide pose and expression for a natural result, even for people who dislike being photographed. Backdrop, schedule, number of people: the session adapts to your needs.'],
         },
       ],
       faqTitle: 'Frequently asked questions',
@@ -179,6 +242,10 @@ export const serviceCopy: Record<Service, Record<Lang, Copy>> = {
         },
         { q: 'When do we get the headshots?', a: 'Fast. We confirm the exact timing when you book.' },
         {
+          q: 'Do you travel outside Montreal?',
+          a: 'Yes. Based in Montreal, we mainly serve Greater Montreal and travel wherever you are. Outside Greater Montreal, travel fees are included in the quote.',
+        },
+        {
           q: 'Can you also photograph the team at work on the same day?',
           a: `Yes, headshots pair well with ${link('workplace', 'en', 'workplace photography')}.`,
         },
@@ -193,6 +260,7 @@ export const serviceCopy: Record<Service, Record<Lang, Copy>> = {
           paras: [
             'Vos employés au travail, là où ils travaillent vraiment : bureaux, ateliers, usines, laboratoires, entrepôts et cliniques. Des photos de votre milieu plutôt que des photos de banques d’images, pour votre site Web, votre page carrières, vos offres d’emploi, votre rapport annuel et vos réseaux sociaux.',
             'Des candidats qui voient votre vrai milieu de travail savent à quoi s’attendre, et vos clients voient les personnes derrière vos produits et services.',
+            'Nos photographes d’expérience s’adaptent à votre milieu, à votre horaire et à vos besoins, où que soient vos installations.',
           ],
         },
         {
@@ -218,6 +286,10 @@ export const serviceCopy: Record<Service, Record<Lang, Copy>> = {
           a: 'Pour le recrutement, oui : site Web, page carrières, offres d’emploi et réseaux sociaux sont inclus. La publicité payée demande une licence étendue : mentionnez-le dans votre demande.',
         },
         {
+          q: 'Vous déplacez-vous à l’extérieur de Montréal ?',
+          a: 'Oui. Basés à Montréal, nous servons surtout le Grand Montréal et nous nous déplaçons partout où vous êtes. À l’extérieur du Grand Montréal, les frais de déplacement sont indiqués dans la soumission.',
+        },
+        {
           q: 'Pouvez-vous faire les portraits de l’équipe le même jour ?',
           a: `Oui. Voyez nos ${link('headshot', 'fr', 'portraits corporatifs')}.`,
         },
@@ -230,6 +302,7 @@ export const serviceCopy: Record<Service, Record<Lang, Copy>> = {
           paras: [
             'Your people at work, where they actually work: offices, workshops, plants, labs, warehouses and clinics. Real photos of your workplace instead of stock images, for your website, careers page, job postings, annual report and social media.',
             'Candidates who see your real workplace know what to expect, and clients see the people behind your products and services.',
+            'Our experienced photographers adapt to your workplace, your schedule and your needs, wherever your sites are.',
           ],
         },
         {
@@ -253,6 +326,10 @@ export const serviceCopy: Record<Service, Record<Lang, Copy>> = {
         {
           q: 'Can we use the photos for recruiting and advertising?',
           a: 'For recruiting, yes: your website, careers page, job postings and social media are included. Paid advertising needs an extended licence: mention it when you contact us.',
+        },
+        {
+          q: 'Do you travel outside Montreal?',
+          a: 'Yes. Based in Montreal, we mainly serve Greater Montreal and travel wherever you are. Outside Greater Montreal, travel fees are included in the quote.',
         },
         {
           q: 'Can you take team headshots on the same day?',

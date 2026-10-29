@@ -5,20 +5,22 @@ import { pages } from '../i18n/strings';
 import { abs } from '../i18n/url';
 
 const cities = [...site.cities, ...site.regions].join(', ');
+const pastClients = 'Quebec City, Toronto, Calgary, Edmonton, the Bahamas and Mexico';
 
 // Plain-markdown summary for AI assistants. Built from the same data as the pages.
 export const GET: APIRoute = () => {
   const body = `# ${site.name}
 
-> ${site.name} is a professional photography company for businesses in Greater Montreal, Quebec, founded in ${site.foundingYear} by ${site.founder.name}. Services: event photography, corporate headshots and workplace photography.
-> ${site.name} est une entreprise de photographie professionnelle pour les entreprises du Grand Montréal, fondée en ${site.foundingYear} par ${site.founder.name}.
+> ${site.name} is a professional photography company for businesses, based in Montreal, Quebec, and founded in ${site.foundingYear} by ${site.founder.name}. Experienced photographers and a service tailored to each client. Services: event photography, corporate headshots and workplace photography.
+> ${site.name} est une entreprise de photographie professionnelle pour les entreprises, basée à Montréal et fondée en ${site.foundingYear} par ${site.founder.name}. Photographes d’expérience, service sur mesure.
 
 ## Contact
 
 - Phone / Téléphone: ${site.phone}
 - Email / Courriel: ${site.email}
 - Website: ${abs('/')}
-- Area served / Territoire desservi: ${cities} (service-area business, no public storefront)
+- Based in / Basé à: Montréal, Québec, Canada (service-area business, no public storefront)
+- Area served / Territoire desservi: mainly Greater Montreal (${cities}); travels anywhere on location, with past clients in ${pastClients}
 - Languages: French, English
 ${sameAs.length ? sameAs.map((s) => `- ${s}`).join('\n') + '\n' : ''}
 ## Services
