@@ -409,6 +409,24 @@ a {
   font-weight: 600;
   margin: 28px 0 8px;
 }
+.prose h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 20px 0 4px;
+}
+.prose h3 + p {
+  margin-top: 0;
+}
 .prose li {
   margin-bottom: 6px;
+}
+
+/* Service page text, below the gallery */
+.service-copy {
+  border-top: 1px solid var(--line);
+  margin-inline: var(--pad);
+  padding-inline: 0;
+}
+.service-copy a {
+  color: var(--accent);
 }

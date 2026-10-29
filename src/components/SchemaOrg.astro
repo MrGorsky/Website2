@@ -2,7 +2,8 @@
 import { getImage } from 'astro:assets';
 import { site, sameAs } from '../data/site';
 import type { Photo } from '../data/images';
-import { routes, htmlLang, type Lang, type PageKey } from '../i18n/routes';
+import { serviceCopy } from '../data/serviceCopy';
+import { routes, htmlLang, type Lang, type PageKey, type Service } from '../i18n/routes';
 import { pages } from '../i18n/strings';
 import { abs, absAsset } from '../i18n/url';
 
@@ -103,6 +104,17 @@ if (type) {
       };
     }),
   );
+  graph.push({
+    '@type': 'FAQPage',
+    '@id': `${pageUrl}#faq`,
+    url: pageUrl,
+    inLanguage: htmlLang[lang],
+    mainEntity: serviceCopy[page as Service][lang].faq.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a.replace(/<[^>]+>/g, '') },
+    })),
+  });
   graph.push({
     '@type': 'ImageGallery',
     '@id': `${pageUrl}#gallery`,

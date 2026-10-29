@@ -3,6 +3,7 @@ import Base from './Base.astro';
 import FilterBar from '../components/FilterBar.astro';
 import Gallery from '../components/Gallery.astro';
 import { getPhotos } from '../data/images';
+import { serviceCopy } from '../data/serviceCopy';
 import type { Lang, Service } from '../i18n/routes';
 import { pages } from '../i18n/strings';
 
@@ -13,10 +14,45 @@ interface Props {
 
 const { lang, service } = Astro.props;
 const photos = getPhotos(service);
+const copy = serviceCopy[service][lang];
+// French puts a space before ? : ; and inside « »; a non-breaking one keeps the mark on the same line.
+const t = (s: string) => (lang === 'fr' ? s.replace(/ ([?:;»])/g, '\u00a0$1').replace(/« /g, '«\u00a0') : s);
+const colon = t(lang === 'fr' ? ' :' : ':');
 ---
 
 <Base lang={lang} page={service} photos={photos}>
   <FilterBar lang={lang} page={service} />
   <p class="intro">{pages[service][lang].intro}</p>
   <Gallery lang={lang} photos={photos} />
+  <div class="prose service-copy">
+    {
+      copy.sections.map((s) => (
+        <section>
+          <h2>{t(s.h2)}</h2>
+          {s.paras?.map((p) => <p>{t(p)}</p>)}
+          {s.steps && (
+            <ol>
+              {s.steps.map(([label, text]) => (
+                <li>
+                  <strong>{label}{colon}</strong> {t(text)}
+                </li>
+              ))}
+            </ol>
+          )}
+          {s.after && <p>{t(s.after)}</p>}
+        </section>
+      ))
+    }
+    <section>
+      <h2>{copy.faqTitle}</h2>
+      {
+        copy.faq.map(({ q, a }) => (
+          <>
+            <h3>{t(q)}</h3>
+            <p set:html={t(a)} />
+          </>
+        ))
+      }
+    </section>
+  </div>
 </Base>
