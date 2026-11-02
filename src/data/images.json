@@ -1,430 +1,1710 @@
 [
   {
+    "file": "evenement-allees-bondees-salon-cartes-sportives-01.jpg",
+    "service": "event",
+    "caption_fr": "Allées bondées d’un salon de cartes sportives et d’objets de collection",
+    "caption_en": "Crowded aisles at a sports card and memorabilia show",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "evenement-entrevue-scene-invite-animatrice-01.jpg",
+    "service": "event",
+    "caption_fr": "Entrevue sur scène avec un invité et une animatrice",
+    "caption_en": "On-stage interview with a guest and a host",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "evenement-allocution-invites-diner-benefice-01.jpg",
+    "service": "event",
+    "caption_fr": "Allocution devant les invités d’un dîner-bénéfice",
+    "caption_en": "Speech to guests at a benefit luncheon",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "evenement-joueur-souleve-coupe-stanley-foule-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueur qui soulève la coupe Stanley devant la foule",
+    "caption_en": "Player lifting the Stanley Cup in front of the crowd",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "evenement-invites-attables-diner-benefice-01.jpg",
+    "service": "event",
+    "caption_fr": "Invités attablés lors d’un dîner-bénéfice",
+    "caption_en": "Guests seated at a benefit luncheon",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "evenement-panel-scene-salon-soccer-01.jpg",
+    "service": "event",
+    "caption_fr": "Panel sur scène lors d’un salon du soccer",
+    "caption_en": "Panel on stage at a soccer fair",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "evenement-voiturettes-alignees-avant-depart-tournoi-01.jpg",
+    "service": "event",
+    "caption_fr": "Voiturettes alignées avant le départ d’un tournoi de golf",
+    "caption_en": "Golf carts lined up before a tournament start",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "evenement-accolade-entre-invites-reception-toit-01.jpg",
+    "service": "event",
+    "caption_fr": "Accolade entre invités lors d’une réception sur un toit",
+    "caption_en": "Guests hugging at a rooftop reception",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "evenement-visiteurs-autour-vitrines-salon-collection-01.jpg",
+    "service": "event",
+    "caption_fr": "Visiteurs autour des vitrines d’un salon de collection sportive",
+    "caption_en": "Visitors around the display cases at a sports collectibles show",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-panel-discussion-scene-salon-01.jpg",
+    "service": "event",
+    "caption_fr": "Panel de discussion sur la scène d’un salon",
+    "caption_en": "Panel discussion on a show stage",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-musicien-basse-mur-fleurs-01.jpg",
+    "service": "event",
+    "caption_fr": "Musicien à la basse devant un mur de fleurs",
+    "caption_en": "Bass player performing in front of a flower wall",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-trois-participantes-reunies-soiree-01.jpg",
+    "service": "event",
+    "caption_fr": "Trois participantes réunies lors d’une soirée",
+    "caption_en": "Three attendees together at an evening event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-signature-chandail-canadien-01.jpg",
+    "service": "event",
+    "caption_fr": "Signature d’un chandail du Canadien",
+    "caption_en": "Signing a Canadiens jersey",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-panel-scene-salon-cartes-sportives-01.jpg",
+    "service": "event",
+    "caption_fr": "Panel sur la scène d’un salon de cartes sportives",
+    "caption_en": "Panel on the stage of a sports card show",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-golfeuse-frappe-chalet-club-golf-01.jpg",
+    "service": "event",
+    "caption_fr": "Golfeuse qui frappe devant le chalet d’un club de golf",
+    "caption_en": "Golfer swinging in front of a golf clubhouse",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-athlete-signe-grande-affiche-01.jpg",
+    "service": "event",
+    "caption_fr": "Athlète qui signe une grande affiche",
+    "caption_en": "Athlete signing a large poster",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-entrevue-micro-jeune-joueur-hockey-01.jpg",
+    "service": "event",
+    "caption_fr": "Entrevue au micro avec un jeune joueur de hockey",
+    "caption_en": "Microphone interview with a young hockey player",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-entrevue-deux-athletes-table-panel-01.jpg",
+    "service": "event",
+    "caption_fr": "Entrevue avec deux athlètes à une table de panel",
+    "caption_en": "Interview with two athletes at a panel table",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-trois-invitees-vernissage-01.jpg",
+    "service": "event",
+    "caption_fr": "Trois invitées à un vernissage",
+    "caption_en": "Three guests at an art opening",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-invite-verre-main-cocktail-01.jpg",
+    "service": "event",
+    "caption_fr": "Invité un verre à la main pendant un cocktail",
+    "caption_en": "Guest holding a glass during a cocktail reception",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-golfeurs-reunis-pres-pont-pierre-01.jpg",
+    "service": "event",
+    "caption_fr": "Golfeurs réunis près d’un pont de pierre sur le parcours",
+    "caption_en": "Golfers by a stone bridge on the course",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-invites-souriants-reception-01.jpg",
+    "service": "event",
+    "caption_fr": "Invités souriants lors d’une réception",
+    "caption_en": "Smiling guests at a reception",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueur-brandit-coupe-stanley-dessus-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueur qui brandit la coupe Stanley au-dessus de la foule",
+    "caption_en": "Player raising the Stanley Cup above the crowd",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueur-tend-coupe-stanley-partisans-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueur qui tend la coupe Stanley aux partisans",
+    "caption_en": "Player holding the Stanley Cup out to fans",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-chanteur-guitariste-eclairage-violet-01.jpg",
+    "service": "event",
+    "caption_fr": "Chanteur et guitariste sous un éclairage violet",
+    "caption_en": "Singer and guitarist under purple lights",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-conferencier-micro-collecte-fonds-01.jpg",
+    "service": "event",
+    "caption_fr": "Conférencier au micro lors d’une collecte de fonds",
+    "caption_en": "Speaker at the microphone at a fundraiser",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-tables-invites-diner-benefice-01.jpg",
+    "service": "event",
+    "caption_fr": "Tables d’invités lors d’un dîner-bénéfice",
+    "caption_en": "Guest tables at a benefit luncheon",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueur-souleve-coupe-stanley-terrasse-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueur qui soulève la coupe Stanley sur une terrasse",
+    "caption_en": "Player lifting the Stanley Cup on a terrace",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-deux-invites-regardent-telephone-riant-01.jpg",
+    "service": "event",
+    "caption_fr": "Deux invités qui regardent un téléphone en riant",
+    "caption_en": "Two guests laughing over a phone",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-allocution-plein-air-employes-01.jpg",
+    "service": "event",
+    "caption_fr": "Allocution en plein air devant les employés",
+    "caption_en": "Outdoor speech to employees",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-deux-invitees-signent-autographes-salon-01.jpg",
+    "service": "event",
+    "caption_fr": "Deux invitées signent des autographes à un salon de collectionneurs",
+    "caption_en": "Two guests signing autographs at a collectors’ show",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-invites-signent-chandail-hockey-01.jpg",
+    "service": "event",
+    "caption_fr": "Invités qui signent un chandail de hockey",
+    "caption_en": "Guests signing a hockey jersey",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-participants-attentifs-conference-01.jpg",
+    "service": "event",
+    "caption_fr": "Participants attentifs pendant une conférence",
+    "caption_en": "Attendees listening during a conference",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-pianiste-mur-fleurs-01.jpg",
+    "service": "event",
+    "caption_fr": "Pianiste devant un mur de fleurs",
+    "caption_en": "Pianist performing in front of a flower wall",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-presentatrice-scene-presente-equipe-ecran-01.jpg",
+    "service": "event",
+    "caption_fr": "Présentatrice sur scène qui présente l’équipe à l’écran",
+    "caption_en": "Presenter on stage introducing the team on screen",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-gros-plan-autographe-photo-hockey-01.jpg",
+    "service": "event",
+    "caption_fr": "Gros plan d’un autographe sur une photo de hockey",
+    "caption_en": "Close-up of an autograph on a hockey photo",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-deux-anciens-joueurs-signent-souvenirs-01.jpg",
+    "service": "event",
+    "caption_fr": "Deux anciens joueurs qui signent des souvenirs",
+    "caption_en": "Two former players signing memorabilia",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueur-hockey-signe-chandail-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueur de hockey qui signe un chandail",
+    "caption_en": "Hockey player signing a jersey",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-trois-invites-mur-commanditaires-01.jpg",
+    "service": "event",
+    "caption_fr": "Trois invités devant le mur de commanditaires",
+    "caption_en": "Three guests in front of the sponsor wall",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-groupe-musique-bluegrass-spectacle-01.jpg",
+    "service": "event",
+    "caption_fr": "Groupe de musique bluegrass en spectacle",
+    "caption_en": "Bluegrass band performing",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-invites-applaudissent-vernissage-01.jpg",
+    "service": "event",
+    "caption_fr": "Invités qui applaudissent lors d’un vernissage",
+    "caption_en": "Guests applauding at an art opening",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-golfeur-sort-balle-fosse-sable-01.jpg",
+    "service": "event",
+    "caption_fr": "Golfeur qui sort une balle d’une fosse de sable",
+    "caption_en": "Golfer hitting out of a bunker",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-foule-rassemblee-scene-evenement-exterieur-01.jpg",
+    "service": "event",
+    "caption_fr": "Foule rassemblée devant la scène d’un événement extérieur",
+    "caption_en": "Crowd gathered in front of an outdoor event stage",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-quatre-golfeurs-souriants-parcours-01.jpg",
+    "service": "event",
+    "caption_fr": "Quatre golfeurs souriants sur le parcours",
+    "caption_en": "Four smiling golfers on the course",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueurs-celebrent-coupe-stanley-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueurs qui célèbrent avec la coupe Stanley",
+    "caption_en": "Players celebrating with the Stanley Cup",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-deux-invites-reunis-soiree-01.jpg",
+    "service": "event",
+    "caption_fr": "Deux invités réunis lors d’une soirée",
+    "caption_en": "Two guests together at an evening event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-invitee-souriante-diner-01.jpg",
+    "service": "event",
+    "caption_fr": "Invitée souriante lors d’un dîner",
+    "caption_en": "Smiling guest at a luncheon",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-presentation-chandail-autographie-encan-01.jpg",
+    "service": "event",
+    "caption_fr": "Présentation d’un chandail autographié lors d’un encan",
+    "caption_en": "Signed jersey presented at a charity auction",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-photo-groupe-salle-conference-01.jpg",
+    "service": "event",
+    "caption_fr": "Photo de groupe dans une salle de conférence",
+    "caption_en": "Group photo in a conference hall",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-invites-reunis-autour-coupe-stanley-01.jpg",
+    "service": "event",
+    "caption_fr": "Invités réunis autour de la coupe Stanley",
+    "caption_en": "Guests gathered around the Stanley Cup",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-couple-danse-terrasse-01.jpg",
+    "service": "event",
+    "caption_fr": "Couple qui danse sur une terrasse",
+    "caption_en": "Couple dancing on a terrace",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-causerie-scene-fauteuils-01.jpg",
+    "service": "event",
+    "caption_fr": "Causerie sur scène dans des fauteuils",
+    "caption_en": "Fireside chat on stage",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-ancien-joueur-hockey-signe-replique-01.jpg",
+    "service": "event",
+    "caption_fr": "Ancien joueur de hockey qui signe une réplique de trophée",
+    "caption_en": "Former hockey player signing a trophy replica",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-partisan-fait-signer-photo-table-01.jpg",
+    "service": "event",
+    "caption_fr": "Partisan qui fait signer une photo à la table d’autographes",
+    "caption_en": "Fan getting a photo signed at the autograph table",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-participante-prend-notes-evenement-01.jpg",
+    "service": "event",
+    "caption_fr": "Participante qui prend des notes à un événement",
+    "caption_en": "Attendee taking notes at an event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-chanteur-guitariste-decor-floral-01.jpg",
+    "service": "event",
+    "caption_fr": "Chanteur et guitariste devant un décor floral",
+    "caption_en": "Singer and guitarist in front of a floral backdrop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-voiturettes-terrain-golf-avant-tournoi-01.jpg",
+    "service": "event",
+    "caption_fr": "Voiturettes sur un terrain de golf avant le tournoi",
+    "caption_en": "Golf carts on the course before the tournament",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-trois-participants-reunis-evenement-communautaire-01.jpg",
+    "service": "event",
+    "caption_fr": "Trois participants réunis à un événement communautaire",
+    "caption_en": "Three attendees together at a community event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-jeune-joueur-hockey-souriant-micro-01.jpg",
+    "service": "event",
+    "caption_fr": "Jeune joueur de hockey souriant au micro",
+    "caption_en": "Young hockey player smiling at the microphone",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-signature-chandail-table-autographes-01.jpg",
+    "service": "event",
+    "caption_fr": "Signature d’un chandail à la table d’autographes",
+    "caption_en": "Signing a jersey at the autograph table",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-partisans-photographies-gardiens-but-01.jpg",
+    "service": "event",
+    "caption_fr": "Partisans photographiés avec des gardiens de but",
+    "caption_en": "Fans photographed with goaltenders",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-athlete-repond-questions-micro-01.jpg",
+    "service": "event",
+    "caption_fr": "Athlète qui répond aux questions au micro",
+    "caption_en": "Athlete answering questions at the microphone",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-paneliste-gesticule-parlant-micro-01.jpg",
+    "service": "event",
+    "caption_fr": "Panéliste qui gesticule en parlant au micro",
+    "caption_en": "Panellist gesturing as she speaks into the microphone",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-musiciens-spectacle-evenement-01.jpg",
+    "service": "event",
+    "caption_fr": "Musiciens en spectacle lors d’un événement",
+    "caption_en": "Musicians performing at an event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-golfeurs-vert-tournoi-01.jpg",
+    "service": "event",
+    "caption_fr": "Golfeurs sur le vert pendant un tournoi",
+    "caption_en": "Golfers on the green during a tournament",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-jeunes-spectateurs-auditoire-salon-sportif-01.jpg",
+    "service": "event",
+    "caption_fr": "Jeunes spectateurs dans l’auditoire d’un salon sportif",
+    "caption_en": "Young spectators in the audience at a sports fair",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-invites-rient-soiree-01.jpg",
+    "service": "event",
+    "caption_fr": "Invités qui rient lors d’une soirée",
+    "caption_en": "Guests laughing at an evening event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-invites-dansent-soiree-01.jpg",
+    "service": "event",
+    "caption_fr": "Invités qui dansent lors d’une soirée",
+    "caption_en": "Guests dancing at an evening event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-foule-rassemblee-place-publique-01.jpg",
+    "service": "event",
+    "caption_fr": "Foule rassemblée sur une place publique",
+    "caption_en": "Crowd gathered in a public square",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-conferencier-lutrin-evenement-fondation-01.jpg",
+    "service": "event",
+    "caption_fr": "Conférencier au lutrin lors d’un événement de fondation",
+    "caption_en": "Speaker at the lectern at a foundation event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueur-soccer-photographie-deux-jeunes-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueur de soccer photographié avec deux jeunes partisans",
+    "caption_en": "Soccer player photographed with two young fans",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-photo-groupe-coupe-stanley-01.jpg",
+    "service": "event",
+    "caption_fr": "Photo de groupe avec la coupe Stanley",
+    "caption_en": "Group photo with the Stanley Cup",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-deux-invitees-s-enlacent-soiree-01.jpg",
+    "service": "event",
+    "caption_fr": "Deux invitées qui s’enlacent lors d’une soirée",
+    "caption_en": "Two guests hugging at an evening event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-presentation-bureaux-entreprise-01.jpg",
+    "service": "event",
+    "caption_fr": "Présentation dans les bureaux d’une entreprise",
+    "caption_en": "Presentation in a company’s offices",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-partisans-file-seance-autographes-01.jpg",
+    "service": "event",
+    "caption_fr": "Partisans en file pour une séance d’autographes",
+    "caption_en": "Fans lining up for an autograph session",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-poignee-main-seance-autographes-01.jpg",
+    "service": "event",
+    "caption_fr": "Poignée de main pendant une séance d’autographes",
+    "caption_en": "Handshake during an autograph session",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-participante-attentive-presentation-01.jpg",
+    "service": "event",
+    "caption_fr": "Participante attentive pendant une présentation",
+    "caption_en": "Attendee listening closely to a presentation",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-enfants-rassembles-autour-activite-salon-01.jpg",
+    "service": "event",
+    "caption_fr": "Enfants rassemblés autour d’une activité à un salon sportif",
+    "caption_en": "Children gathered around an activity at a sports fair",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-partisan-montre-figurine-table-autographes-01.jpg",
+    "service": "event",
+    "caption_fr": "Partisan qui montre une figurine à la table d’autographes",
+    "caption_en": "Fan showing a figurine at the autograph table",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-athlete-souriante-seance-autographes-01.jpg",
+    "service": "event",
+    "caption_fr": "Athlète souriante pendant une séance d’autographes",
+    "caption_en": "Athlete smiling during an autograph session",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-athlete-signe-chandail-01.jpg",
+    "service": "event",
+    "caption_fr": "Athlète qui signe un chandail",
+    "caption_en": "Athlete signing a jersey",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-groupe-participants-reunis-soiree-01.jpg",
+    "service": "event",
+    "caption_fr": "Groupe de participants réunis lors d’une soirée",
+    "caption_en": "Group of attendees together at an evening event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-chanteur-guitariste-spectacle-exterieur-01.jpg",
+    "service": "event",
+    "caption_fr": "Chanteur et guitariste en spectacle extérieur",
+    "caption_en": "Singer and guitarist at an outdoor show",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-athlete-presente-coffret-cartes-kiosque-01.jpg",
+    "service": "event",
+    "caption_fr": "Athlète qui présente un coffret de cartes à un kiosque",
+    "caption_en": "Athlete showing a card box at a booth",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-signature-chandail-canadien-foule-01.jpg",
+    "service": "event",
+    "caption_fr": "Signature d’un chandail du Canadien devant la foule",
+    "caption_en": "Signing a Canadiens jersey in front of the crowd",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-invites-discutent-cocktail-corporatif-01.jpg",
+    "service": "event",
+    "caption_fr": "Invités qui discutent lors d’un cocktail corporatif",
+    "caption_en": "Guests chatting at a corporate cocktail reception",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-golfeur-joue-pres-drapeau-01.jpg",
+    "service": "event",
+    "caption_fr": "Golfeur qui joue près du drapeau",
+    "caption_en": "Golfer playing near the flag",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-golfeurs-parcours-entre-arbres-01.jpg",
+    "service": "event",
+    "caption_fr": "Golfeurs sur le parcours entre les arbres",
+    "caption_en": "Golfers on the course between the trees",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-enfant-joue-craie-rue-fete-01.jpg",
+    "service": "event",
+    "caption_fr": "Enfant qui joue à la craie dans la rue lors d’une fête de quartier",
+    "caption_en": "Child playing on the street at a neighbourhood festival",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-partisans-touchent-coupe-stanley-01.jpg",
+    "service": "event",
+    "caption_fr": "Partisans qui touchent la coupe Stanley",
+    "caption_en": "Fans touching the Stanley Cup",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-spectacle-musical-scene-coloree-01.jpg",
+    "service": "event",
+    "caption_fr": "Spectacle musical sur une scène colorée",
+    "caption_en": "Live music on a colourful stage",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-panel-joueuses-soccer-scene-01.jpg",
+    "service": "event",
+    "caption_fr": "Panel de joueuses de soccer sur scène",
+    "caption_en": "Panel of soccer players on stage",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-participants-discutent-table-information-01.jpg",
+    "service": "event",
+    "caption_fr": "Participants qui discutent à une table d’information",
+    "caption_en": "Attendees talking at an information table",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-trois-invitees-terrasse-soiree-01.jpg",
+    "service": "event",
+    "caption_fr": "Trois invitées sur une terrasse en soirée",
+    "caption_en": "Three guests on a terrace in the evening",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-quatre-invitees-terrasse-soir-01.jpg",
+    "service": "event",
+    "caption_fr": "Quatre invitées sur une terrasse le soir",
+    "caption_en": "Four guests on a terrace at night",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-conferenciere-ecran-projection-01.jpg",
+    "service": "event",
+    "caption_fr": "Conférencière devant l’écran de projection",
+    "caption_en": "Speaker in front of the projection screen",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-collectionneurs-tables-exposants-01.jpg",
+    "service": "event",
+    "caption_fr": "Collectionneurs devant les tables des exposants",
+    "caption_en": "Collectors at the exhibitors’ tables",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-detail-serviettes-table-hotel-evenement-01.jpg",
+    "service": "event",
+    "caption_fr": "Détail des serviettes de table d’un hôtel lors d’un événement",
+    "caption_en": "Detail of hotel napkins at an event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-enfant-joue-cage-soccer-salon-01.jpg",
+    "service": "event",
+    "caption_fr": "Enfant qui joue dans une cage de soccer à un salon",
+    "caption_en": "Child playing in a soccer cage at a fair",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-file-partisans-evenement-autographes-interieur-01.jpg",
+    "service": "event",
+    "caption_fr": "File de partisans à un événement d’autographes intérieur",
+    "caption_en": "Line of fans at an indoor autograph event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-enseigne-hotel-centre-ville-01.jpg",
+    "service": "event",
+    "caption_fr": "Enseigne d’un hôtel au centre-ville",
+    "caption_en": "Hotel sign downtown",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-partisan-photographie-athlete-mur-commanditaires-01.jpg",
+    "service": "event",
+    "caption_fr": "Partisan photographié avec une athlète devant le mur de commanditaires",
+    "caption_en": "Fan photographed with an athlete in front of the sponsor wall",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-carnets-brodes-logo-client-detail-01.jpg",
+    "service": "event",
+    "caption_fr": "Carnets brodés du logo d’un client, détail d’un événement",
+    "caption_en": "Notebooks with a client’s logo, an event detail",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-partisan-ravi-chandail-autographie-01.jpg",
+    "service": "event",
+    "caption_fr": "Partisan ravi devant un chandail autographié",
+    "caption_en": "Delighted fan in front of a signed jersey",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-trois-invites-souriants-salon-collectionneurs-01.jpg",
+    "service": "event",
+    "caption_fr": "Trois invités souriants à un salon de collectionneurs",
+    "caption_en": "Three smiling guests at a collectors’ show",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-enfants-jouent-soccer-salon-sportif-01.jpg",
+    "service": "event",
+    "caption_fr": "Enfants qui jouent au soccer dans un salon sportif",
+    "caption_en": "Children playing soccer at a sports fair",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-partisans-photographies-ancien-joueur-hockey-01.jpg",
+    "service": "event",
+    "caption_fr": "Partisans photographiés avec un ancien joueur de hockey",
+    "caption_en": "Fans photographed with a former hockey player",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-familles-souriantes-table-autographes-salon-01.jpg",
+    "service": "event",
+    "caption_fr": "Familles souriantes à la table d’autographes d’un salon",
+    "caption_en": "Smiling families at a show’s autograph table",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-detail-coup-roule-vert-01.jpg",
+    "service": "event",
+    "caption_fr": "Détail d’un coup roulé sur le vert",
+    "caption_en": "Detail of a putt on the green",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueur-presente-coupe-stanley-partisans-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueur qui présente la coupe Stanley aux partisans",
+    "caption_en": "Player showing the Stanley Cup to fans",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-foule-rue-festival-01.jpg",
+    "service": "event",
+    "caption_fr": "Foule dans la rue lors d’un festival",
+    "caption_en": "Crowd on the street at a festival",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-guitariste-scene-eclairee-bleu-01.jpg",
+    "service": "event",
+    "caption_fr": "Guitariste sur une scène éclairée en bleu",
+    "caption_en": "Guitarist on a stage lit in blue",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-remise-cheque-geant-coupe-stanley-01.jpg",
+    "service": "event",
+    "caption_fr": "Remise d’un chèque géant devant la coupe Stanley",
+    "caption_en": "Giant cheque presentation beside the Stanley Cup",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueuse-soccer-repond-questions-scene-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueuse de soccer qui répond aux questions sur scène",
+    "caption_en": "Soccer player answering questions on stage",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueur-soccer-souriant-signe-chandail-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueur de soccer souriant qui signe un chandail",
+    "caption_en": "Smiling soccer player signing a jersey",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-invitees-discutent-terrasse-01.jpg",
+    "service": "event",
+    "caption_fr": "Invitées qui discutent sur une terrasse",
+    "caption_en": "Guests chatting on a terrace",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-deux-invitees-trinquent-soiree-toit-01.jpg",
+    "service": "event",
+    "caption_fr": "Deux invitées qui trinquent lors d’une soirée sur un toit",
+    "caption_en": "Two guests toasting at a rooftop party",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-conference-grande-salle-congres-01.jpg",
+    "service": "event",
+    "caption_fr": "Conférence dans une grande salle de congrès",
+    "caption_en": "Conference in a large convention hall",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-salle-exposition-achalandee-01.jpg",
+    "service": "event",
+    "caption_fr": "Vue d’une salle d’exposition achalandée",
+    "caption_en": "View of a busy exhibition hall",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-groupe-golfeurs-tournoi-golf-corporatif-01.jpg",
+    "service": "event",
+    "caption_fr": "Groupe de golfeurs à un tournoi de golf corporatif",
+    "caption_en": "Group of golfers at a corporate golf tournament",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-deux-invites-souriants-evenement-reseautage-01.jpg",
+    "service": "event",
+    "caption_fr": "Deux invités souriants à un événement de réseautage",
+    "caption_en": "Two guests smiling at a networking event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-partisans-table-chandails-autographies-01.jpg",
+    "service": "event",
+    "caption_fr": "Partisans devant une table de chandails autographiés",
+    "caption_en": "Fans at a table of signed jerseys",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-quatuor-golfeurs-parcours-01.jpg",
+    "service": "event",
+    "caption_fr": "Quatuor de golfeurs sur le parcours",
+    "caption_en": "Foursome of golfers on the course",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-collectionneurs-penches-vitrines-exposant-01.jpg",
+    "service": "event",
+    "caption_fr": "Collectionneurs penchés sur les vitrines d’un exposant",
+    "caption_en": "Collectors leaning over an exhibitor’s display cases",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-jeunes-partisans-seance-autographes-01.jpg",
+    "service": "event",
+    "caption_fr": "Jeunes partisans à une séance d’autographes",
+    "caption_en": "Young fans at an autograph session",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-partisan-souriant-signature-chandail-01.jpg",
+    "service": "event",
+    "caption_fr": "Partisan souriant pendant la signature de son chandail",
+    "caption_en": "Fan smiling as his jersey is signed",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-contrebassiste-spectacle-01.jpg",
+    "service": "event",
+    "caption_fr": "Contrebassiste en spectacle",
+    "caption_en": "Double bass player on stage",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-conferenciere-micro-scene-01.jpg",
+    "service": "event",
+    "caption_fr": "Conférencière au micro sur scène",
+    "caption_en": "Speaker at the microphone on stage",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-golfeurs-trinquent-station-degustation-01.jpg",
+    "service": "event",
+    "caption_fr": "Golfeurs qui trinquent à une station de dégustation",
+    "caption_en": "Golfers toasting at a tasting station",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-groupe-musique-scene-evenement-01.jpg",
+    "service": "event",
+    "caption_fr": "Groupe de musique sur la scène d’un événement",
+    "caption_en": "Band performing on an event stage",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-golfeur-frappe-coup-roule-01.jpg",
+    "service": "event",
+    "caption_fr": "Golfeur qui frappe un coup roulé",
+    "caption_en": "Golfer putting",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-jeunes-joueuses-soccer-demonstration-01.jpg",
+    "service": "event",
+    "caption_fr": "Jeunes joueuses de soccer lors d’une démonstration",
+    "caption_en": "Young soccer players during a demonstration",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-golfeurs-lisent-vert-01.jpg",
+    "service": "event",
+    "caption_fr": "Golfeurs qui lisent le vert",
+    "caption_en": "Golfers reading the green",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueuses-soccer-panel-scene-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueuses de soccer en panel sur scène",
+    "caption_en": "Soccer players on a panel on stage",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueuse-soccer-signe-chandail-jeune-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueuse de soccer qui signe le chandail d’une jeune partisane",
+    "caption_en": "Soccer player signing a young fan’s jersey",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueur-soccer-signe-album-jeune-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueur de soccer qui signe un album pour une jeune partisane",
+    "caption_en": "Soccer player signing an album for a young fan",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-partisans-photographient-joueur-parc-01.jpg",
+    "service": "event",
+    "caption_fr": "Partisans qui photographient un joueur dans un parc",
+    "caption_en": "Fans photographing a player in a park",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-quatre-invitees-terrasse-vieux-montreal-01.jpg",
+    "service": "event",
+    "caption_fr": "Quatre invitées sur une terrasse du Vieux-Montréal",
+    "caption_en": "Four guests on a rooftop terrace in Old Montreal",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-conferenciere-grande-scene-auditoire-01.jpg",
+    "service": "event",
+    "caption_fr": "Conférencière sur une grande scène devant l’auditoire",
+    "caption_en": "Keynote speaker on a large stage in front of the audience",
+    "location": "",
+    "featured": false
+  },
+  {
     "file": "evenement-conferencier-lutrin-01.jpg",
     "service": "event",
-    "caption_fr": "Conférencier au lutrin pendant une conférence d’affaires",
-    "caption_en": "Speaker at the lectern during a business conference",
+    "caption_fr": "Conférencier au lutrin",
+    "caption_en": "Speaker at the lectern",
     "location": "",
-    "featured": true
+    "featured": false
   },
   {
-    "file": "evenement-congres-grande-salle-01.jpg",
+    "file": "evenement-ancien-joueur-basketball-signe-ballons-01.jpg",
     "service": "event",
-    "caption_fr": "Vue d’ensemble d’un congrès dans une grande salle comble",
-    "caption_en": "Wide view of a packed convention hall",
+    "caption_fr": "Ancien joueur de basketball qui signe des ballons",
+    "caption_en": "Former basketball player signing basketballs",
     "location": "",
-    "featured": true
+    "featured": false
   },
   {
-    "file": "evenement-conference-principale-ecran-geant-01.jpg",
+    "file": "evenement-invite-rit-entrevue-scene-01.jpg",
     "service": "event",
-    "caption_fr": "Conférencière sur scène devant un écran géant",
-    "caption_en": "Keynote speaker on stage in front of a giant screen",
+    "caption_fr": "Invité qui rit pendant une entrevue sur scène",
+    "caption_en": "Guest laughing during an on-stage interview",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-photo-groupe-jeunes-participantes-t-01.jpg",
+    "service": "event",
+    "caption_fr": "Photo de groupe de jeunes participantes en t-shirts rouges",
+    "caption_en": "Group photo of young participants in red T-shirts",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-golfeurs-voiturette-parcours-01.jpg",
+    "service": "event",
+    "caption_fr": "Golfeurs en voiturette sur le parcours",
+    "caption_en": "Golfers driving carts on the course",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-deux-benevoles-evenement-communautaire-01.jpg",
+    "service": "event",
+    "caption_fr": "Deux bénévoles à un événement communautaire",
+    "caption_en": "Two volunteers at a community event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-participante-souriante-evenement-01.jpg",
+    "service": "event",
+    "caption_fr": "Participante souriante à un événement",
+    "caption_en": "Attendee smiling at an event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueur-hockey-signe-chandail-canadien-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueur de hockey qui signe un chandail du Canadien",
+    "caption_en": "Hockey player signing a Canadiens jersey",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueur-hockey-rit-entrevue-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueur de hockey qui rit pendant une entrevue",
+    "caption_en": "Hockey player laughing during an interview",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueur-hockey-signe-chandail-rouge-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueur de hockey qui signe un chandail rouge",
+    "caption_en": "Hockey player signing a red jersey",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-quatre-invitees-cocktail-01.jpg",
+    "service": "event",
+    "caption_fr": "Quatre invitées à un cocktail",
+    "caption_en": "Four guests at a cocktail reception",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-bouchees-servies-cocktail-01.jpg",
+    "service": "event",
+    "caption_fr": "Bouchées servies lors d’un cocktail",
+    "caption_en": "Canapés served at a cocktail reception",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-enfant-fait-signer-chandail-soccer-01.jpg",
+    "service": "event",
+    "caption_fr": "Enfant qui fait signer son chandail de soccer",
+    "caption_en": "Child getting his soccer jersey signed",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-quatre-golfeurs-reunis-vert-01.jpg",
+    "service": "event",
+    "caption_fr": "Quatre golfeurs réunis sur le vert",
+    "caption_en": "Four golfers together on the green",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-deux-jeunes-joueuses-se-disputent-01.jpg",
+    "service": "event",
+    "caption_fr": "Deux jeunes joueuses qui se disputent le ballon",
+    "caption_en": "Two young players battling for the ball",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-partisans-celebrent-defile-01.jpg",
+    "service": "event",
+    "caption_fr": "Partisans qui célèbrent lors d’un défilé",
+    "caption_en": "Fans celebrating at a parade",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-jeune-partisan-decouvre-coupe-stanley-01.jpg",
+    "service": "event",
+    "caption_fr": "Jeune partisan qui découvre la coupe Stanley",
+    "caption_en": "Young fan seeing the Stanley Cup up close",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueuse-soccer-signe-ballon-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueuse de soccer qui signe un ballon",
+    "caption_en": "Soccer player signing a ball",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-jeunes-partisans-seance-autographes-soccer-01.jpg",
+    "service": "event",
+    "caption_fr": "Jeunes partisans à une séance d’autographes de soccer",
+    "caption_en": "Young fans at a soccer autograph session",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-photo-equipe-benevoles-salon-soccer-01.jpg",
+    "service": "event",
+    "caption_fr": "Photo d’équipe des bénévoles d’un salon du soccer",
+    "caption_en": "Team photo of soccer show volunteers",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-invitees-rient-terrasse-01.jpg",
+    "service": "event",
+    "caption_fr": "Invitées qui rient sur une terrasse",
+    "caption_en": "Guests laughing on a terrace",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-conferencier-s-exprime-lutrin-01.jpg",
+    "service": "event",
+    "caption_fr": "Conférencier qui s’exprime au lutrin",
+    "caption_en": "Speaker addressing the room from the lectern",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-deux-invitees-souriantes-cocktail-01.jpg",
+    "service": "event",
+    "caption_fr": "Deux invitées souriantes à un cocktail",
+    "caption_en": "Two smiling guests at a cocktail reception",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-partisan-photographie-invite-mur-commanditaires-01.jpg",
+    "service": "event",
+    "caption_fr": "Partisan photographié avec un invité devant le mur de commanditaires",
+    "caption_en": "Fan photographed with a guest in front of the sponsor wall",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-participant-souriant-conference-01.jpg",
+    "service": "event",
+    "caption_fr": "Participant souriant pendant une conférence",
+    "caption_en": "Attendee smiling during a conference session",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-conferencier-micro-auditoire-01.jpg",
+    "service": "event",
+    "caption_fr": "Conférencier au micro devant l’auditoire",
+    "caption_en": "Speaker at the microphone addressing the audience",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-animatrice-t-shirt-rouge-s-01.jpg",
+    "service": "event",
+    "caption_fr": "Animatrice en t-shirt rouge qui s’adresse au groupe",
+    "caption_en": "Host in a red T-shirt speaking to the group",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-participante-rit-pause-reseautage-01.jpg",
+    "service": "event",
+    "caption_fr": "Participante qui rit pendant une pause de réseautage",
+    "caption_en": "Attendee laughing during a networking break",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-golfeuse-leve-pouce-parcours-01.jpg",
+    "service": "event",
+    "caption_fr": "Golfeuse qui lève le pouce sur le parcours",
+    "caption_en": "Golfer giving a thumbs-up on the course",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-photo-groupe-fin-evenement-communautaire-01.jpg",
+    "service": "event",
+    "caption_fr": "Photo de groupe à la fin d’un événement communautaire",
+    "caption_en": "Group photo at the end of a community event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-invites-reunis-mur-commanditaires-01.jpg",
+    "service": "event",
+    "caption_fr": "Invités réunis devant le mur de commanditaires",
+    "caption_en": "Guests together in front of the sponsor wall",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-athlete-olympique-signe-photo-01.jpg",
+    "service": "event",
+    "caption_fr": "Athlète olympique qui signe une photo",
+    "caption_en": "Olympic athlete signing a photo",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-couple-souriant-vernissage-01.jpg",
+    "service": "event",
+    "caption_fr": "Couple souriant à un vernissage",
+    "caption_en": "Smiling couple at an art opening",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-invites-discutent-cocktail-01.jpg",
+    "service": "event",
+    "caption_fr": "Invités qui discutent pendant un cocktail",
+    "caption_en": "Guests talking during a cocktail reception",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-quatuor-golfeurs-avant-depart-01.jpg",
+    "service": "event",
+    "caption_fr": "Quatuor de golfeurs avant le départ",
+    "caption_en": "Foursome of golfers before tee-off",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-participantes-discutent-cocktail-01.jpg",
+    "service": "event",
+    "caption_fr": "Participantes qui discutent pendant un cocktail",
+    "caption_en": "Attendees chatting during a cocktail reception",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-quatre-golfeuses-tournoi-golf-01.jpg",
+    "service": "event",
+    "caption_fr": "Quatre golfeuses à un tournoi de golf",
+    "caption_en": "Four golfers at a golf tournament",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-trois-invitees-regardent-telephone-riant-01.jpg",
+    "service": "event",
+    "caption_fr": "Trois invitées qui regardent un téléphone en riant",
+    "caption_en": "Three guests laughing over a phone",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-affiche-exposition-presentee-evenement-01.jpg",
+    "service": "event",
+    "caption_fr": "Affiche d’une exposition présentée lors d’un événement",
+    "caption_en": "Exhibition poster displayed at an event",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-enfants-atelier-dessin-salon-01.jpg",
+    "service": "event",
+    "caption_fr": "Enfants à un atelier de dessin lors d’un salon",
+    "caption_en": "Children at a drawing workshop at a fair",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-participante-leve-mains-auditoire-01.jpg",
+    "service": "event",
+    "caption_fr": "Participante qui lève les mains dans l’auditoire",
+    "caption_en": "Attendee raising her hands in the audience",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-joueurs-soccer-photographies-partisans-01.jpg",
+    "service": "event",
+    "caption_fr": "Joueurs de soccer photographiés avec des partisans",
+    "caption_en": "Soccer players photographed with fans",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "evenement-quatre-invites-terrasse-coucher-soleil-01.jpg",
+    "service": "event",
+    "caption_fr": "Quatre invités sur une terrasse au coucher du soleil",
+    "caption_en": "Four guests on a terrace at sunset",
     "location": "",
     "featured": false
   },
   {
     "file": "evenement-panel-discussion-scene-01.jpg",
     "service": "event",
-    "caption_fr": "Panel de discussion sur scène devant le public",
-    "caption_en": "Panel discussion on stage in front of the audience",
+    "caption_fr": "Panel de discussion sur scène",
+    "caption_en": "Panel discussion on stage",
     "location": "",
     "featured": false
   },
   {
-    "file": "evenement-gala-invites-tenue-soiree-01.jpg",
-    "service": "event",
-    "caption_fr": "Invités en tenue de soirée lors d’un gala",
-    "caption_en": "Guests in evening wear at a gala",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-cocktail-reseautage-01.jpg",
-    "service": "event",
-    "caption_fr": "Participants qui échangent lors d’un cocktail de réseautage",
-    "caption_en": "Guests mingling at a networking reception",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-reception-terrasse-coucher-soleil-01.jpg",
-    "service": "event",
-    "caption_fr": "Réception sur une terrasse au coucher du soleil",
-    "caption_en": "Rooftop reception at sunset",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-entrevue-scene-causerie-01.jpg",
-    "service": "event",
-    "caption_fr": "Entrevue sur scène en formule causerie",
-    "caption_en": "Fireside chat on stage",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-conferenciere-scene-01.jpg",
-    "service": "event",
-    "caption_fr": "Conférencière en mouvement sur scène",
-    "caption_en": "Keynote speaker walking the stage",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-allocution-plein-air-01.jpg",
-    "service": "event",
-    "caption_fr": "Allocution en plein air devant les employés",
-    "caption_en": "Outdoor speech to staff",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-photo-groupe-equipe-ventes-01.jpg",
-    "service": "event",
-    "caption_fr": "Photo de groupe d’une équipe des ventes lors d’un événement",
-    "caption_en": "Sales team group photo at an event",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-presentation-salle-hotel-01.jpg",
-    "service": "event",
-    "caption_fr": "Présentation dans une salle de réunion d’hôtel",
-    "caption_en": "Presentation in a hotel meeting room",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-salon-professionnel-poignee-main-01.jpg",
-    "service": "event",
-    "caption_fr": "Poignée de main à un kiosque de salon professionnel",
-    "caption_en": "Handshake at a trade show booth",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-conferencier-gros-plan-01.jpg",
-    "service": "event",
-    "caption_fr": "Gros plan d’un conférencier au lutrin",
-    "caption_en": "Close-up of a speaker at the lectern",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-assemblee-employes-bureau-01.jpg",
-    "service": "event",
-    "caption_fr": "Assemblée des employés dans les bureaux de l’entreprise",
-    "caption_en": "All-hands meeting in the company office",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-participants-congres-01.jpg",
-    "service": "event",
-    "caption_fr": "Trois participants qui posent lors d’un congrès",
-    "caption_en": "Three attendees posing at a conference",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-pause-cafe-congres-01.jpg",
-    "service": "event",
-    "caption_fr": "Discussion pendant la pause-café d’un congrès",
-    "caption_en": "Conversation during a conference coffee break",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-salon-professionnel-demonstration-01.jpg",
-    "service": "event",
-    "caption_fr": "Démonstration de logiciel à un kiosque de salon professionnel",
-    "caption_en": "Software demo at a trade show booth",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-panel-table-honneur-01.jpg",
-    "service": "event",
-    "caption_fr": "Panel d’experts à la table d’honneur d’une conférence",
-    "caption_en": "Expert panel at the head table of a conference",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-party-bureau-fetes-01.jpg",
-    "service": "event",
-    "caption_fr": "Couple qui pose au party de bureau des Fêtes",
-    "caption_en": "Couple posing at the office holiday party",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-atelier-salle-conference-01.jpg",
-    "service": "event",
-    "caption_fr": "Atelier dans une salle de conférence",
-    "caption_en": "Breakout session in a conference room",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-tournoi-golf-entreprise-01.jpg",
-    "service": "event",
-    "caption_fr": "Trois golfeurs lors d’un tournoi de golf d’entreprise",
-    "caption_en": "Three golfers at a corporate golf tournament",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-kiosque-exposant-visiteurs-01.jpg",
-    "service": "event",
-    "caption_fr": "Exposant qui discute avec des visiteurs à son kiosque",
-    "caption_en": "Exhibitor talking with visitors at a booth",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-invitees-cocktail-01.jpg",
-    "service": "event",
-    "caption_fr": "Deux invitées qui posent lors d’un cocktail",
-    "caption_en": "Two guests posing at a reception",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-presentation-resultats-banquet-01.jpg",
-    "service": "event",
-    "caption_fr": "Présentation de résultats lors d’un banquet d’affaires",
-    "caption_en": "Results presentation at a business banquet",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-photo-groupe-fond-blanc-01.jpg",
-    "service": "event",
-    "caption_fr": "Photo de groupe sur fond blanc lors d’un événement d’entreprise",
-    "caption_en": "Group photo on a white backdrop at a company event",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-presentation-kiosque-salon-01.jpg",
-    "service": "event",
-    "caption_fr": "Présentation devant public à un kiosque de salon professionnel",
-    "caption_en": "Presentation to an audience at a trade show booth",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "evenement-anniversaire-entreprise-collegues-01.jpg",
-    "service": "event",
-    "caption_fr": "Collègues réunis pour l’anniversaire de l’entreprise",
-    "caption_en": "Colleagues celebrating a company anniversary",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-femme-veston-camel-fond-gris-01.jpg",
+    "file": "portrait-dirigeant-bureau-01.jpg",
     "service": "headshot",
-    "caption_fr": "Portrait corporatif d’une professionnelle en veston camel, fond gris",
-    "caption_en": "Corporate headshot of a woman in a camel blazer, grey backdrop",
+    "caption_fr": "Portrait d’un dirigeant dans son bureau",
+    "caption_en": "Portrait of an executive in his office",
     "location": "",
     "featured": true
   },
   {
-    "file": "portrait-corporatif-homme-veston-bleu-fond-gris-01.jpg",
+    "file": "portrait-employee-corridor-bureau-01.jpg",
     "service": "headshot",
-    "caption_fr": "Portrait corporatif d’un professionnel en veston bleu, fond gris",
-    "caption_en": "Corporate headshot of a man in a blue blazer, grey backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-femme-lunettes-fond-bleu-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’une professionnelle à lunettes, fond bleu marine",
-    "caption_en": "Corporate headshot of a woman wearing glasses, navy backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-dirigeant-complet-cravate-fond-gris-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’un dirigeant en complet-cravate, fond gris",
-    "caption_en": "Corporate headshot of an executive in a suit and tie, grey backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-homme-chandail-gris-fond-gris-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’un jeune professionnel en chandail gris, fond gris",
-    "caption_en": "Corporate headshot of a young professional in a grey sweater, grey backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-femme-veston-vert-fond-gris-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’une professionnelle en veston vert, fond gris",
-    "caption_en": "Corporate headshot of a woman in a green blazer, grey backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-homme-chemise-bleue-fond-bleu-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’un professionnel en chemise bleu pâle, fond bleu marine",
-    "caption_en": "Corporate headshot of a man in a light blue shirt, navy backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-femme-veston-marine-fond-gris-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’une professionnelle en veston marine, fond gris",
-    "caption_en": "Corporate headshot of a woman in a navy blazer, grey backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-dirigeant-complet-marine-fond-gris-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’un dirigeant en complet marine, fond gris",
-    "caption_en": "Corporate headshot of an executive in a navy suit, grey backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-femme-cardigan-bordeaux-fond-bleu-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’une professionnelle en cardigan bordeaux, fond bleu marine",
-    "caption_en": "Corporate headshot of a woman in a burgundy cardigan, navy backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-homme-col-roule-fond-gris-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’un professionnel en col roulé et veston noir, fond gris",
-    "caption_en": "Corporate headshot of a man in a turtleneck and black blazer, grey backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-femme-veston-gris-fond-gris-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’une professionnelle en veston gris, fond gris",
-    "caption_en": "Corporate headshot of a woman in a grey blazer, grey backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-homme-barbe-lunettes-fond-bleu-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’un professionnel barbu à lunettes, fond bleu marine",
-    "caption_en": "Corporate headshot of a bearded man wearing glasses, navy backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-femme-cheveux-gris-lunettes-fond-gris-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’une professionnelle aux cheveux gris, à lunettes, fond gris",
-    "caption_en": "Corporate headshot of a grey-haired woman wearing glasses, grey backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-homme-veston-kaki-fond-gris-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’un professionnel en veston kaki, fond gris",
-    "caption_en": "Corporate headshot of a man in an olive blazer, grey backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-femme-veston-vert-fond-bleu-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’une professionnelle en veston vert forêt, fond bleu marine",
-    "caption_en": "Corporate headshot of a woman in a forest-green blazer, navy backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-femme-veston-gris-fond-bleu-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’une professionnelle en veston gris, fond bleu marine",
-    "caption_en": "Corporate headshot of a woman in a grey blazer, navy backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-dirigeant-complet-marine-fond-gris-02.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’un dirigeant souriant en complet marine, fond gris",
-    "caption_en": "Corporate headshot of a smiling executive in a navy suit, grey backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "portrait-corporatif-femme-cheveux-roux-fond-bleu-01.jpg",
-    "service": "headshot",
-    "caption_fr": "Portrait corporatif d’une professionnelle aux cheveux roux, fond bleu marine",
-    "caption_en": "Corporate headshot of a red-haired woman, navy backdrop",
-    "location": "",
-    "featured": false
-  },
-  {
-    "file": "photo-corporative-machiniste-atelier-usinage-01.jpg",
-    "service": "workplace",
-    "caption_fr": "Machiniste à son poste dans un atelier d’usinage",
-    "caption_en": "Machinist at work in a machine shop",
+    "caption_fr": "Portrait d’une employée dans un corridor de bureau",
+    "caption_en": "Portrait of an employee in an office hallway",
     "location": "",
     "featured": true
   },
   {
-    "file": "photo-corporative-gestionnaire-bureau-aire-ouverte-01.jpg",
-    "service": "workplace",
-    "caption_fr": "Gestionnaire en discussion à son bureau dans une aire ouverte",
-    "caption_en": "Manager talking at her desk in an open-plan office",
+    "file": "portrait-corporatif-dirigeant-fond-gris-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’un dirigeant sur fond gris",
+    "caption_en": "Corporate headshot of an executive on a grey background",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "portrait-equipe-direction-bureau-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait de l’équipe de direction au bureau",
+    "caption_en": "Portrait of the leadership team at the office",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "portrait-exterieur-employee-verdure-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait extérieur d’une employée devant la verdure",
+    "caption_en": "Outdoor portrait of an employee against greenery",
     "location": "",
     "featured": false
   },
   {
-    "file": "photo-corporative-technicien-soudure-circuit-01.jpg",
-    "service": "workplace",
-    "caption_fr": "Technicien qui soude un circuit électronique",
-    "caption_en": "Technician soldering a circuit board",
+    "file": "portrait-corporatif-professionnelle-fond-bleu-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle sur fond bleu",
+    "caption_en": "Corporate headshot of a professional on a blue background",
     "location": "",
     "featured": false
   },
   {
-    "file": "photo-corporative-developpeur-poste-travail-01.jpg",
-    "service": "workplace",
-    "caption_fr": "Développeur souriant à son poste de travail",
-    "caption_en": "Smiling developer at his workstation",
+    "file": "portrait-corporatif-professionnel-fond-bleu-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’un professionnel sur fond bleu",
+    "caption_en": "Corporate headshot of a professional on a blue background",
     "location": "",
     "featured": false
   },
   {
-    "file": "photo-corporative-operateur-plieuse-tolerie-01.jpg",
-    "service": "workplace",
-    "caption_fr": "Opérateur à la plieuse dans un atelier de tôlerie",
-    "caption_en": "Operator at the press brake in a sheet-metal shop",
+    "file": "portrait-corporatif-souriant-fond-gris-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif souriant sur fond gris",
+    "caption_en": "Smiling corporate headshot on a grey background",
     "location": "",
     "featured": false
   },
   {
-    "file": "photo-corporative-employee-bureau-lumineux-01.jpg",
-    "service": "workplace",
-    "caption_fr": "Employée à son poste dans un bureau lumineux",
-    "caption_en": "Employee at her desk in a bright office",
+    "file": "portrait-corporatif-professionnelle-veston-vert-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle en veston vert",
+    "caption_en": "Corporate headshot of a professional in a green blazer",
     "location": "",
     "featured": false
   },
   {
-    "file": "photo-corporative-technicienne-impression-3d-01.jpg",
+    "file": "portrait-corporatif-professionnelle-cardigan-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle en cardigan",
+    "caption_en": "Corporate headshot of a professional in a cardigan",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-professionnel-veston-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’un professionnel en veston",
+    "caption_en": "Corporate headshot of a professional in a blazer",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-jeune-professionnelle-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une jeune professionnelle",
+    "caption_en": "Corporate headshot of a young professional",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-professionnelle-souriante-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle souriante",
+    "caption_en": "Corporate headshot of a smiling professional",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-fond-bleu-marine-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif sur fond bleu marine",
+    "caption_en": "Corporate headshot on a navy background",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-dirigeant-cravate-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’un dirigeant en cravate",
+    "caption_en": "Corporate headshot of an executive in a tie",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-professionnelle-fond-gris-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle sur fond gris",
+    "caption_en": "Corporate headshot of a professional on a grey background",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-professionnelle-experience-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle d’expérience",
+    "caption_en": "Corporate headshot of a senior professional",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-professionnel-souriant-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’un professionnel souriant",
+    "caption_en": "Corporate headshot of a smiling professional",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-employe-polo-entreprise-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait d’un employé en polo d’entreprise",
+    "caption_en": "Headshot of an employee in a company polo shirt",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-dirigeant-complet-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’un dirigeant en complet",
+    "caption_en": "Corporate headshot of an executive in a suit",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-gestionnaire-veston-vert-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une gestionnaire en veston vert",
+    "caption_en": "Corporate headshot of a manager in a green blazer",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-professionnelle-veston-beige-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une professionnelle en veston beige",
+    "caption_en": "Corporate headshot of a professional in a beige blazer",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "portrait-corporatif-gestionnaire-01.jpg",
+    "service": "headshot",
+    "caption_fr": "Portrait corporatif d’une gestionnaire",
+    "caption_en": "Corporate headshot of a manager",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-equipe-course-changement-pneus-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Équipe de course au changement de pneus",
+    "caption_en": "Race crew during a tyre change",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "travail-employe-manipule-bobine-cable-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Employé qui manipule une bobine de câble",
+    "caption_en": "Employee handling a cable reel",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "travail-deux-collegues-discutent-bureaux-entreprise-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Deux collègues qui discutent dans les bureaux d’une entreprise",
+    "caption_en": "Two colleagues talking in a company’s offices",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "travail-service-bord-bateau-plaisance-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Service à bord d’un bateau de plaisance",
+    "caption_en": "Service on board a pleasure boat",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "travail-mecanicien-prepare-voiture-course-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Mécanicien qui prépare une voiture de course",
+    "caption_en": "Mechanic preparing a race car",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-capitaine-monte-bord-bateau-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Capitaine qui monte à bord d’un bateau",
+    "caption_en": "Captain stepping aboard a boat",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-membres-equipe-course-discutent-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Membres d’une équipe de course qui discutent",
+    "caption_en": "Race team members talking",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-technicienne-finit-piece-imprimee-3d-01.jpg",
     "service": "workplace",
     "caption_fr": "Technicienne qui finit une pièce imprimée en 3D",
     "caption_en": "Technician finishing a 3D-printed part",
@@ -432,58 +1712,466 @@
     "featured": false
   },
   {
-    "file": "photo-corporative-architecte-plans-bureau-01.jpg",
+    "file": "travail-architecte-travaille-plans-01.jpg",
     "service": "workplace",
-    "caption_fr": "Architecte qui annote des plans à son bureau",
-    "caption_en": "Architect marking up plans at his desk",
+    "caption_fr": "Architecte qui travaille sur des plans",
+    "caption_en": "Architect working on plans",
     "location": "",
     "featured": false
   },
   {
-    "file": "photo-corporative-artisan-panneau-decoupe-laser-01.jpg",
+    "file": "travail-technicienne-verifie-pneu-voiture-course-01.jpg",
     "service": "workplace",
-    "caption_fr": "Artisan qui présente un panneau découpé au laser",
-    "caption_en": "Maker holding a laser-cut panel",
+    "caption_fr": "Technicienne qui vérifie un pneu de voiture de course",
+    "caption_en": "Technician checking a race car tyre",
     "location": "",
     "featured": false
   },
   {
-    "file": "photo-corporative-dirigeant-bureau-vue-ville-01.jpg",
+    "file": "travail-mecanicien-accroupi-pres-voiture-course-01.jpg",
     "service": "workplace",
-    "caption_fr": "Dirigeant à son bureau avec vue sur la ville",
-    "caption_en": "Executive at his desk with a city view",
+    "caption_fr": "Mécanicien accroupi près d’une voiture de course",
+    "caption_en": "Mechanic crouching by a race car",
     "location": "",
     "featured": false
   },
   {
-    "file": "photo-corporative-designer-graphique-studio-01.jpg",
+    "file": "travail-deux-membres-equipe-course-repos-01.jpg",
     "service": "workplace",
-    "caption_fr": "Designer graphique à son poste dans un studio de création",
-    "caption_en": "Graphic designer at her desk in a creative studio",
+    "caption_fr": "Deux membres d’une équipe de course au repos",
+    "caption_en": "Two race team members taking a break",
     "location": "",
     "featured": false
   },
   {
-    "file": "photo-corporative-technicien-atelier-fabrication-01.jpg",
+    "file": "travail-employee-poste-bureau-lumineux-01.jpg",
     "service": "workplace",
-    "caption_fr": "Technicien au travail dans un atelier de fabrication",
-    "caption_en": "Technician at work in a fabrication workshop",
+    "caption_fr": "Employée à son poste dans un bureau lumineux",
+    "caption_en": "Employee at her desk in a bright office",
     "location": "",
     "featured": false
   },
   {
-    "file": "photo-corporative-professionnelle-portable-bureau-01.jpg",
+    "file": "travail-analyste-centre-controle-01.jpg",
     "service": "workplace",
-    "caption_fr": "Professionnelle qui travaille sur son portable au bureau",
-    "caption_en": "Professional working on her laptop at the office",
+    "caption_fr": "Analyste dans un centre de contrôle",
+    "caption_en": "Analyst in a control room",
     "location": "",
     "featured": false
   },
   {
-    "file": "photo-corporative-analyste-salle-controle-01.jpg",
+    "file": "travail-deux-employes-reunion-espace-colore-01.jpg",
     "service": "workplace",
-    "caption_fr": "Analyste devant plusieurs écrans dans une salle de contrôle",
-    "caption_en": "Analyst at a multi-screen desk in a control room",
+    "caption_fr": "Deux employés en réunion dans un espace coloré",
+    "caption_en": "Two employees meeting in a colourful space",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-instructeur-pilote-voiture-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Instructeur et pilote dans une voiture",
+    "caption_en": "Instructor and driver in a car",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-operateur-plieuse-usine-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Opérateur d’une plieuse dans une usine",
+    "caption_en": "Press brake operator in a plant",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-gestionnaire-appel-video-bureau-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Gestionnaire en appel vidéo au bureau",
+    "caption_en": "Manager on a video call at the office",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-photo-equipe-autobus-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Photo d’équipe devant un autobus",
+    "caption_en": "Team photo in front of a bus",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-employe-mesure-cable-entrepot-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Employé qui mesure du câble dans un entrepôt",
+    "caption_en": "Employee measuring cable in a warehouse",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-membre-equipe-course-bord-piste-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Membre d’une équipe de course au bord de la piste",
+    "caption_en": "Race team member by the track",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-artisan-presente-piece-decoupee-laser-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Artisan qui présente une pièce découpée au laser",
+    "caption_en": "Craftsman showing a laser-cut panel",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-designer-graphique-souriante-studio-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Designer graphique souriante dans son studio",
+    "caption_en": "Smiling graphic designer in her studio",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-capitaine-leve-pouce-barre-bateau-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Capitaine qui lève le pouce à la barre de son bateau",
+    "caption_en": "Captain giving a thumbs-up at the helm",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-pilote-casque-volant-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Pilote casqué au volant",
+    "caption_en": "Driver in a helmet at the wheel",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-technicien-soude-circuit-electronique-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Technicien qui soude un circuit électronique",
+    "caption_en": "Technician soldering a circuit board",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-programmeur-souriant-poste-travail-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Programmeur souriant à son poste de travail",
+    "caption_en": "Smiling programmer at his workstation",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-equipe-autobus-electrique-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Équipe devant un autobus électrique",
+    "caption_en": "Team in front of an electric bus",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-capitaine-prepare-bateau-quai-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Capitaine qui prépare le bateau au quai",
+    "caption_en": "Captain preparing the boat at the dock",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-membre-equipe-course-garage-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Membre d’une équipe de course dans le garage",
+    "caption_en": "Race team member in the garage",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-technicien-travaille-moule-atelier-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Technicien qui travaille un moule en atelier",
+    "caption_en": "Technician working on a mould in the shop",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-professionnelle-bureau-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Professionnelle à son bureau",
+    "caption_en": "Professional at her desk",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-capitaine-pont-bateau-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Capitaine sur le pont d’un bateau",
+    "caption_en": "Captain on the deck of a boat",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-technicienne-transporte-pneu-course-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Technicienne qui transporte un pneu de course",
+    "caption_en": "Technician carrying a racing tyre",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-machiniste-machine-outil-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Machiniste devant une machine-outil",
+    "caption_en": "Machinist at a machine tool",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "travail-analyste-ecrans-bureau-01.jpg",
+    "service": "workplace",
+    "caption_fr": "Analyste devant ses écrans au bureau",
+    "caption_en": "Analyst at his screens in the office",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-immeuble-bureaux-centre-ville-pont-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Immeuble de bureaux avec le centre-ville et le pont Jacques-Cartier au loin",
+    "caption_en": "Office building with downtown and the Jacques Cartier Bridge in the distance",
+    "location": "Montréal",
+    "featured": true
+  },
+  {
+    "file": "immobilier-tour-centre-ville-coucher-soleil-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Tour au centre-ville au coucher du soleil, vue aérienne",
+    "caption_en": "Downtown tower at sunset, aerial view",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "immobilier-hall-entree-murales-ancien-batiment-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Hall d’entrée avec murales dans un ancien bâtiment industriel",
+    "caption_en": "Entrance hall with murals in a former industrial building",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "immobilier-grand-immeuble-briques-stationnement-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Grand immeuble de briques et son stationnement",
+    "caption_en": "Large brick building and its parking lot",
+    "location": "",
+    "featured": true
+  },
+  {
+    "file": "immobilier-tour-residentielle-centre-ville-fin-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Tour résidentielle au centre-ville en fin de journée",
+    "caption_en": "Downtown residential tower in late-day light",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-immeubles-bureaux-centre-ville-drone-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Immeubles de bureaux du centre-ville vus par drone",
+    "caption_en": "Downtown office buildings seen by drone",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-quartier-montrealais-lever-soleil-drone-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Quartier montréalais au lever du soleil, vue par drone",
+    "caption_en": "Montreal neighbourhood at sunrise, drone view",
+    "location": "Montréal",
+    "featured": false
+  },
+  {
+    "file": "immobilier-corridor-centre-ville-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Corridor avec vue sur le centre-ville",
+    "caption_en": "Hallway with a view of downtown",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-facade-tour-soleil-couchant-drone-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Façade d’une tour au soleil couchant, vue par drone",
+    "caption_en": "Tower façade at sunset, drone view",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-facade-immeuble-bureaux-patrimonial-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Façade d’un immeuble de bureaux patrimonial",
+    "caption_en": "Façade of a heritage office building",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-plateau-bureaux-aire-ouverte-plancher-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Plateau de bureaux à aire ouverte au plancher de béton",
+    "caption_en": "Open-plan office floor with a concrete floor",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-plateau-bureaux-cours-reamenagement-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Plateau de bureaux en cours de réaménagement",
+    "caption_en": "Office floor being refitted",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-tour-centre-ville-ciel-bleu-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Tour du centre-ville sous un ciel bleu",
+    "caption_en": "Downtown tower under a blue sky",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-ancien-batiment-industriel-converti-bureaux-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Ancien bâtiment industriel converti en bureaux, vue aérienne",
+    "caption_en": "Former industrial building converted to offices, aerial view",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-espace-commercial-grandes-fenetres-industrielles-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Espace commercial avec grandes fenêtres industrielles",
+    "caption_en": "Commercial space with large industrial windows",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-plateau-bureaux-aire-ouverte-cloisons-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Plateau de bureaux à aire ouverte avec cloisons vitrées",
+    "caption_en": "Open-plan office floor with glass partitions",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-tour-cour-interieure-hiver-aerienne-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Tour et cour intérieure en hiver, vue aérienne",
+    "caption_en": "Tower and courtyard in winter, aerial view",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-aerienne-montreal-vers-stade-olympique-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Vue aérienne de Montréal vers le Stade olympique",
+    "caption_en": "Aerial view of Montreal toward the Olympic Stadium",
+    "location": "Montréal",
+    "featured": false
+  },
+  {
+    "file": "immobilier-plateau-bureaux-blanc-vacant-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Plateau de bureaux blanc et vacant",
+    "caption_en": "White vacant office floor",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-aerienne-tour-centre-ville-hiver-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Vue aérienne d’une tour au centre-ville en hiver",
+    "caption_en": "Aerial view of a downtown tower in winter",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-aerienne-centre-ville-immeubles-voisins-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Vue aérienne du centre-ville et des immeubles voisins",
+    "caption_en": "Aerial view of downtown and surrounding buildings",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-hall-immeuble-industriel-renove-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Hall d’un immeuble industriel rénové",
+    "caption_en": "Lobby of a renovated industrial building",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-plateau-vacant-fenetres-trois-cotes-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Plateau vacant avec fenêtres sur trois côtés",
+    "caption_en": "Vacant floor with windows on three sides",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-facade-verre-pierre-tour-drone-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Façade de verre et de pierre d’une tour, vue par drone",
+    "caption_en": "Glass and stone tower façade, drone view",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-sommet-immeuble-patrimonial-centre-ville-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Sommet d’un immeuble patrimonial au centre-ville",
+    "caption_en": "Top of a heritage building downtown",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-grand-plateau-bureaux-lumineux-louer-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Grand plateau de bureaux lumineux à louer",
+    "caption_en": "Large bright office floor for lease",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-bureaux-vitres-ville-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Bureaux vitrés avec vue sur la ville",
+    "caption_en": "Glass-walled offices with a city view",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-plongeante-tour-cour-interieure-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Vue plongeante sur une tour et sa cour intérieure",
+    "caption_en": "Top-down view of a tower and its courtyard",
+    "location": "",
+    "featured": false
+  },
+  {
+    "file": "immobilier-immeuble-bureaux-stade-olympique-loin-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Immeuble de bureaux avec le Stade olympique au loin",
+    "caption_en": "Office building with the Olympic Stadium in the distance",
+    "location": "Montréal",
+    "featured": false
+  },
+  {
+    "file": "immobilier-plateau-vacant-conduits-apparents-01.jpg",
+    "service": "realestate",
+    "caption_fr": "Plateau vacant avec conduits apparents",
+    "caption_en": "Vacant floor with exposed ductwork",
     "location": "",
     "featured": false
   }

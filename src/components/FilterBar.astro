@@ -10,7 +10,7 @@ interface Props {
 
 const { lang, page } = Astro.props;
 const t = ui[lang];
-const chips = ['home', 'event', 'headshot', 'workplace'] as const;
+const chips = ['home', 'event', 'headshot', 'workplace', 'realestate'] as const;
 ---
 
 <nav class="filters" aria-label={t.filterLabel}>

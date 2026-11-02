@@ -11,7 +11,7 @@ const pastClients = 'Quebec City, Toronto, Calgary, Edmonton, the Bahamas and Me
 export const GET: APIRoute = () => {
   const body = `# ${site.name}
 
-> ${site.name} is a professional photography company for businesses, based in Montreal, Quebec, and founded in ${site.foundingYear} by ${site.founder.name}. Experienced photographers and a service tailored to each client. Services: event photography, corporate headshots and workplace photography.
+> ${site.name} is a professional photography company for businesses, based in Montreal, Quebec, and founded in ${site.foundingYear} by ${site.founder.name}. Experienced photographers and a service tailored to each client. Services: event photography, corporate headshots, workplace photography and real estate photography.
 > ${site.name} est une entreprise de photographie professionnelle pour les entreprises, basée à Montréal et fondée en ${site.foundingYear} par ${site.founder.name}. Photographes d’expérience, service sur mesure.
 
 ## Contact
@@ -28,14 +28,15 @@ ${sameAs.length ? sameAs.map((s) => `- ${s}`).join('\n') + '\n' : ''}
 1. Event photography / Photographie d’événements — conferences, galas, corporate events.
 2. Corporate headshots / Portraits corporatifs — executives, teams and professionals, on site.
 3. Workplace photography / Photographie en milieu de travail — employees at work in offices, workshops and plants, for websites, careers pages and annual reports.
+4. Real estate photography / Photographie immobilière — office buildings, towers, commercial spaces and floors for lease, from the ground and by drone.
 
 ## Pages (français)
 
-${(['home', 'event', 'headshot', 'workplace', 'privacy'] as const).map((k) => `- [${pages[k].fr.h1}](${abs(routes[k].fr)}): ${pages[k].fr.description}`).join('\n')}
+${(['home', 'event', 'headshot', 'workplace', 'realestate', 'privacy'] as const).map((k) => `- [${pages[k].fr.h1}](${abs(routes[k].fr)}): ${pages[k].fr.description}`).join('\n')}
 
 ## Pages (English)
 
-${(['home', 'event', 'headshot', 'workplace', 'privacy'] as const).map((k) => `- [${pages[k].en.h1}](${abs(routes[k].en)}): ${pages[k].en.description}`).join('\n')}
+${(['home', 'event', 'headshot', 'workplace', 'realestate', 'privacy'] as const).map((k) => `- [${pages[k].en.h1}](${abs(routes[k].en)}): ${pages[k].en.description}`).join('\n')}
 `;
   return new Response(body, { headers: { 'Content-Type': 'text/markdown; charset=utf-8' } });
 };

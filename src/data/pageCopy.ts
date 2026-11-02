@@ -31,6 +31,7 @@ export const pageCopy: Record<Service | 'home', Record<Lang, Copy>> = {
             `<strong>${link('event', 'fr', 'Photographie d’événements')}</strong> : conférences, congrès, galas, lancements et fêtes d’entreprise, couverts du début à la fin.`,
             `<strong>${link('headshot', 'fr', 'Portraits corporatifs')}</strong> : dirigeants, équipes et professionnels, photographiés à vos bureaux, dans un style uniforme pour toute l’équipe.`,
             `<strong>${link('workplace', 'fr', 'Photographie en milieu de travail')}</strong> : vos employés au travail, au bureau, à l’atelier ou à l’usine, pour votre site Web, vos offres d’emploi et vos rapports.`,
+            `<strong>${link('realestate', 'fr', 'Photographie immobilière')}</strong> : immeubles de bureaux, espaces commerciaux et plateaux à louer, au sol et par drone.`,
           ],
         },
         {
@@ -57,6 +58,7 @@ export const pageCopy: Record<Service | 'home', Record<Lang, Copy>> = {
             `<strong>${link('event', 'en', 'Event photography')}</strong>: conferences, conventions, galas, launches and company parties, covered from start to finish.`,
             `<strong>${link('headshot', 'en', 'Corporate headshots')}</strong>: executives, teams and professionals, photographed at your office in one consistent style for the whole team.`,
             `<strong>${link('workplace', 'en', 'Workplace photography')}</strong>: your people at work, in the office, workshop or plant, for your website, job postings and reports.`,
+            `<strong>${link('realestate', 'en', 'Real estate photography')}</strong>: office buildings, commercial spaces and floors for lease, from the ground and by drone.`,
           ],
         },
         {
@@ -334,6 +336,32 @@ export const pageCopy: Record<Service | 'home', Record<Lang, Copy>> = {
         {
           q: 'Can you take team headshots on the same day?',
           a: `Yes. See our ${link('headshot', 'en', 'corporate headshots')}.`,
+        },
+      ],
+    },
+  },
+  realestate: {
+    fr: {
+      sections: [
+        {
+          h2: 'Ce que nous photographions',
+          paras: [
+            'Immeubles de bureaux, tours, bâtiments industriels convertis, halls d’entrée et plateaux vacants : des photos claires et lumineuses pour vos fiches de location, votre site Web, vos brochures et vos présentations aux investisseurs.',
+            'Les vues aériennes par drone montrent l’immeuble dans son quartier, avec ses accès et ce qui l’entoure. Au sol, nous photographions les façades, les espaces communs et chaque étage, vide ou aménagé.',
+            'Nos photographes d’expérience planifient la séance avec vous selon la lumière, la saison et l’accès à l’immeuble.',
+          ],
+        },
+      ],
+    },
+    en: {
+      sections: [
+        {
+          h2: 'What we photograph',
+          paras: [
+            'Office buildings, towers, converted industrial buildings, lobbies and vacant floors: clear, bright photos for your leasing listings, website, brochures and investor presentations.',
+            'Aerial drone views show the building in its neighbourhood, with its access points and surroundings. On the ground, we photograph the façades, the common areas and every floor, empty or fitted out.',
+            'Our experienced photographers plan the shoot with you around the light, the season and access to the building.',
+          ],
         },
       ],
     },

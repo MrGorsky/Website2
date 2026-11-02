@@ -31,6 +31,7 @@ const serviceType: Partial<Record<PageKey, Record<Lang, string>>> = {
   event: { fr: 'Photographie d’événements', en: 'Event photography' },
   headshot: { fr: 'Portraits corporatifs', en: 'Corporate headshots' },
   workplace: { fr: 'Photographie en milieu de travail', en: 'Workplace photography' },
+  realestate: { fr: 'Photographie immobilière', en: 'Real estate photography' },
 };
 
 const graph: Record<string, unknown>[] = [
@@ -104,17 +105,21 @@ if (type) {
       };
     }),
   );
-  graph.push({
-    '@type': 'FAQPage',
-    '@id': `${pageUrl}#faq`,
-    url: pageUrl,
-    inLanguage: htmlLang[lang],
-    mainEntity: (pageCopy[page as Service][lang].faq ?? []).map(({ q, a }) => ({
-      '@type': 'Question',
-      name: q,
-      acceptedAnswer: { '@type': 'Answer', text: a.replace(/<[^>]+>/g, '') },
-    })),
-  });
+  // A page without questions yet gets no FAQPage: an empty one is invalid.
+  const faq = pageCopy[page as Service][lang].faq;
+  if (faq?.length) {
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${pageUrl}#faq`,
+      url: pageUrl,
+      inLanguage: htmlLang[lang],
+      mainEntity: faq.map(({ q, a }) => ({
+        '@type': 'Question',
+        name: q,
+        acceptedAnswer: { '@type': 'Answer', text: a.replace(/<[^>]+>/g, '') },
+      })),
+    });
+  }
   graph.push({
     '@type': 'ImageGallery',
     '@id': `${pageUrl}#gallery`,

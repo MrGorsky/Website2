@@ -82,6 +82,26 @@ export const pages: Record<PageKey, Record<Lang, PageText>> = {
       crumb: 'Workplace photography',
     },
   },
+  realestate: {
+    fr: {
+      title: 'Photographie immobilière à Montréal | Hamel Photo',
+      description:
+        'Photos d’immeubles, de bureaux et d’espaces commerciaux, au sol et par drone, à Montréal et partout où vous êtes. 514 802-6778.',
+      h1: 'Photographie immobilière à Montréal',
+      intro:
+        'Immeubles de bureaux, tours, espaces commerciaux et plateaux à louer, photographiés au sol et du haut des airs, à Montréal, dans les environs ou ailleurs.',
+      crumb: 'Photographie immobilière',
+    },
+    en: {
+      title: 'Real Estate Photography in Montreal | Hamel Photo',
+      description:
+        'Photos of buildings, offices and commercial spaces, from the ground and by drone, in Montreal and wherever you are. Call 514 802-6778.',
+      h1: 'Real estate photography in Montreal',
+      intro:
+        'Office buildings, towers, commercial spaces and floors for lease, photographed from the ground and from the air, in Montreal, the surrounding area or beyond.',
+      crumb: 'Real estate photography',
+    },
+  },
   privacy: {
     fr: {
       title: 'Politique de confidentialité | Hamel Photo',
@@ -103,7 +123,7 @@ export const pages: Record<PageKey, Record<Lang, PageText>> = {
 export const ui = {
   fr: {
     filterLabel: 'Filtrer les photos par service',
-    chips: { home: 'Tout', event: 'Événements', headshot: 'Portraits corporatifs', workplace: 'Milieu de travail' },
+    chips: { home: 'Tout', event: 'Événements', headshot: 'Portraits corporatifs', workplace: 'Milieu de travail', realestate: 'Immobilier' },
     langSwitchLabel: 'Langue',
     serving: 'Basés à Montréal · Grand Montréal et partout où vous êtes',
     privacy: 'Confidentialité',
@@ -125,7 +145,7 @@ export const ui = {
   },
   en: {
     filterLabel: 'Filter photos by service',
-    chips: { home: 'All', event: 'Events', headshot: 'Corporate headshots', workplace: 'Workplace' },
+    chips: { home: 'All', event: 'Events', headshot: 'Corporate headshots', workplace: 'Workplace', realestate: 'Real estate' },
     langSwitchLabel: 'Language',
     serving: 'Based in Montreal · Greater Montreal and wherever you are',
     privacy: 'Privacy',
