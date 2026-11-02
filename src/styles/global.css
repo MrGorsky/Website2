@@ -77,11 +77,10 @@ a {
 }
 .bar {
   display: grid;
-  grid-template-columns: auto 1fr auto auto;
+  grid-template-columns: 1fr auto auto;
   align-items: center;
   gap: 8px 24px;
-  padding: 12px var(--pad);
-  max-height: 80px;
+  padding: 6px var(--pad);
 }
 .logo {
   font-weight: 650;
@@ -89,39 +88,80 @@ a {
   text-decoration: none;
   white-space: nowrap;
 }
-.h1 {
-  margin: 0;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.35;
-  color: var(--muted);
-}
 .contact {
   display: flex;
   gap: 16px;
   white-space: nowrap;
 }
-.contact a,
-.lang a {
+.contact a {
   text-decoration: none;
   font-weight: 550;
 }
-.contact a:hover,
-.lang a:hover {
+.contact a:hover {
   text-decoration: underline;
 }
+/* The current language is dark and underlined; the other one is the muted link. */
 .lang {
   display: flex;
-  gap: 6px;
   font-size: 0.875rem;
 }
-.lang > :first-child::after {
-  content: '|';
-  margin-left: 6px;
-  color: var(--line);
+.lang a,
+.lang span {
+  display: grid;
+  place-items: center;
+  min-width: 44px;
+  min-height: 44px;
 }
 .lang span {
+  font-weight: 650;
+  text-decoration: underline 2px var(--accent);
+  text-underline-offset: 6px;
+}
+.lang a {
   color: var(--muted);
+  text-decoration: none;
+}
+.lang a:hover {
+  color: var(--text);
+}
+
+/* Page heading and quote request, above the photos */
+.page-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px 40px;
+  padding: 28px var(--pad) 0;
+}
+.page-head > div:first-child {
+  flex: 1 1 480px;
+  max-width: 760px;
+}
+.page-head h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 1.1rem + 1.2vw, 2rem);
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 20px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn:hover {
+  background: color-mix(in srgb, var(--accent) 85%, #000);
 }
 
 /* Filters */
@@ -157,8 +197,7 @@ a {
 }
 
 .intro {
-  max-width: 60ch;
-  margin: 12px var(--pad) 0;
+  margin: 10px 0 0;
   color: var(--muted);
 }
 
@@ -340,15 +379,6 @@ a {
   :root {
     --row: 240px;
   }
-  .bar {
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas: 'logo contact lang' 'h1 h1 h1';
-    padding-block: 8px;
-  }
-  .logo { grid-area: logo; }
-  .contact { grid-area: contact; justify-self: end; }
-  .lang { grid-area: lang; }
-  .h1 { grid-area: h1; }
 }
 
 /* Phones: header scrolls away; the contact links pin to the bottom of the screen. */
@@ -367,8 +397,18 @@ a {
   }
   .bar {
     grid-template-columns: 1fr auto;
-    grid-template-areas: 'logo lang' 'h1 h1';
-    max-height: none;
+  }
+  .page-head {
+    padding-top: 20px;
+  }
+  /* All four filters stay visible: they wrap rather than scroll off the screen. */
+  .filters ul {
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+  .chip {
+    padding: 9px 14px;
+    font-size: 0.875rem;
   }
   .contact {
     position: fixed;
@@ -421,12 +461,57 @@ a {
   margin-bottom: 6px;
 }
 
-/* Home and service page text, below the gallery */
+/* Home and service page text, below the gallery: heading on the left, text on the right on wide screens. */
 .page-copy {
-  border-top: 1px solid var(--line);
+  max-width: 1120px;
   margin-inline: var(--pad);
   padding-inline: 0;
+  border-top: 1px solid var(--line);
+}
+.page-copy section {
+  padding: 28px 0;
+}
+.page-copy section + section {
+  border-top: 1px solid var(--line);
+}
+.page-copy h2 {
+  margin: 0 0 8px;
+}
+.page-copy section > div > :first-child {
+  margin-top: 0;
+}
+.page-copy section > div > :last-child {
+  margin-bottom: 0;
+}
+.page-copy ul {
+  padding-left: 0;
+  list-style: none;
+}
+.page-copy ul li {
+  position: relative;
+  padding-left: 20px;
+}
+.page-copy ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.75em;
+  width: 10px;
+  height: 2px;
+  background: var(--accent);
+}
+.page-copy ol {
+  padding-left: 1.25em;
 }
 .page-copy a {
   color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+@media (min-width: 900px) {
+  .page-copy section {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: 48px;
+  }
 }

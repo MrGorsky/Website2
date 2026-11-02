@@ -9,7 +9,8 @@ export const pages: Record<PageKey, Record<Lang, PageText>> = {
       title: 'Photographe corporatif à Montréal | Hamel Photo',
       description:
         'Photographes d’expérience basés à Montréal depuis 2012 : événements, portraits corporatifs et milieux de travail, partout où vous êtes. 514 802-6778.',
-      h1: 'Photographe corporatif à Montréal : événements, portraits et milieu de travail',
+      h1: 'Photographe corporatif à Montréal : événements, portraits et milieu de travail',
+      intro: 'Des photographes d’expérience et un service sur mesure, à Montréal et partout où vous êtes.',
       crumb: 'Accueil',
     },
     en: {
@@ -17,6 +18,7 @@ export const pages: Record<PageKey, Record<Lang, PageText>> = {
       description:
         'Experienced Montreal-based photographers since 2012: events, corporate headshots and workplace photos, wherever you are. Call 514 802-6778.',
       h1: 'Corporate photographer in Montreal: events, headshots and workplace',
+      intro: 'Experienced photographers and a service tailored to you, in Montreal and wherever you are.',
       crumb: 'Home',
     },
   },
@@ -108,6 +110,11 @@ export const ui = {
     cookies: 'Préférences de témoins',
     callLabel: 'Appeler Hamel Photo au',
     emailLabel: 'Écrire à Hamel Photo à',
+    quote: {
+      label: 'Demander une soumission',
+      subject: 'Demande de soumission',
+      body: 'Bonjour,\n\nDate :\nLieu :\nType de photos :\n\nMerci !',
+    },
     lightbox: { close: 'Fermer', prev: 'Photo précédente', next: 'Photo suivante', label: 'Visionneuse de photos' },
     consent: {
       text: 'Nous utilisons des témoins de mesure d’audience et de publicité seulement avec votre accord.',
@@ -125,6 +132,11 @@ export const ui = {
     cookies: 'Cookie preferences',
     callLabel: 'Call Hamel Photo at',
     emailLabel: 'Email Hamel Photo at',
+    quote: {
+      label: 'Request a quote',
+      subject: 'Quote request',
+      body: 'Hello,\n\nDate:\nPlace:\nType of photos:\n\nThank you!',
+    },
     lightbox: { close: 'Close', prev: 'Previous photo', next: 'Next photo', label: 'Photo viewer' },
     consent: {
       text: 'We use analytics and advertising cookies only with your consent.',

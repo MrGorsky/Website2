@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ConsentBanner from '../components/ConsentBanner.astro';
+import PageHead from '../components/PageHead.astro';
 import SchemaOrg from '../components/SchemaOrg.astro';
 import { site } from '../data/site';
 import type { Photo } from '../data/images';
@@ -63,8 +64,9 @@ if (text.description.length > 155) throw new Error(`Description over 155 chars (
   </head>
   <body data-page={page}>
     <a class="skip" href="#main">{lang === 'fr' ? 'Aller au contenu' : 'Skip to content'}</a>
-    <Header lang={lang} page={page} h1={text.h1} />
+    <Header lang={lang} page={page} />
     <main id="main">
+      <PageHead lang={lang} page={page} />
       <slot />
     </main>
     <Footer lang={lang} />

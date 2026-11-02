@@ -1,0 +1,31 @@
+---
+import { site } from '../data/site';
+import type { Lang, PageKey } from '../i18n/routes';
+import { pages, ui } from '../i18n/strings';
+
+interface Props {
+  lang: Lang;
+  page: PageKey;
+}
+
+const { lang, page } = Astro.props;
+const text = pages[page][lang];
+const t = ui[lang];
+// The privacy page gets the heading only; every other page also gets the quote request.
+const cta = page !== 'privacy';
+const quoteHref = `mailto:${site.email}?subject=${encodeURIComponent(t.quote.subject)}&body=${encodeURIComponent(t.quote.body)}`;
+---
+
+<div class="page-head">
+  <div>
+    <h1>{text.h1}</h1>
+    {text.intro && <p class="intro">{text.intro}</p>}
+  </div>
+  {
+    cta && (
+      <a class="btn" href={quoteHref}>
+        {t.quote.label}
+      </a>
+    )
+  }
+</div>

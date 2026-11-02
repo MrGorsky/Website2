@@ -20,18 +20,20 @@ const colon = t(lang === 'fr' ? ' :' : ':');
     copy.sections.map((s) => (
       <section>
         <h2>{t(s.h2)}</h2>
-        {s.paras?.map((p) => <p set:html={t(p)} />)}
-        {s.items && <ul>{s.items.map((i) => <li set:html={t(i)} />)}</ul>}
-        {s.steps && (
-          <ol>
-            {s.steps.map(([label, text]) => (
-              <li>
-                <strong>{label}{colon}</strong> {t(text)}
-              </li>
-            ))}
-          </ol>
-        )}
-        {s.after && <p>{t(s.after)}</p>}
+        <div>
+          {s.paras?.map((p) => <p set:html={t(p)} />)}
+          {s.items && <ul>{s.items.map((i) => <li set:html={t(i)} />)}</ul>}
+          {s.steps && (
+            <ol>
+              {s.steps.map(([label, text]) => (
+                <li>
+                  <strong>{label}{colon}</strong> {t(text)}
+                </li>
+              ))}
+            </ol>
+          )}
+          {s.after && <p>{t(s.after)}</p>}
+        </div>
       </section>
     ))
   }
@@ -39,12 +41,14 @@ const colon = t(lang === 'fr' ? ' :' : ':');
     copy.faq && (
       <section>
         <h2>{copy.faqTitle}</h2>
-        {copy.faq.map(({ q, a }) => (
-          <>
-            <h3>{t(q)}</h3>
-            <p set:html={t(a)} />
-          </>
-        ))}
+        <div>
+          {copy.faq.map(({ q, a }) => (
+            <>
+              <h3>{t(q)}</h3>
+              <p set:html={t(a)} />
+            </>
+          ))}
+        </div>
       </section>
     )
   }

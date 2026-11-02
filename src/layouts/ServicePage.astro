@@ -5,7 +5,6 @@ import Gallery from '../components/Gallery.astro';
 import PageCopy from '../components/PageCopy.astro';
 import { getPhotos } from '../data/images';
 import type { Lang, Service } from '../i18n/routes';
-import { pages } from '../i18n/strings';
 
 interface Props {
   lang: Lang;
@@ -18,7 +17,6 @@ const photos = getPhotos(service);
 
 <Base lang={lang} page={service} photos={photos}>
   <FilterBar lang={lang} page={service} />
-  <p class="intro">{pages[service][lang].intro}</p>
   <Gallery lang={lang} photos={photos} />
   <PageCopy lang={lang} page={service} />
 </Base>
