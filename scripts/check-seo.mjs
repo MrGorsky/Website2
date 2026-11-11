@@ -27,7 +27,9 @@ for (const f of files) {
   const types = ld['@graph'].map((n) => n['@type']);
   const biz = ld['@graph'].find((n) => n['@type'] === 'ProfessionalService');
   for (const k of ['name', 'url', 'logo', 'image', 'telephone', 'email', 'founder', 'foundingDate', 'areaServed', 'priceRange']) if (!biz[k]) bad(path, 'business missing ' + k);
-  if (biz.address) bad(path, 'business has address');
+  // Service-area business: city, province and country only, never a street address.
+  if (biz.address?.streetAddress || biz.address?.postalCode) bad(path, 'business has a street address');
+  if (biz.address?.addressLocality !== 'Montréal') bad(path, 'business missing city');
   const isService = /evenementiel|corporatifs|photographie-corporative|event-photography|corporate-headshots|corporate-photography|photographie-immobiliere|real-estate-photography/.test(path);
   if (isService && !(types.includes('Service') && types.includes('ImageGallery'))) bad(path, 'service schema missing');
   if (isService) for (const img of ld['@graph'].find((n) => n['@type'] === 'ImageGallery').image)

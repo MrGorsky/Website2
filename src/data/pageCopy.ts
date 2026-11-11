@@ -351,6 +351,42 @@ export const pageCopy: Record<Service | 'home', Record<Lang, Copy>> = {
             'Nos photographes d’expérience planifient la séance avec vous selon la lumière, la saison et l’accès à l’immeuble.',
           ],
         },
+        {
+          h2: 'Comment ça se passe',
+          steps: [
+            ['Planification', 'ensemble, nous dressons la liste des vues à prendre : façades, vues aériennes, hall, espaces communs et étages.'],
+            ['Accès', 'nous convenons avec le gestionnaire de l’immeuble des étages à ouvrir, de l’accès au toit et des locaux occupés à éviter.'],
+            ['Sur place', 'nous choisissons l’heure selon l’orientation de l’immeuble, pour une façade éclairée et un ciel dégagé.'],
+            ['Livraison', 'une sélection de photos retouchées, prêtes pour vos fiches de location, le Web et l’impression.'],
+          ],
+        },
+      ],
+      faqTitle: 'Questions fréquentes',
+      faq: [
+        {
+          q: 'Pouvez-vous photographier un étage vacant ?',
+          a: 'Oui. Un plateau vide montre la lumière, les fenêtres et la superficie disponible. Nous le photographions de façon à ce qu’un futur locataire puisse imaginer son aménagement.',
+        },
+        {
+          q: 'Le drone peut-il voler partout ?',
+          a: 'Pas toujours. Près de l’aéroport et dans certains secteurs du centre-ville, il faut une autorisation de vol. Nous vérifions l’espace aérien avant la séance et vous le disons dans la soumission.',
+        },
+        {
+          q: 'Quel est le meilleur moment pour la séance ?',
+          a: 'Cela dépend de l’orientation de l’immeuble et de la saison. Une façade est souvent mieux éclairée le matin ou en fin de journée ; nous choisissons l’heure avec vous.',
+        },
+        {
+          q: 'Pouvons-nous utiliser les photos pour nos fiches de location ?',
+          a: 'Oui : fiches de location, site Web, brochures, présentations aux investisseurs et réseaux sociaux sont inclus. La publicité payée demande une licence étendue : mentionnez-le dans votre demande.',
+        },
+        {
+          q: 'Vous déplacez-vous à l’extérieur de Montréal ?',
+          a: 'Oui. Basés à Montréal, nous servons surtout le Grand Montréal et nous nous déplaçons partout où vous êtes. À l’extérieur du Grand Montréal, les frais de déplacement sont indiqués dans la soumission.',
+        },
+        {
+          q: 'Pouvez-vous aussi photographier les gens qui travaillent dans l’immeuble ?',
+          a: `Oui. Voyez notre ${link('workplace', 'fr', 'photographie en milieu de travail')}.`,
+        },
       ],
     },
     en: {
@@ -362,6 +398,42 @@ export const pageCopy: Record<Service | 'home', Record<Lang, Copy>> = {
             'Aerial drone views show the building in its neighbourhood, with its access points and surroundings. On the ground, we photograph the façades, the common areas and every floor, empty or fitted out.',
             'Our experienced photographers plan the shoot with you around the light, the season and access to the building.',
           ],
+        },
+        {
+          h2: 'How it works',
+          steps: [
+            ['Planning', 'together we list the shots: façades, aerial views, lobby, common areas and floors.'],
+            ['Access', 'we agree with the building manager on which floors to open, roof access and occupied spaces to avoid.'],
+            ['On site', 'we pick the time of day by the building’s orientation, for a well-lit façade and a clear sky.'],
+            ['Delivery', 'a selection of edited photos, ready for your leasing listings, web and print.'],
+          ],
+        },
+      ],
+      faqTitle: 'Frequently asked questions',
+      faq: [
+        {
+          q: 'Can you photograph a vacant floor?',
+          a: 'Yes. An empty floor shows the light, the windows and the space available. We photograph it so a future tenant can picture their own layout.',
+        },
+        {
+          q: 'Can the drone fly anywhere?',
+          a: 'Not always. Near the airport and in parts of downtown, a flight authorization is needed. We check the airspace before the shoot and tell you in the quote.',
+        },
+        {
+          q: 'When is the best time for the shoot?',
+          a: 'It depends on the building’s orientation and the season. A façade is often best lit in the morning or late in the day; we choose the time with you.',
+        },
+        {
+          q: 'Can we use the photos in our leasing listings?',
+          a: 'Yes: leasing listings, your website, brochures, investor presentations and social media are included. Paid advertising needs an extended licence: mention it when you contact us.',
+        },
+        {
+          q: 'Do you travel outside Montreal?',
+          a: 'Yes. Based in Montreal, we mainly serve Greater Montreal and travel wherever you are. Outside Greater Montreal, travel fees are included in the quote.',
+        },
+        {
+          q: 'Can you also photograph the people who work in the building?',
+          a: `Yes. See our ${link('workplace', 'en', 'workplace photography')}.`,
         },
       ],
     },

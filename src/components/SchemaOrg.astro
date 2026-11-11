@@ -46,6 +46,12 @@ const graph: Record<string, unknown>[] = [
     email: site.email,
     foundingDate: String(site.foundingYear),
     founder: { '@id': founderId },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: site.address.locality,
+      addressRegion: site.address.region,
+      addressCountry: site.address.country,
+    },
     areaServed,
     priceRange: '$$',
     knowsLanguage: ['fr-CA', 'en-CA'],

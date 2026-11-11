@@ -12,6 +12,8 @@ export const site = {
     name: 'Jo Hamel',
     jobTitle: { fr: 'Fondateur et directeur de création', en: 'Founder & Creative Director' },
   },
+  // City only: the business serves clients on site and has no public street address.
+  address: { locality: 'Montréal', region: 'QC', country: 'CA' },
   cities: ['Montréal', 'Laval', 'Longueuil'],
   regions: ['Rive-Sud', 'Rive-Nord'],
   // TODO: add the real profile URLs (e.g. https://www.instagram.com/hamelphoto/). Empty strings are skipped everywhere.
