@@ -8,16 +8,16 @@ export const pages: Record<PageKey, Record<Lang, PageText>> = {
     fr: {
       title: 'Photographe corporatif à Montréal | Hamel Photo',
       description:
-        'Photographes d’expérience basés à Montréal depuis 2012 : événements, portraits corporatifs et milieux de travail, partout où vous êtes. 514 802-6778.',
-      h1: 'Photographe corporatif à Montréal : événements, portraits et milieu de travail',
+        'Photographes d’expérience à Montréal depuis 2012 : événements, portraits corporatifs, milieux de travail et immobilier, partout où vous êtes. 514 802-6778.',
+      h1: 'Photographe corporatif à Montréal : événements, portraits, milieu de travail et immobilier',
       intro: 'Des photographes d’expérience et un service sur mesure, à Montréal et partout où vous êtes.',
       crumb: 'Accueil',
     },
     en: {
       title: 'Corporate Photographer in Montreal | Hamel Photo',
       description:
-        'Experienced Montreal-based photographers since 2012: events, corporate headshots and workplace photos, wherever you are. Call 514 802-6778.',
-      h1: 'Corporate photographer in Montreal: events, headshots and workplace',
+        'Experienced Montreal photographers since 2012: events, corporate headshots, workplace and real estate photography, wherever you are. Call 514 802-6778.',
+      h1: 'Corporate photographer in Montreal: events, headshots, workplace and real estate',
       intro: 'Experienced photographers and a service tailored to you, in Montreal and wherever you are.',
       crumb: 'Home',
     },

@@ -111,7 +111,7 @@ export const pageCopy: Record<Service | 'home', Record<Lang, Copy>> = {
         },
         {
           q: 'Do you travel outside Montreal?',
-          a: 'Yes. Based in Montreal, we mainly serve Greater Montreal and travel wherever you are. Outside Greater Montreal, travel fees are included in the quote.',
+          a: 'Yes. Based in Montreal, we mainly serve Greater Montreal and travel wherever you are. Outside Greater Montreal, travel fees are listed in the quote.',
         },
         {
           q: 'How soon do we get the photos?',
@@ -183,7 +183,7 @@ export const pageCopy: Record<Service | 'home', Record<Lang, Copy>> = {
             ['After', 'you receive a selection of edited photos, ready for web and print, through a download link.'],
           ],
           after:
-            'Based in Montreal, we mainly serve Greater Montreal and travel wherever you are: we have photographed clients in Quebec City, Toronto, Calgary, Edmonton, the Bahamas and Mexico. Outside Greater Montreal, travel fees are included in the quote.',
+            'Based in Montreal, we mainly serve Greater Montreal and travel wherever you are: we have photographed clients in Quebec City, Toronto, Calgary, Edmonton, the Bahamas and Mexico. Outside Greater Montreal, travel fees are listed in the quote.',
         },
       ],
       faqTitle: 'Frequently asked questions',
@@ -291,7 +291,7 @@ export const pageCopy: Record<Service | 'home', Record<Lang, Copy>> = {
         { q: 'When do we get the headshots?', a: 'Fast. We confirm the exact timing when you book.' },
         {
           q: 'Do you travel outside Montreal?',
-          a: 'Yes. Based in Montreal, we mainly serve Greater Montreal and travel wherever you are. Outside Greater Montreal, travel fees are included in the quote.',
+          a: 'Yes. Based in Montreal, we mainly serve Greater Montreal and travel wherever you are. Outside Greater Montreal, travel fees are listed in the quote.',
         },
         {
           q: 'Can you also photograph the team at work on the same day?',
@@ -377,7 +377,7 @@ export const pageCopy: Record<Service | 'home', Record<Lang, Copy>> = {
         },
         {
           q: 'Do you travel outside Montreal?',
-          a: 'Yes. Based in Montreal, we mainly serve Greater Montreal and travel wherever you are. Outside Greater Montreal, travel fees are included in the quote.',
+          a: 'Yes. Based in Montreal, we mainly serve Greater Montreal and travel wherever you are. Outside Greater Montreal, travel fees are listed in the quote.',
         },
         {
           q: 'Can you take team headshots on the same day?',
@@ -475,7 +475,7 @@ export const pageCopy: Record<Service | 'home', Record<Lang, Copy>> = {
         },
         {
           q: 'Do you travel outside Montreal?',
-          a: 'Yes. Based in Montreal, we mainly serve Greater Montreal and travel wherever you are. Outside Greater Montreal, travel fees are included in the quote.',
+          a: 'Yes. Based in Montreal, we mainly serve Greater Montreal and travel wherever you are. Outside Greater Montreal, travel fees are listed in the quote.',
         },
         {
           q: 'Can you also photograph the people who work in the building?',
