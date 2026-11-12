@@ -3,7 +3,7 @@ import { getImage } from 'astro:assets';
 import { site, sameAs } from '../data/site';
 import type { Photo } from '../data/images';
 import { pageCopy } from '../data/pageCopy';
-import { routes, htmlLang, type Lang, type PageKey, type Service } from '../i18n/routes';
+import { routes, htmlLang, type Lang, type PageKey } from '../i18n/routes';
 import { pages } from '../i18n/strings';
 import { abs, absAsset } from '../i18n/url';
 
@@ -39,6 +39,7 @@ const graph: Record<string, unknown>[] = [
     '@type': 'ProfessionalService',
     '@id': businessId,
     name: site.name,
+    description: pages.home[lang].description,
     url: abs('/'),
     logo: abs('/icon-512.png'),
     image: ogImage,
@@ -111,21 +112,6 @@ if (type) {
       };
     }),
   );
-  // A page without questions yet gets no FAQPage: an empty one is invalid.
-  const faq = pageCopy[page as Service][lang].faq;
-  if (faq?.length) {
-    graph.push({
-      '@type': 'FAQPage',
-      '@id': `${pageUrl}#faq`,
-      url: pageUrl,
-      inLanguage: htmlLang[lang],
-      mainEntity: faq.map(({ q, a }) => ({
-        '@type': 'Question',
-        name: q,
-        acceptedAnswer: { '@type': 'Answer', text: a.replace(/<[^>]+>/g, '') },
-      })),
-    });
-  }
   graph.push({
     '@type': 'ImageGallery',
     '@id': `${pageUrl}#gallery`,
@@ -134,6 +120,22 @@ if (type) {
     inLanguage: htmlLang[lang],
     about: { '@id': `${pageUrl}#service` },
     image: images,
+  });
+}
+
+// Home and service pages with questions get FAQPage; an empty one is invalid.
+const faq = page === 'privacy' ? undefined : pageCopy[page][lang].faq;
+if (faq?.length) {
+  graph.push({
+    '@type': 'FAQPage',
+    '@id': `${pageUrl}#faq`,
+    url: pageUrl,
+    inLanguage: htmlLang[lang],
+    mainEntity: faq.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a.replace(/<[^>]+>/g, '') },
+    })),
   });
 }
 

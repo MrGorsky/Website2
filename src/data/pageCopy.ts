@@ -49,6 +49,29 @@ export const pageCopy: Record<Service | 'home', Record<Lang, Copy>> = {
           ],
         },
       ],
+      faqTitle: 'Questions fréquentes',
+      faq: [
+        {
+          q: 'Quels types de photos faites-vous ?',
+          a: `Quatre types de mandats pour les entreprises : ${link('event', 'fr', 'événements')}, ${link('headshot', 'fr', 'portraits corporatifs')}, ${link('workplace', 'fr', 'milieu de travail')} et ${link('realestate', 'fr', 'immobilier')}.`,
+        },
+        {
+          q: 'Combien coûte une séance ?',
+          a: 'Le prix dépend du type de mandat, de sa durée et du lieu. Dites-nous ce dont vous avez besoin et nous vous envoyons une soumission détaillée.',
+        },
+        {
+          q: 'Vous déplacez-vous à l’extérieur de Montréal ?',
+          a: 'Oui. Basés à Montréal, nous servons surtout le Grand Montréal et nous nous déplaçons partout où vous êtes. À l’extérieur du Grand Montréal, les frais de déplacement sont indiqués dans la soumission.',
+        },
+        {
+          q: 'En combien de temps recevons-nous les photos ?',
+          a: 'Les photos sont retouchées et livrées rapidement, prêtes pour le Web et l’impression. Pour un événement, nous pouvons aussi vous en envoyer quelques-unes le jour même.',
+        },
+        {
+          q: 'Travaillez-vous en anglais ?',
+          a: 'Oui. Nous travaillons en français et en anglais.',
+        },
+      ],
     },
     en: {
       sections: [
@@ -74,6 +97,29 @@ export const pageCopy: Record<Service | 'home', Record<Lang, Copy>> = {
           paras: [
             `Call us at ${phone} or email ${email}. Tell us the date, the place and what you want photographed, and we’ll reply with a quote.`,
           ],
+        },
+      ],
+      faqTitle: 'Frequently asked questions',
+      faq: [
+        {
+          q: 'What kinds of photos do you take?',
+          a: `Four kinds of assignments for businesses: ${link('event', 'en', 'events')}, ${link('headshot', 'en', 'corporate headshots')}, ${link('workplace', 'en', 'workplace')} and ${link('realestate', 'en', 'real estate')}.`,
+        },
+        {
+          q: 'How much does a shoot cost?',
+          a: 'The price depends on the type of assignment, its length and the location. Tell us what you need and we’ll send you a detailed quote.',
+        },
+        {
+          q: 'Do you travel outside Montreal?',
+          a: 'Yes. Based in Montreal, we mainly serve Greater Montreal and travel wherever you are. Outside Greater Montreal, travel fees are included in the quote.',
+        },
+        {
+          q: 'How soon do we get the photos?',
+          a: 'Photos are edited and delivered fast, ready for web and print. For events, we can also send you a few the same day.',
+        },
+        {
+          q: 'Do you work in French?',
+          a: 'Yes. We work in French and English.',
         },
       ],
     },
